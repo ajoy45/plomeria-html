@@ -1,0 +1,61 @@
+@use "../abstract/"as *;
+.client-section{
+    margin: 120px 0;
+}
+.client-description{
+    justify-content: center;
+}
+.client-heading{
+    max-width: 806px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.client-paragraph-content{
+    display: flex;
+    justify-content: center;
+}
+.client-paragraph{
+    max-width: 665px;
+    text-align: center;
+    // margin-left: 90px;
+    margin-bottom: 24px;
+   
+}
+.client-read{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .client-read-color{
+        color: var(--blue);
+    }
+}
+
+.client-arrow{
+    width: 24px;
+    height: 24px;
+}
+.client-img-content{
+   align-items: center;
+    justify-content: center;
+}
+.client-img1{
+    width: 400.21px;
+  
+    .img{
+        padding: 10px 10px;
+    }
+}
+
+.client-img2{
+    width: 493.28px;
+    .img{
+        padding: 10px 10px;
+    }
+}
+
+.client-img3{
+    width: 400.21px;
+    .img{
+        padding: 10px 10px;
+    }
+}

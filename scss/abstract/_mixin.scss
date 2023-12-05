@@ -1,0 +1,49 @@
+@mixin heading-64($weight:700){
+    font-size: 64px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight:$weight;
+    line-height: 1.08em;
+    letter-spacing: -.015em;
+      
+}
+@mixin heading-48($weight:700){
+    font-size: 48px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight:$weight;
+    line-height: 1.3em;
+    letter-spacing: -.015em;
+      
+}
+@mixin heading-32($weight:700){
+    font-size: 32px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight:$weight;
+    line-height: 1.30em;
+    letter-spacing: -.015em;
+      
+}
+@mixin heading-24($weight:700){
+    font-size: 24px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight:$weight;
+    line-height: 1.30em;    
+}
+@mixin heading-20($weight:700,$line-height:1.30em){
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight:$weight;
+    line-height: $line-height;    
+}
+@mixin paragraph-20{
+    font-size: 20px;
+    line-height: 1.74em;
+    font-weight: 400;
+}
+@mixin paragraph-18{
+    font-size: 18px;
+    line-height: 1.74em;
+}
+@mixin paragraph-16($line-height:1.74em){
+    font-size: 16px;
+    line-height: $line-height;
+}

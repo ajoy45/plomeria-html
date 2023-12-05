@@ -1,0 +1,54 @@
+@use '../abstract/' as *;
+.banner{
+    justify-content:space-between;
+ 
+    margin-top: 32px;
+}
+.banner-title{
+    max-width: 598px;
+    padding: 55.55px 0;
+}
+.banner-heading{
+   margin-bottom: 24px;
+}
+.banner-description{
+    margin-bottom: 140px;
+ }
+.banner-form{
+    background-image: url('../../assets/banner/Mask\ group.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+   max-width: 619px;
+   padding: 100px
+}
+.banner-content{
+   padding:64px 80px ;
+   background-color: rgb(255, 255, 255,.5);
+   z-index: 2;
+   width: 100%;
+   margin: 0 auto;
+  
+  
+}
+.banner-content>input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+.banner-content select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.banner-btn{
+    width: 100%;
+    background-color: #d20d0c;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,19 @@
+@use '../abstract/' as *;
+
+:root{
+    --primary:#{$primary-hex};
+    --secondary:#{$secondary-hex};
+    --text-dark:#{$text-dark-hex};
+    --text-light:#{$text-light-hex};
+    --white:#{$white-hex};
+    --blue:#{$blue-hex};
+    --yellow:#{$yellow-hex};
+}
+
+h1,h2,h3,h4{
+ font-family:$heading-font;
+}
+body{
+    font-family: $body-font;
+    font-weight:$body-font-weight;
+}

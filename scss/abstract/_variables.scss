@@ -1,0 +1,20 @@
+$primary-hex:#D20D0C;
+$secondary-hex:#131325;
+$text-dark-hex:#424251;
+$text-light-hex:#DFDFDF;
+$white-hex:#FFFFFF;
+$blue-hex:#0077FF;
+$yellow-hex:#FFB700;
+
+// do not use dollar sign inside var because it is css variable
+$primary:var(--primary);
+$secondary:var(--secondary);
+$text-dark:var(--text-dark);
+$text-light:var(--text-light);
+$white:var(--white);
+$blue:var(--blue);
+$yellow:var(--yellow);
+
+$heading-font:'Be Vietnam Pro', sans-serif;
+$body-font:'ABeeZee', sans-serif;
+$body-font-weight:400;

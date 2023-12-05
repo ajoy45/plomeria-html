@@ -1,0 +1,32 @@
+@use '../abstract/'as *;
+.testimonial-section{
+
+}
+.testimonial{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+.testimonial-title{
+    text-align: center;
+}
+.card{
+    max-width: 400px;
+}
+.card-img{
+    width: 48px;
+    height: 48px;
+}
+.card-title{
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+}
+.card-profile{
+    display: flex;
+    
+}
+.card-star{
+    width: 16.67px;
+    height: 16.67px;
+}
