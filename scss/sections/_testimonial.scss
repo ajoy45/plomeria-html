@@ -7,7 +7,7 @@
         max-width: 536.67px;
         padding: 32px 36px;
         border-radius: 8px;
-        border-left: 3px solid var(--blue-blue-01, #07F);
+        border-left: 3px solid var(--blue, #07F);
     }
 }
 
@@ -45,4 +45,7 @@
 .card-star{
     width: 16.67px;
     height: 16.67px;
+}
+.card-text{
+    max-width: 464.67px;
 }

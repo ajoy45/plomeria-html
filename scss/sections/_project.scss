@@ -1,4 +1,7 @@
 @use "../abstract/" as *;
+.project-section{
+    padding: 120px 0;
+}
 .project{
     display: flex;
     justify-content: center;
