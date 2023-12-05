@@ -59,6 +59,9 @@
 .section-title{
     @include heading-48;
 }
+.medium-title{
+    @include heading-32;
+}
 .block-title{
     @include heading-24;
 }

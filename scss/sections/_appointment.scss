@@ -41,6 +41,7 @@
 }
 .appointment-left{
     max-width: 623px;
+    position: relative;
     .appointment{
          display: flex;
          align-items: center;
@@ -49,7 +50,17 @@
             opacity: 0.8;
          }
     }
-}
+    .cruv{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        .cruv-img{
+            width: 158.7px;
+            height: 139.88px;
+        }
+    }
+    }
+    
 
 .appointment-right{
     max-width: 558px;
