@@ -8,6 +8,11 @@
     align-items: center;
     margin-bottom: 10px;
 }
+.project-description{
+   
+    margin-bottom: 60px;
+}
+
 .project-title{
     text-align: center;
     margin-bottom: 40px;
@@ -18,7 +23,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin-bottom: 60px;
+      
         
        li{
         list-style-type: none;
@@ -46,6 +51,7 @@
         background: #FFF;
         padding: 10px; 
         max-width: 423px; 
+        margin-bottom: 60px;
     }
     .project-card img{
         border-radius: 8px 8px 0px 0px;

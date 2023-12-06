@@ -1,9 +1,11 @@
 @use "../abstract/" as *;
 .appointment-section{
     background: var(--secondary);
+    
 }
 .appointment-content{
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
     .appointment-title{
         color: var(--white);
@@ -42,6 +44,7 @@
 .appointment-left{
     max-width: 623px;
     position: relative;
+    padding: 120px 0;
     .appointment{
          display: flex;
          align-items: center;
@@ -67,4 +70,14 @@
   .appointment-right-img{
     margin-top: -130px;
   }
+}
+@media only screen and (max-width:992px){
+    .appointment-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        .appointment-right{
+            display: none;
+        }
+    }
 }

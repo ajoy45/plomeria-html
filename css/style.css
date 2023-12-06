@@ -143,6 +143,9 @@ body {
   justify-content: center;
   margin-bottom: 60px;
 }
+.service-heading .service-title {
+  text-align: center;
+}
 
 .service {
   display: flex;
@@ -214,6 +217,7 @@ body {
 
 .client-description {
   justify-content: center;
+  margin-bottom: 66px;
 }
 
 .client-heading {
@@ -254,23 +258,24 @@ body {
 
 .client-img1 {
   width: 400.21px;
+  border-radius: 10px;
 }
 .client-img1 .img {
-  padding: 10px 10px;
+  border-radius: 10px !important;
 }
 
 .client-img2 {
   width: 493.28px;
 }
 .client-img2 .img {
-  padding: 10px 10px;
+  border-radius: 10px !important;
 }
 
 .client-img3 {
   width: 400.21px;
 }
 .client-img3 .img {
-  padding: 10px 10px;
+  border-radius: 10px !important;
 }
 
 .header-section {
@@ -364,14 +369,6 @@ i.fa.fa-bars {
   font-size: 30px;
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none; /* Hide the navigation links on small screens */
-  }
-  .hamburger {
-    display: block;
-  }
-}
 .active {
   display: block;
   position: absolute;
@@ -379,14 +376,36 @@ i.fa.fa-bars {
   right: 0;
 }
 
+@media only screen and (max-width: 992px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
 .banner {
-  justify-content: space-between;
-  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .banner-title {
   max-width: 598px;
-  padding: 55.55px 0;
+  padding: 34px 0;
+}
+
+.banner-form {
+  background-image: url(../../assets/banner/Mask\ group.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  max-width: 619px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-heading {
@@ -397,46 +416,60 @@ i.fa.fa-bars {
   margin-bottom: 140px;
 }
 
-.banner-form {
-  background-image: url("../../assets/banner/Mask group.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 1;
-  max-width: 619px;
-  padding: 100px;
+.banner-form-detail {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1098039216);
+  background-color: rgba(255, 255, 255, 0.1098039216);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   border-radius: 10px;
+  padding: 48px 40px;
 }
 
-.banner-content {
-  padding: 64px 80px;
-  background-color: rgba(255, 255, 255, 0.5);
-  z-index: 2;
+.input-text, .input-email, .input-select, .input-textarea {
   width: 100%;
-  margin: 0 auto;
+  padding: 22px;
+  margin-bottom: 16px;
+  border: none;
+  background-color: var(--white);
+  border-radius: 8px;
+  outline: none;
 }
 
-.banner-content > input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.banner-content select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+.input-textarea {
+  padding: 18px 20px 90px 20px;
 }
 
 .banner-btn {
   width: 100%;
   background-color: #d20d0c;
   border: none;
-  padding: 10px;
+  padding: 20px;
   color: white;
   border-radius: 5px;
 }
 
+@media only screen and (max-width: 992px) {
+  .banner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .banner-heading {
+    text-align: center;
+  }
+  .banner-description {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .banner-img-group {
+    display: flex;
+    justify-content: center;
+  }
+  .banner-form {
+    width: 100%;
+  }
+}
 .contact-content {
   display: flex;
   justify-content: space-between;
@@ -458,8 +491,20 @@ i.fa.fa-bars {
 
 .service-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  gap: 38px;
+}
+
+.service-list-first {
+  max-width: 299.5px;
+}
+.service-list-first .contact-service {
+  margin-bottom: 16px;
+}
+
+.service-list-second {
+  max-width: 299.5px;
+}
+.service-list-second .contact-service {
   margin-bottom: 16px;
 }
 
@@ -533,6 +578,17 @@ i.fa.fa-bars {
   justify-content: center;
 }
 
+@media only screen and (max-width: 1194px) {
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-content .choose-us {
+    margin-bottom: 30px;
+  }
+}
 .project-section {
   padding: 120px 0;
 }
@@ -544,6 +600,10 @@ i.fa.fa-bars {
   margin-bottom: 10px;
 }
 
+.project-description {
+  margin-bottom: 60px;
+}
+
 .project-title {
   text-align: center;
   margin-bottom: 40px;
@@ -553,7 +613,6 @@ i.fa.fa-bars {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 60px;
 }
 .project-tap > ul li {
   list-style-type: none;
@@ -577,6 +636,7 @@ i.fa.fa-bars {
   background: #FFF;
   padding: 10px;
   max-width: 423px;
+  margin-bottom: 60px;
 }
 
 .project-card img {
@@ -650,7 +710,8 @@ i.fa.fa-bars {
 }
 
 .appointment-content {
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
 .appointment-content .appointment-title {
@@ -687,6 +748,7 @@ i.fa.fa-bars {
 .appointment-left {
   max-width: 623px;
   position: relative;
+  padding: 120px 0;
 }
 .appointment-left .appointment {
   display: flex;
@@ -713,6 +775,16 @@ i.fa.fa-bars {
   margin-top: -130px;
 }
 
+@media only screen and (max-width: 992px) {
+  .appointment-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .appointment-content .appointment-right {
+    display: none;
+  }
+}
 .footer-section {
   background-color: var(--secondary);
   padding-top: 120px;
@@ -806,6 +878,12 @@ i.fa.fa-bars {
   padding: 120px 0;
 }
 
+.blog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
 .blog-title {
   text-align: center;
   margin-bottom: 60px;
@@ -825,6 +903,9 @@ i.fa.fa-bars {
   color: var(--blue);
 }
 
+.blog-right {
+  max-width: 626px;
+}
 .blog-right .blog-part {
   display: flex;
   align-items: center;
@@ -841,4 +922,11 @@ i.fa.fa-bars {
 
 .blog-small-title {
   max-width: 406px;
+}
+
+@media only screen and (max-width: 992px) {
+  .blog {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */

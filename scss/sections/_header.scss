@@ -86,36 +86,21 @@ nav{
 i.fa.fa-bars {
     font-size: 30px;
 }
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Hide the navigation links on small screens */
-    }
-   .hamburger{
-    display: block;
-   }
-}
-//    /* Cross sign styles */
-//    .cross-sign {
-//     display: none; /* Hide the cross sign initially */
-   
-// }
-
-// // .cross-sign span {
-// //     display: block;
-// //     transform: rotate(45deg);
-// //     margin: 5px auto;
-// // }
-// /* Show the cross sign and hide the navigation links when the hamburger menu is clicked */
-// .hamburger.active span{
-//     display: none;
-// }
-// .cross-sign.active.cross{
-//     display: block;
-// }
-
 .active{
     display: block;
     position: absolute;
     top: 100px;
     right: 0;
 }
+@media only screen and (max-width: 992px) {
+    .nav-links {
+        display: none; 
+    }
+   .hamburger{
+    display: block;
+   }
+  
+}
+
+
+

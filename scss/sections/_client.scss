@@ -4,6 +4,7 @@
 }
 .client-description{
     justify-content: center;
+    margin-bottom: 66px;
 }
 .client-heading{
     max-width: 806px;
@@ -40,22 +41,23 @@
 }
 .client-img1{
     width: 400.21px;
-  
+    border-radius: 10px;
+    // padding: 0;
     .img{
-        padding: 10px 10px;
-    }
+        border-radius: 10px !important;
+     }
 }
 
 .client-img2{
     width: 493.28px;
     .img{
-        padding: 10px 10px;
-    }
+        border-radius: 10px !important;
+     }
 }
 
 .client-img3{
     width: 400.21px;
-    .img{
-        padding: 10px 10px;
-    }
+        .img{
+           border-radius: 10px !important;
+        }
 }
