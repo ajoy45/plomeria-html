@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Be Vietnam fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,14 +35,14 @@
                     <h1 class="logo-name logo-title-font">Plomeria</h1>
                 </div>
                 <nav class="navigation row">
-                    <ul>
+                    <ul class="nav-links">
                         <li><a class="large-paragraph" href="">Home</a></li>
                         <li><a class="large-paragraph" href="">About us</a></li>
                         <li><a class="large-paragraph" href="">Blog</a></li>
 
                         <li class="dropdown">
                             <div class="service-menu">
-                                <a class="large-paragraph" href="#">Services</a>
+                                <a class="large-paragraph dropdown-main" href="#">Services</a>
                                 <img class="menu-icon" src=" ./assets/header/chevron-down.png" alt="">
                             </div>
                             <ul class="dropdown-content">
@@ -53,13 +56,22 @@
                             </ul>
                         </li>
                         <li><a class="large-paragraph" href="">Contact us</a></li>
+                        <div class="calling">
+                            <div><img src="./assets/header/Group 34.png" alt=""></div>
+                            <h5>Emergency call <br>
+                                <span style="font-size: 20px; font-weight: bold;">070 4531 9507 </span>
+                            </h5>
+                        </div>
                     </ul>
-                    <div class="calling">
-                        <div><img src="./assets/header/Group 34.png" alt=""></div>
-                        <h5>Emergency call <br>
-                            <span style="font-size: 20px; font-weight: bold;">070 4531 9507 </span>
-                        </h5>
+
+
+                    <div class="hamburger" id="hamburger">
+                        <i class="fa fa-bars"></i>
                     </div>
+
+
+
+
                 </nav>
             </div>
         </div>
@@ -773,6 +785,24 @@
 
         </section>
     </footer>
+    <script>
+        const btn = document.querySelector(".hamburger");
+        const icon = document.querySelector(".fa-bars");
+        const navBar = document.querySelector('.nav-links')
+        btn.addEventListener('click', () => {
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.replace("fa-bars", "fa-times");
+                navBar.classList.add('active');
+                navBar.style.display = "block"
+            }
+            else {
+                icon.classList.replace("fa-times", "fa-bars");
+                navBar.classList.remove = "active";
+
+                navBar.style.display = "none"
+            }
+        })
+    </script>
 </body>
 
 </html>

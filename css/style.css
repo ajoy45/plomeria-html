@@ -303,6 +303,9 @@ nav ul li a {
   color: black;
   font-weight: bold;
 }
+nav ul li .service-menu .dropdown-main {
+  margin-right: 10px;
+}
 
 .dropdown {
   display: inline-block;
@@ -350,6 +353,30 @@ nav ul li a {
 .calling img {
   width: 30px;
   margin-right: 10px;
+}
+
+.hamburger {
+  display: none; /* Hide the hamburger menu initially */
+  cursor: pointer;
+}
+
+i.fa.fa-bars {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide the navigation links on small screens */
+  }
+  .hamburger {
+    display: block;
+  }
+}
+.active {
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: 0;
 }
 
 .banner {
