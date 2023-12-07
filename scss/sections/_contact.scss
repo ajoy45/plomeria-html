@@ -1,7 +1,8 @@
 @use "../abstract/" as *;
 .contact-content{
-    display: flex;
-    justify-content: space-between;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 42px;
     margin: 120px 0;
 }
 .contact-title{
@@ -9,7 +10,6 @@
 }
 .choose-us{
     max-width: 670px;
-   
 }
 .why-choose{
     display: flex;
@@ -49,15 +49,15 @@
     background-color: var(--primary);
     border: 0;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 14px 24px;
     color: white;
     margin-top: 48px;
+    font-size: 25px;
 }
 
 .choose-image{
     position: relative;
     max-width: 607px;
-    
 }
 .hapynes-main-container{
     max-width: 230px;
@@ -98,12 +98,20 @@
 }
 @media only screen and (max-width:1194px){
     .contact-content{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+       
+       grid-template-columns: repeat(1,1fr);
+       justify-items: center;
+       
         .choose-us{
             margin-bottom: 30px;
-        }
+            text-align: center;
+       }
+       .why-choose{
+            justify-content: center;
+       }
+       .service-list{
+        justify-content: center;
+       }
+        
     }
 }

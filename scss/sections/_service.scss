@@ -23,7 +23,9 @@
     margin-right: 10px;
 }
 .service-card{
+    display:grid;
     justify-content: center;
+    grid-template-columns: repeat(3,1fr);
     gap: 30px;
    
 }
@@ -45,7 +47,7 @@
         display:none;
     }
 }
-.card-img{
+.card-img-size{
     width: 64px;
     height: 64px;
     margin-bottom: 32px;
@@ -65,5 +67,17 @@
     background: none;
     border: 0;
     @include paragraph-16(1.4em);
+}
+@media only screen and (max-width:1024px){
+    .service-card{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+}
+@media only screen and (max-width:783px){
+    .service-card{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
 }
 
