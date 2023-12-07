@@ -424,6 +424,7 @@ i.fa.fa-bars {
           backdrop-filter: blur(6px);
   border-radius: 10px;
   padding: 48px 40px;
+  width: 425.78px;
 }
 
 .input-text, .input-email, .input-select, .input-textarea {
@@ -468,6 +469,7 @@ i.fa.fa-bars {
   }
   .banner-form {
     width: 100%;
+    padding: 60px 0;
   }
 }
 .contact-content {
@@ -891,6 +893,10 @@ i.fa.fa-bars {
 
 .blog-left {
   max-width: 644px;
+  border-radius: 10px 10px 0 0;
+}
+.blog-left .blog-img {
+  border-radius: 10px 10px 0 0;
 }
 .blog-left .blog-text {
   box-shadow: 0px 4px 30px 0px rgba(19, 19, 37, 0.07);
@@ -905,6 +911,9 @@ i.fa.fa-bars {
 
 .blog-right {
   max-width: 626px;
+}
+.blog-right .small-blog-img {
+  border-radius: 10px;
 }
 .blog-right .blog-part {
   display: flex;

@@ -13,19 +13,28 @@
 }
 .blog-left{
     max-width:644px;
+    border-radius: 10px 10px 0 0;
+    .blog-img {
+        border-radius: 10px 10px 0 0;
+    }
     .blog-text{
       box-shadow: 0px 4px 30px 0px rgba(19, 19, 37, 0.07);
     }
+   
     .blog-read{
         display: flex;
         
     }
 }
+
 .blog-read-color{
     color: var(--blue);
 }
 .blog-right{
     max-width: 626px;
+    .small-blog-img{
+        border-radius: 10px;
+    }
     .blog-part{
         display: flex;
         align-items: center;

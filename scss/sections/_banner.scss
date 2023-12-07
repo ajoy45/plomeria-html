@@ -34,7 +34,9 @@
    background-color: #ffffff1c;
    backdrop-filter: blur(6px);
    border-radius: 10px;
-   padding: 48px 40px;   
+   padding: 48px 40px;  
+   width: 425.78px; 
+ 
 }
 .input-text,.input-email,.input-select,.input-textarea{
     width: 100%;
@@ -77,6 +79,7 @@
        }
        .banner-form{
         width: 100%;
+       padding: 60px 0;
        }
 }
 
