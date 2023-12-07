@@ -37,6 +37,7 @@
 .first-service-card:hover{
     background-color: var(--secondary);
     color: var(--white);
+    transition: background-color 1s ease-in;
     .btn{
         color:var(--white);
     }

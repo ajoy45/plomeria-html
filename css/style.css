@@ -176,6 +176,7 @@ body {
 .first-service-card:hover {
   background-color: var(--secondary);
   color: var(--white);
+  transition: background-color 1s ease-in;
 }
 .first-service-card:hover .btn {
   color: var(--white);
