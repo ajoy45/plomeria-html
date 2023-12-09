@@ -34,10 +34,17 @@
 }
  .fast-service{
     margin-right: 56px;
+    margin-bottom: 0;
+    margin-left: 10px;
 } 
 .contact-service{
     display: flex;
     align-items: center;
+}
+                                
+.contact-service-title{
+    margin-bottom: 0;
+    margin-left: 10px;
 }
 .contact-paragraph{
     max-width: 599px;
@@ -49,10 +56,10 @@
     background-color: var(--primary);
     border: 0;
     border-radius: 5px;
-    padding: 14px 24px;
+    padding: 16px 26px;
     color: white;
     margin-top: 48px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .choose-image{

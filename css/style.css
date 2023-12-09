@@ -178,13 +178,17 @@ body {
 .first-service-card:hover {
   background-color: var(--secondary);
   color: var(--white);
-  transition: background-color 1s ease-in;
+  transition: background-color 0.4s ease-in;
 }
 .first-service-card:hover .btn {
   color: var(--white);
 }
 .first-service-card:hover .icon-black {
   display: none;
+}
+
+.line-text {
+  margin-bottom: 0;
 }
 
 .card-img-size {
@@ -211,7 +215,6 @@ body {
   background: none;
   border: 0;
   font-size: 16px;
-  line-height: 1.4em;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -255,11 +258,14 @@ body {
 
 .client-read {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .client-read .client-read-color {
   color: var(--blue);
+}
+
+.line-text {
+  margin-bottom: 0;
 }
 
 .client-arrow {
@@ -372,7 +378,6 @@ nav ul li .service-menu .dropdown-main {
 
 .calling {
   display: flex;
-  align-items: center;
   line-height: 1.5;
 }
 
@@ -390,7 +395,7 @@ i.fa.fa-bars {
   font-size: 30px;
 }
 
-.active {
+.header-active {
   display: block;
   position: absolute;
   top: 100px;
@@ -534,11 +539,18 @@ i.fa.fa-bars {
 
 .fast-service {
   margin-right: 56px;
+  margin-bottom: 0;
+  margin-left: 10px;
 }
 
 .contact-service {
   display: flex;
   align-items: center;
+}
+
+.contact-service-title {
+  margin-bottom: 0;
+  margin-left: 10px;
 }
 
 .contact-paragraph {
@@ -550,10 +562,10 @@ i.fa.fa-bars {
   background-color: var(--primary);
   border: 0;
   border-radius: 5px;
-  padding: 14px 24px;
+  padding: 16px 26px;
   color: white;
   margin-top: 48px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .choose-image {
@@ -639,19 +651,27 @@ i.fa.fa-bars {
   margin-bottom: 40px;
 }
 
-.project-tap > ul {
-  display: flex;
+.nav {
   justify-content: center;
-  flex-wrap: wrap;
 }
-.project-tap > ul li {
-  list-style-type: none;
-  border-bottom: 1px solid var(--text-dark);
+
+.nav-item {
+  margin: 0px 30px;
 }
-.project-tap > ul li a {
-  text-decoration: none;
-  margin-right: 60px;
-  color: var(--text-dark);
+
+.nav-item:first-child {
+  margin-left: 0px !important;
+}
+
+.nav-item:last-child {
+  margin-right: 0px !important;
+}
+
+.nav-link {
+  color: var(--secondary);
+  border: 0 !important;
+  background-color: none !important;
+  border-bottom: 2px solid var(--blue) !important;
 }
 
 .first-tap {
@@ -659,7 +679,7 @@ i.fa.fa-bars {
 }
 
 .project-card-container {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -830,6 +850,15 @@ i.fa.fa-bars {
     justify-content: center;
   }
   .appointment-content .appointment-right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .appointment-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cruv {
     display: none;
   }
 }

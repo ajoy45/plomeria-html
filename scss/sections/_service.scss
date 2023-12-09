@@ -39,13 +39,16 @@
 .first-service-card:hover{
     background-color: var(--secondary);
     color: var(--white);
-    transition: background-color 1s ease-in;
+    transition: background-color .4s ease-in;
     .btn{
         color:var(--white);
     }
     .icon-black{
         display:none;
     }
+}
+.line-text{
+    margin-bottom: 0;
 }
 .card-img-size{
     width: 64px;
@@ -66,7 +69,8 @@
 .btn{
     background: none;
     border: 0;
-    @include paragraph-16(1.4em);
+    font-size: 16px;
+    // @include paragraph-16(1.4em);
 }
 @media only screen and (max-width:1024px){
     .service-card{

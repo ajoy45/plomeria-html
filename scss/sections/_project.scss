@@ -9,41 +9,38 @@
     margin-bottom: 10px;
 }
 .project-description{
-   
     margin-bottom: 60px;
 }
-
 .project-title{
     text-align: center;
     margin-bottom: 40px;
   }
+.nav{
+    justify-content: center;
+}
+.nav-item{
+    margin: 0px 30px;
+}
 
+.nav-item:first-child{
+    margin-left: 0px !important;
+}
+.nav-item:last-child{
+    margin-right: 0px !important;
+}
+.nav-link{
+    color: var(--secondary);
+    border:0 !important;
+    background-color: none !important;
+    border-bottom: 2px solid var(--blue) !important;
+}
 
-.project-tap>ul{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-      
-        
-       li{
-        list-style-type: none;
-        border-bottom: 1px solid var(--text-dark);
-       
-        a{
-            text-decoration: none;
-            margin-right: 60px;
-            color: var(--text-dark);
-        
-        }
-       }
-       
-    }
-    .first-tap{
+ .first-tap{
         color: #0077FF !important;
     }
     
     .project-card-container{
-        display: grid;
+        display: grid !important;
         grid-template-columns: repeat(3,1fr);
         
     }

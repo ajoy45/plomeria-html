@@ -72,7 +72,6 @@ nav{
 }
 .calling{
     display: flex;
-    align-items: center;
     line-height: 1.5;
 }
 .calling img{
@@ -86,7 +85,7 @@ nav{
 i.fa.fa-bars {
     font-size: 30px;
 }
-.active{
+.header-active{
     display: block;
     position: absolute;
     top: 100px;
