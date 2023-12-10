@@ -1,13 +1,13 @@
 @use '../abstract/' as *;
 .blog-section{
     padding: 120px 0;
+    h1{
+        @include heading-48;
+        text-align: center;
+        margin-bottom: 60px;
+    }
 }
-.blog{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    gap: 50px;
-}
+
 .blog-title{
     text-align: center;
     margin-bottom: 60px;
