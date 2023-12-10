@@ -353,6 +353,7 @@ nav ul li .service-menu .dropdown-main {
 }
 .dropdown-content li {
   list-style-type: none;
+  width: 300px;
 }
 .dropdown-content a {
   color: black;
@@ -736,11 +737,16 @@ i.fa.fa-bars {
   margin-bottom: 60px;
 }
 
-.testimonial-card {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+.slick-next {
+  right: 0 !important;
+}
+
+.card {
+  margin-right: 40px;
+}
+
+.card-title-margin {
+  margin-bottom: 0;
 }
 
 .card-img {
@@ -757,6 +763,11 @@ i.fa.fa-bars {
 
 .card-profile {
   display: flex;
+}
+
+.card-star-position {
+  display: flex;
+  align-items: center;
 }
 
 .card-star {
