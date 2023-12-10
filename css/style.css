@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -133,6 +136,114 @@ body {
   width: 100%;
 }
 
+.hero-section {
+  padding-top: 32px;
+  padding-bottom: 120px;
+}
+
+.hero-content-texts {
+  max-width: 598px;
+}
+.hero-content-texts .page-title {
+  margin-bottom: 24px;
+}
+.hero-content-texts p {
+  margin-bottom: 15px;
+}
+.hero-content-texts p:last-of-type {
+  margin-bottom: 0;
+}
+.hero-content-texts .hero-logo-block {
+  padding-top: 140px;
+  max-width: 397px;
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.banner-title {
+  max-width: 598px;
+  padding: 34px 0;
+}
+
+.banner-form {
+  background-image: url(../../assets/banner/Mask\ group.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  max-width: 619px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-heading {
+  margin-bottom: 24px;
+}
+
+.banner-description {
+  margin-bottom: 140px;
+}
+
+.banner-form-detail {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1098039216);
+  background-color: rgba(255, 255, 255, 0.1098039216);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 48px 40px;
+  width: 425.78px;
+}
+
+.input-text, .input-email, .input-select, .input-textarea {
+  width: 100%;
+  padding: 22px;
+  margin-bottom: 16px;
+  border: none;
+  background-color: var(--white);
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-textarea {
+  padding: 18px 20px 90px 20px;
+}
+
+.banner-btn {
+  width: 100%;
+  background-color: #d20d0c;
+  border: none;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+  .banner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .banner-heading {
+    text-align: center;
+  }
+  .banner-description {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .banner-img-group {
+    display: flex;
+    justify-content: center;
+  }
+  .banner-form {
+    width: 100%;
+    padding: 60px 0;
+  }
+}
 .service-section {
   background-color: #F8FAFD;
   padding: 120px 0;
@@ -409,94 +520,6 @@ i.fa.fa-bars {
   }
   .hamburger {
     display: block;
-  }
-}
-.banner {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.banner-title {
-  max-width: 598px;
-  padding: 34px 0;
-}
-
-.banner-form {
-  background-image: url(../../assets/banner/Mask\ group.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-  max-width: 619px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.banner-heading {
-  margin-bottom: 24px;
-}
-
-.banner-description {
-  margin-bottom: 140px;
-}
-
-.banner-form-detail {
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1098039216);
-  background-color: rgba(255, 255, 255, 0.1098039216);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
-  border-radius: 10px;
-  padding: 48px 40px;
-  width: 425.78px;
-}
-
-.input-text, .input-email, .input-select, .input-textarea {
-  width: 100%;
-  padding: 22px;
-  margin-bottom: 16px;
-  border: none;
-  background-color: var(--white);
-  border-radius: 8px;
-  outline: none;
-}
-
-.input-textarea {
-  padding: 18px 20px 90px 20px;
-}
-
-.banner-btn {
-  width: 100%;
-  background-color: #d20d0c;
-  border: none;
-  padding: 20px;
-  color: white;
-  border-radius: 5px;
-}
-
-@media only screen and (max-width: 992px) {
-  .banner {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-  }
-  .banner-heading {
-    text-align: center;
-  }
-  .banner-description {
-    text-align: center;
-    margin-bottom: 36px;
-  }
-  .banner-img-group {
-    display: flex;
-    justify-content: center;
-  }
-  .banner-form {
-    width: 100%;
-    padding: 60px 0;
   }
 }
 .contact-content {
