@@ -1,0 +1,47 @@
+
+.about-section{
+    background-image: url(../../assets/about-page/banner/baner1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 73px;
+    padding-bottom: 73px;
+    .about-content-wrapper{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .about-content-text{
+            max-width: 422px;
+            padding: 40px 48px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(2px);
+            text-align: center;
+            h1{
+                color: white;
+                margin-bottom: 32px;
+                font-size: 64px;
+              
+                font-weight: 700;
+                line-height: 1.08em;
+                letter-spacing: -0.015em;
+                text-transform: capitalize;
+            }
+            .about-block-title,.fa-greater-than{
+                color:white;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 1.30em;
+                text-transform: capitalize;
+            }
+            .about-block-text{
+                color: var(--secondary);
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 1.30em;
+                text-transform: capitalize;
+            }             
+        }
+    }
+}

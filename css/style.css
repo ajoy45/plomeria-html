@@ -1397,7 +1397,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .appointment-form-wrapper {
-  background-image: url(../../assets/banner/Mask.png);
+  background-image: url(../../assets/home-page/banner/Mask.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2352,6 +2352,232 @@ i.fa.fa-bars {
     justify-items: center;
   }
 }
+.about-section {
+  background-image: url(../../assets/about-page/banner/baner1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 73px;
+  padding-bottom: 73px;
+}
+.about-section .about-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-section .about-content-wrapper .about-content-text {
+  max-width: 422px;
+  padding: 40px 48px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  text-align: center;
+}
+.about-section .about-content-wrapper .about-content-text h1 {
+  color: white;
+  margin-bottom: 32px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.08em;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+}
+.about-section .about-content-wrapper .about-content-text .about-block-title, .about-section .about-content-wrapper .about-content-text .fa-greater-than {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3em;
+  text-transform: capitalize;
+}
+.about-section .about-content-wrapper .about-content-text .about-block-text {
+  color: var(--secondary);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3em;
+  text-transform: capitalize;
+}
+
+.experience-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.experience-title-wrapper .experience-title-text {
+  display: flex;
+  align-items: center;
+}
+.experience-title-wrapper .experience-title-text h5 {
+  margin-bottom: 10px;
+}
+.experience-title-wrapper h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.3em;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+
+.experience-content-image {
+  max-width: 622px;
+  position: relative;
+}
+.experience-content-image__block {
+  max-width: 355px;
+  border-radius: 10px;
+  border-left: 6px solid var(--blue-blue-01, #07F);
+  background: var(--white);
+  box-shadow: 0px 0px 20px 0px rgba(104, 102, 102, 0.16);
+  position: absolute;
+  bottom: 48px;
+  left: 40px;
+}
+.experience-content-image__block h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3em;
+  text-transform: capitalize;
+  padding: 12px 12px 0 12px;
+  margin-bottom: 14px;
+}
+.experience-content-image__block p {
+  padding: 0 12px 12px 12px;
+}
+
+.gap-90 {
+  gap: 90px;
+}
+
+.experience-content-text {
+  max-width: 607px;
+  padding: 0;
+}
+.experience-content-text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.74em;
+  margin-bottom: 30px;
+}
+.experience-content-text .experience-icon-text {
+  max-width: 490px;
+  display: flex;
+  gap: 20px;
+}
+.experience-content-text .experience-icon-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3em;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.experience-content-text .experience-icon-text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.74em;
+  color: #131325;
+}
+.experience-content-text .experience-icon-text img {
+  width: 50px;
+  height: 50px;
+}
+.experience-content-text button {
+  border: 0;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 16px 26px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4em;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+
+.advantage-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #F8FAFD;
+}
+
+.advantage-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 16px;
+}
+.advantage-card-wrapper .advantage-card {
+  max-width: 282px;
+  background-color: var(--white);
+  box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
+  padding: 35px 32px;
+  text-align: center;
+  border-radius: 16px;
+}
+.advantage-card-wrapper .advantage-card .advantage-card-icon img {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 24px;
+}
+.advantage-card-wrapper .advantage-card .advantage-card-body h3 {
+  color: var(--heading-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3em;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+.advantage-card-wrapper .advantage-card .advantage-card-body p {
+  color: var(--text-dark);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.74em;
+}
+.advantage-card-wrapper .advantage-card:hover {
+  background-color: var(--heading-color);
+  transition: background-color 0.5s ease-in;
+}
+.advantage-card-wrapper .advantage-card:hover h3, .advantage-card-wrapper .advantage-card:hover p {
+  color: white;
+}
+
+.advantage-content-wrapper .advantage-title-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.advantage-content-wrapper h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.3em;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+.advantage-content-wrapper p {
+  font-family: ABeeZee;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.74em;
+  margin-bottom: 24px;
+}
+.advantage-content-wrapper .advantage-point-wrapper .advantage-point {
+  margin-bottom: 16px;
+}
+.advantage-content-wrapper .advantage-point-wrapper .advantage-point img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+.advantage-content-wrapper .advantage-point-wrapper .advantage-point span {
+  font-family: ABeeZee;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.74em;
+}
+
 .img-full {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
