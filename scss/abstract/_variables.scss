@@ -1,5 +1,6 @@
 $primary-hex:#D20D0C;
-$secondary-hex:#131325;
+$secondary-hex:#07F;
+$heading-dark-hex:#131325;
 $text-dark-hex:#424251;
 $text-light-hex:#DFDFDF;
 $white-hex:#FFFFFF;
@@ -8,7 +9,11 @@ $yellow-hex:#FFB700;
 
 // do not use dollar sign inside var because it is css variable
 $primary:var(--primary);
+$primary-rgb:var(--primary-rgb);
 $secondary:var(--secondary);
+$secondary-rgb:var(--secondary-rgb);
+$heading-color:var(--heading-dark);
+$heading-color-rgb:var(--heading-dark-rgb);
 $text-dark:var(--text-dark);
 $text-light:var(--text-light);
 $white:var(--white);
