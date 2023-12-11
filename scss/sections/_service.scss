@@ -7,6 +7,58 @@
         justify-content: center;
     }
 }
+.service-card{
+    padding: 40px 32px;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
+    max-width: 419.67px;
+    margin-right: 10px;
+    text-align: center;
+    .service-card-icon{
+        
+     img{
+          width: 64px;
+          margin-bottom: 32px;
+     }
+    }
+    .service-card-body{
+        h1{
+            max-width: 355.66px;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.30em; 
+            margin-bottom: 12px;
+        }
+        p{
+            max-width: 355.66px;
+            margin-bottom: 32px;
+        }
+       a{
+        text-decoration: none;
+        color: var(--text-dark);
+        .fa-arrow-right{
+            width: 20px;
+            height: 20px;
+        }
+       }
+    }
+}
+.service-card:hover{
+    background-color:#131325;
+    color: var(--white);
+    transition: background-color .4s ease-in;
+    .service-card-body{
+        a{
+            text-decoration: none;
+            color: var(--white);
+            .fa-arrow-right{
+                width: 20px;
+                height: 20px;
+            }
+           }
+    }
+}
 .service-content-heading{
     .service{
         display: flex;
@@ -19,14 +71,8 @@
         margin-bottom: 60px;
     }
 }
-.service-heading{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
-    .service-title{
-        text-align: center;
-    }
-}
+
+
 
 .line{
     width: 30px;
@@ -34,33 +80,8 @@
     background: var(--yellow);
     margin-right: 10px;
 }
-.service-card{
-    display:grid;
-    justify-content: center;
-    grid-template-columns: repeat(3,1fr);
-    gap: 30px;
-   
-}
-.first-service-card{
-    text-align: center;
-    background-color: white;
-    padding: 35px;
-    border-radius: 16px;
-    box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
-    max-width: 419.67px;
-    margin-right: 10px;
-}
-.first-service-card:hover{
-    background-color: var(--secondary);
-    color: var(--white);
-    transition: background-color .4s ease-in;
-    .btn{
-        color:var(--white);
-    }
-    .icon-black{
-        display:none;
-    }
-}
+
+
 .line-text{
     margin-bottom: 0;
 }
