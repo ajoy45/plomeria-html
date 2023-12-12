@@ -1,7 +1,6 @@
 
 @use '../abstract/' as *;
 
-
 .hero-section{
     padding-top: 32px;
     padding-bottom: 120px;
@@ -12,6 +11,7 @@
     max-width: 598px;
     .page-title{
         margin-bottom: 24px;
+        padding-top: 60px;
     }
     p{
         margin-bottom: 15px;

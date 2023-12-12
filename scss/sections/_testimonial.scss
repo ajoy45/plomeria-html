@@ -21,14 +21,11 @@
     text-align: center;
     margin-bottom: 60px;
 }
-// .testimonial-card{
-//     display: flex;
-//     justify-content: space-between;
-//     flex-wrap: wrap;
-//     gap: 30px;
-// }
 .slick-next {
-     right:0 !important; 
+     right:0px !important;
+}
+.slick-prev {
+    left: 0px !important;
 }
 .card{
     margin-right: 40px;

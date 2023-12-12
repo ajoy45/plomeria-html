@@ -1,6 +1,7 @@
 @use "../abstract/"as *;
 .client-section{
-    margin: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .client-content-text{
     .service{
@@ -8,29 +9,28 @@
         justify-content: center;
         align-items: center;
     }
-    .client-description{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        h1{
-            max-width: 806px;
-            text-align: center;
-            margin-bottom: 24px;
-        }
-        p{
-            max-width: 665px;
-            margin-bottom: 24px;
-            text-align: center;
-            @include paragraph-20;
-        }
-       
-
-    }
+    
    
+}
+.client-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        max-width: 806px;
+        margin-bottom: 24px;
+        @include heading-48;
+     }
+  p {
+         max-width: 665px;
+         margin-bottom: 24px;
+         @include paragraph-20;
+     } 
 }
 .client-read{
     display: flex;
     justify-content: center;
+    margin-bottom: 66px;
     .client-read-color{
         color: var(--blue);
     }
