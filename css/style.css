@@ -1548,7 +1548,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 64px;
   margin-bottom: 32px;
 }
-.service-card .service-card-body h1 {
+.service-card .service-card-body .service-card-title {
   max-width: 355.66px;
   font-size: 24px;
   font-weight: 700;
@@ -2383,12 +2383,13 @@ i.fa.fa-bars {
   letter-spacing: -0.015em;
   text-transform: capitalize;
 }
-.about-section .about-content-wrapper .about-content-text .about-block-title, .about-section .about-content-wrapper .about-content-text .fa-greater-than {
+.about-section .about-content-wrapper .about-content-text .about-block-title {
   color: white;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.3em;
   text-transform: capitalize;
+  margin-right: 6px;
 }
 .about-section .about-content-wrapper .about-content-text .about-block-text {
   color: var(--secondary);
@@ -2396,6 +2397,7 @@ i.fa.fa-bars {
   font-weight: 700;
   line-height: 1.3em;
   text-transform: capitalize;
+  margin-left: 6px;
 }
 
 .experience-section {
@@ -2521,7 +2523,7 @@ i.fa.fa-bars {
   height: 56px;
   margin-bottom: 24px;
 }
-.advantage-card-wrapper .advantage-card .advantage-card-body h3 {
+.advantage-card-wrapper .advantage-card .advantage-card-body .advantage-card-title {
   color: var(--heading-color);
   font-size: 24px;
   font-weight: 700;
@@ -2529,8 +2531,21 @@ i.fa.fa-bars {
   text-transform: capitalize;
   margin-bottom: 12px;
 }
+.advantage-card-wrapper .advantage-card .advantage-card-body .advantage-card-last-title {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3em;
+  text-transform: capitalize;
+}
 .advantage-card-wrapper .advantage-card .advantage-card-body p {
   color: var(--text-dark);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.74em;
+}
+.advantage-card-wrapper .advantage-card .advantage-card-body .advantage-card-last-paragrapg {
+  color: var(--white);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.74em;
@@ -2548,7 +2563,7 @@ i.fa.fa-bars {
   align-items: center;
   margin-bottom: 10px;
 }
-.advantage-content-wrapper h1 {
+.advantage-content-wrapper .advantage-content-title {
   font-size: 48px;
   font-weight: 700;
   line-height: 1.3em;
@@ -2576,6 +2591,35 @@ i.fa.fa-bars {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.74em;
+}
+
+.team-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-title-wrapper .team-title-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.team-title-wrapper .team-section-title {
+  max-width: 823px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.3em;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.team-title-wrapper p {
+  max-width: 778px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.74em;
+  text-align: center;
 }
 
 .img-full {

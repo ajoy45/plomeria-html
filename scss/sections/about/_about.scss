@@ -28,12 +28,13 @@
                 letter-spacing: -0.015em;
                 text-transform: capitalize;
             }
-            .about-block-title,.fa-greater-than{
+            .about-block-title{
                 color:white;
                 font-size: 20px;
                 font-weight: 700;
                 line-height: 1.30em;
                 text-transform: capitalize;
+                margin-right: 6px;
             }
             .about-block-text{
                 color: var(--secondary);
@@ -41,6 +42,7 @@
                 font-weight: 700;
                 line-height: 1.30em;
                 text-transform: capitalize;
+                margin-left: 6px;
             }             
         }
     }
