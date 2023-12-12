@@ -1,0 +1,19 @@
+@use '../abstract' as *;
+.btn{
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4em;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    margin-top: 10px;
+    @include py(16px);
+    @include px(26px);
+    &-primary{
+        color: var(--white)!important;
+        background:var(--primary)!important;
+    }
+    &-lg{
+        @include py(20px);
+    }
+}

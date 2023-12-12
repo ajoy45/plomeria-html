@@ -1396,17 +1396,37 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none;
 }
 
+.btn {
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4em;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  margin-top: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+.btn-primary {
+  color: var(--white) !important;
+  background: var(--primary) !important;
+}
+.btn-lg {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .appointment-form-wrapper {
-  background-image: url(../../assets/home-page/banner/Mask.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 64px 80px;
   border-radius: 12px;
-  max-width: 619px;
 }
-.appointment-form-wrapper .appointment-form {
-  max-width: 459px;
+
+.appointment-form {
   padding: 48px 40px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1415,21 +1435,16 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
 }
-.appointment-form-wrapper .appointment-form .form-control {
+.appointment-form .form-control {
   margin-bottom: 16px;
 }
-.appointment-form-wrapper .appointment-form .form-text-area {
+.appointment-form .form-text-area {
   padding-top: 18px;
   padding-bottom: 90px;
 }
-.appointment-form-wrapper .appointment-form button {
-  width: 100%;
-  background: var(--primary);
-  padding: 20px;
-  border: 0;
-  border-radius: 8px;
-  color: var(--white);
-  margin-top: 24px;
+.appointment-form--black {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.11);
 }
 
 .hero-section {
@@ -2483,19 +2498,6 @@ i.fa.fa-bars {
   width: 50px;
   height: 50px;
 }
-.experience-content-text button {
-  border: 0;
-  background-color: var(--primary);
-  color: var(--white);
-  padding: 16px 26px;
-  border-radius: 8px;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.4em;
-  letter-spacing: 0.01em;
-  text-transform: capitalize;
-  margin-top: 10px;
-}
 
 .advantage-section {
   padding-top: 120px;
@@ -2598,13 +2600,13 @@ i.fa.fa-bars {
   justify-content: center;
   align-items: center;
 }
-.team-title-wrapper .team-title-text {
+.team-title-wrapper .team-card .team-title-text {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
 }
-.team-title-wrapper .team-section-title {
+.team-title-wrapper .team-card .team-section-title {
   max-width: 823px;
   font-size: 48px;
   font-weight: 700;
@@ -2614,7 +2616,7 @@ i.fa.fa-bars {
   text-align: center;
   margin-bottom: 24px;
 }
-.team-title-wrapper p {
+.team-title-wrapper .team-card p {
   max-width: 778px;
   font-size: 20px;
   font-weight: 400;
