@@ -1,24 +1,61 @@
 @use "../abstract/" as *;
 .content-section{
-    padding-top: 120px;
-    padding-bottom: 120px;
-    .col-xl-6.col-lg-6.col-sm-12 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-.content-title{
-    margin-bottom: 24px;
+    @include py(60px);
+ @include desktop{
+    @include py(120px);
+ }
 }
 .choose-us{
-    max-width: 670px;
+   @include mobile{
+     .content-title{
+        text-align: center;
+     }
+     .why-choose{
+        justify-content: center;
+     }
+     .content-paragraph{
+        text-align: center;
+     }
+     .service-list{
+        justify-content: center;
+     }
+     .content-btn{
+        text-align: center;
+     }
+     .content-img-wrapper{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+        }
+     }
+   }
+    @include desktop{
+        max-width: 670px;
+       .content-title{
+        text-align: start;
+       }
+        .content-paragraph{
+        text-align: start;
+      }
+      .why-choose{
+        justify-content: start;
+     }
+      .service-list{
+        justify-content: start;
+     }
+     .content-btn{
+        text-align: start;
+     }
+    }
+    .why-choose{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
 }
-.why-choose{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
+
+
 .service-list{
     display: flex;
     gap: 38px;
@@ -54,6 +91,8 @@
     margin-bottom: 24px;
    
 }
+
+
 .choose-image{
     position: relative;
     max-width: 607px;

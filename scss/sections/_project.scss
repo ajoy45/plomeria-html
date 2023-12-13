@@ -1,14 +1,14 @@
 @use "../abstract/" as *;
-.project-section{
+.portfolio-section{
     padding: 120px 0;
 }
-.project{
+.portfolio{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
-.project-description{
+.portfolio-description{
     margin-bottom: 60px;
     .section-title{
         @include heading-48;
@@ -40,33 +40,33 @@
         color: #0077FF !important;
     }
     
-    .project-card-container{
+    .portfolio-card-container{
         display: grid !important;
         grid-template-columns: repeat(3,1fr);
         
     }
-    .project-card{
+    .portfolio-card{
         background: #FFF;
         padding: 10px; 
         max-width: 423px; 
         margin-bottom: 50px;
     }
-    .project-card img{
+    .portfolio-card img{
         border-radius: 8px 8px 0px 0px;
     }
-    .project-card-description{
+    .portfolio-card-description{
         text-align: center;
         box-shadow: 0px 5px 5px 0px rgba(233, 226, 226, 0.5);
         padding: 40px 0;    
     }
     @media only screen and (max-width:1024px){
-        .project-card-container{
+        .portfolio-card-container{
             grid-template-columns: repeat(2,1fr);
             justify-items: center;
         }
     }
     @media only screen and (max-width:783px){
-        .project-card-container{
+        .portfolio-card-container{
             grid-template-columns: repeat(1,1fr);
             justify-items: center;
         }

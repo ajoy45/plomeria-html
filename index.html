@@ -132,8 +132,9 @@
                 </div>
             </div>
         </section>
-        <!-- clients sections -->
-        <section class="client-section">
+        <!-- about sections -->
+        <!-- scss name is client -->
+        <section class="about-home-section">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -146,10 +147,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row text-center">
                     <div class="col-xl-12">
-                        <div class="about-description text-center">
-                            <h1>We work closely with out clients to
+                        <div class="about-title">
+                            <h1 class="about-section-title">We work closely with out clients to
                                 understand their needs</h1>
                         </div>
                     </div>
@@ -173,19 +174,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="row g-3 align-items-center ">
-                    <div class="col-xl-4 col-lg-4 col-md-12">
-                        <div class="about-img1 ">
+                <div class="row gy-3 gy-lg-0  align-items-center ">
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="about-img1 mx-auto">
                             <img class="img-full img" src="./image/home-page/client/plumber1.png" alt="">
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12">
-                        <div class="about-img2 ">
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="about-img2 mx-auto">
                             <img class="img-full img" src="./image/home-page/client/plumber2.png" alt="">
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12">
-                        <div class="about-img3 ">
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="about-img3 mx-auto">
                             <img class="img-full img" src="./image/home-page/client/plumber3.png" alt="">
                         </div>
                     </div>
@@ -195,6 +196,7 @@
 
         </section>
         <!-- service section -->
+
         <section class="service-section">
             <div class="container">
                 <div class="row">
@@ -205,14 +207,15 @@
                                 </div>
                                 <h5 class="large-paragraph line-text">Services</h5>
                             </div>
-                            <h1>Explore our services & solutions</h1>
+                            <h1 class="service-section-title">Explore our services & solutions</h1>
                         </div>
                     </div>
                 </div>
                 <div class="row  gy-3">
-                    <!-- service card -->
+
                     <div class="col-xl-4 col-lg-4 col-sm-12">
-                        <div class="service-card">
+                        <!-- using component card -->
+                        <div class="service-card service-card--width">
                             <div class="service-card-icon">
                                 <img src="./image/home-page/service/screw 1.png" alt="">
                             </div>
@@ -351,9 +354,10 @@
         </section>
 
         <!-- content  section -->
+        <!-- scss name is contact -->
         <section class="content-section">
             <div class=" container">
-                <div class="row g-5 ">
+                <div class="row justify-content-lg-between align-items-lg-center gy-5 gy-lg-0">
                     <div class="col-xl-6 col-lg-6 col-sm-12 order-lg-1 order-sm-2 ">
                         <div class="choose-us">
                             <div class="why-choose">
@@ -384,7 +388,7 @@
                                 <div class="service-list-second">
                                     <div class="content-service">
                                         <img src="./image/home-page/contact/circle.png" alt="">
-                                        <p class="contact-service-title">Affordable pricing</p>
+                                        <p class="content-service-title">Affordable pricing</p>
                                     </div>
                                     <div class="content-service">
                                         <img src="./image/home-page/contact/circle.png" alt="">
@@ -392,13 +396,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn btn-primary mt-5">Contact Us</button>
+                            <div class="content-btn">
+                                <button class="btn btn-primary mt-5 ">Contact Us</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-xl-6 col-lg-6 col-sm-12 order-lg-2 order-sm-1 ">
-                        <div class="choose-image ">
-                            <img class="img-full" src="./image/home-page/contact/Mask group.png" alt="">
+                    <div class="col-xl-5 col-lg-5 col-sm-12 order-lg-2 order-sm-1 ">
+                        <div class="choose-image">
+                            <div class="content-img-wrapper">
+                                <img class="img-fluid" src="./image/home-page/contact/Mask group.png" alt="">
+                            </div>
                             <div class="hapynes-main-container">
                                 <div class="happynes-content">
                                     <div class="happynes">
@@ -431,8 +439,10 @@
 
             </div>
         </section>
+
         <!-- portfolio section -->
-        <section class="portfolio-section">
+        <!-- scss name is project -->
+        <!-- <section class="portfolio-section">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -515,7 +525,7 @@
                                                 <div class="portfolio-card">
                                                     <img class="img-full"
                                                         src="./image/home-page/project/plamber3.png" alt="">
-                                                    <p class="large-paragraph project-card-description">
+                                                    <p class="large-paragraph portfolio-card-description">
                                                         At
                                                         <span style="font-weight: bold;color: #424251;">2464
                                                             Royal
@@ -551,7 +561,7 @@
                                                 <div class="portfolio-card">
                                                     <img class="img-full"
                                                         src="./image/home-page/project/plamber2.png" alt="">
-                                                    <p class="large-paragraph project-card-description">
+                                                    <p class="large-paragraph portfolio-card-description">
                                                         At
                                                         <span style="font-weight: bold;color: #424251;">2464
                                                             Royal
@@ -569,7 +579,7 @@
                                                 <div class="portfolio-card">
                                                     <img class="img-full"
                                                         src="./image/home-page/project/plamber3.png" alt="">
-                                                    <p class="large-paragraph project-card-description">
+                                                    <p class="large-paragraph portfolio-card-description">
                                                         At
                                                         <span style="font-weight: bold;color: #424251;">2464
                                                             Royal
@@ -595,7 +605,7 @@
                                                 <div class="portfolio-card">
                                                     <img class="img-full"
                                                         src="./image/home-page/project/plamber3.png" alt="">
-                                                    <p class="large-paragraph project-card-description">
+                                                    <p class="large-paragraph portfolio-card-description">
                                                         At
                                                         <span style="font-weight: bold;color: #424251;">2464
                                                             Royal
@@ -965,7 +975,7 @@
                                                 <div class="portfolio-card">
                                                     <img class="img-full"
                                                         src="./image/home-page/project/plamber1.png" alt="">
-                                                    <p class="large-paragraph project-card-description">
+                                                    <p class="large-paragraph portfolio-card-description">
                                                         At
                                                         <span style="font-weight: bold;color: #424251;">2464
                                                             Royal
@@ -1038,7 +1048,7 @@
                                                 <div class="project-card">
                                                     <img class="img-full"
                                                         src="./image/home-page/project/plamber3.png" alt="">
-                                                    <p class="large-paragraph project-card-description">
+                                                    <p class="large-paragraph portfolio-card-description">
                                                         At
                                                         <span style="font-weight: bold;color: #424251;">2464
                                                             Royal
@@ -1060,11 +1070,11 @@
 
                                         <div id="six" class=" tab-pane ">
 
-                                            <div class=" project-card-container">
-                                                <div class="project-card">
+                                            <div class=" portfolio-card-container">
+                                                <div class="portfolio-card">
                                                     <img class="img-full"
                                                         src="./image/home-page/project/plamber2.png" alt="">
-                                                    <p class="large-paragraph project-card-description">
+                                                    <p class="large-paragraph portfolio-card-description">
                                                         At
                                                         <span style="font-weight: bold;color: #424251;">2464
                                                             Royal
@@ -1079,10 +1089,10 @@
                                                         flush out.
                                                     </p>
                                                 </div>
-                                                <div class="project-card">
+                                                <div class="portfolio-card">
                                                     <img class="img-full"
                                                         src="./image/home-page/project/plamber1.png" alt="">
-                                                    <p class="large-paragraph project-card-description">
+                                                    <p class="large-paragraph portfolio-card-description">
                                                         At
                                                         <span style="font-weight: bold;color: #424251;">2464
                                                             Royal
@@ -1098,10 +1108,10 @@
                                                     </p>
                                                 </div>
 
-                                                <div class="project-card">
+                                                <div class="portfolio-card">
                                                     <img class="img-full"
                                                         src="./image/home-page/project/plamber3.png" alt="">
-                                                    <p class="large-paragraph project-card-description">
+                                                    <p class="large-paragraph portfolio-card-description">
                                                         At
                                                         <span style="font-weight: bold;color: #424251;">2464
                                                             Royal
@@ -1116,10 +1126,10 @@
                                                         flush out.
                                                     </p>
                                                 </div>
-                                                <div class="project-card">
+                                                <div class="portfolio-card">
                                                     <img class="img-full"
                                                         src="./image/home-page/project/plamber1.png" alt="">
-                                                    <p class="large-paragraph project-card-description">
+                                                    <p class="large-paragraph portfolio-card-description">
                                                         At
                                                         <span style="font-weight: bold;color: #424251;">2464
                                                             Royal
@@ -1134,10 +1144,10 @@
                                                         flush out.
                                                     </p>
                                                 </div>
-                                                <div class="project-card">
+                                                <div class="portfolio-card">
                                                     <img class="img-full"
                                                         src="./image/home-page/project/plamber2.png" alt="">
-                                                    <p class="large-paragraph project-card-description">
+                                                    <p class="large-paragraph portfolio-card-description">
                                                         At
                                                         <span style="font-weight: bold;color: #424251;">2464
                                                             Royal
@@ -1152,10 +1162,10 @@
                                                         flush out.
                                                     </p>
                                                 </div>
-                                                <div class="project-card">
+                                                <div class="portfolio-card">
                                                     <img class="img-full"
                                                         src="./image/home-page/project/plamber3.png" alt="">
-                                                    <p class="large-paragraph project-card-description">
+                                                    <p class="large-paragraph portfolio-card-description">
                                                         At
                                                         <span style="font-weight: bold;color: #424251;">2464
                                                             Royal
@@ -1184,38 +1194,40 @@
 
             </div>
             </div>
-        </section>
-        <!-- appointment section -->
-        <section class="appointment-section">
+        </section> -->
+        <!-- call to action section -->
+        <!-- scss name is appointment -->
+        <!-- <section class="callToAction-section">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-sm-12">
-                        <div class="appointment-left">
-                            <div class="appointment">
+                        <div class="callToAction-left">
+                            <div class="callToAction">
                                 <div class="line">
                                 </div>
-                                <h5 class="large-paragraph  appointment-heading line-text">Emergency need help
+                                <h5 class="large-paragraph  callToAction-heading line-text">Emergency need
+                                    help
                                 </h5>
                             </div>
                             <div>
-                                <h1 class="section-title appointment-title">24 hours emergency plumbing
+                                <h1 class="section-title callToAction-title">24 hours emergency plumbing
                                     service
                                     all time</h1>
-                                <p class="large-paragraph appointment-paragraph">We are dedicated to
+                                <p class="large-paragraph callToAction-paragraph">We are dedicated to
                                     delivering
                                     top-quality plumbing solutions to a wide range of locations in our service
                                     areas of both residential and commercial clients. Below, you'll find:</p>
 
-                                <div class="appointment-bottom">
+                                <div class="callToAction-bottom">
                                     <div style="margin-right: 2.5rem;">
-                                        <button class="banner-btn">Make Appointment</button>
+                                        <button class="btn btn-primary">Make Appointment</button>
                                     </div>
-                                    <div class="appointment-calling">
+                                    <div class="callToAction-calling">
                                         <div>
                                             <img class="app-calling-img"
                                                 src="./image/home-page/appointment/Ellipse1.png" alt="">
                                         </div>
-                                        <div class="appointment-calling-right">
+                                        <div class="callToAction-calling-right">
                                             <img class="calling-img"
                                                 style="width: 3.125rem; height: 3.125rem;"
                                                 src="./image/home-page/appointment/calling.png" alt="">
@@ -1237,8 +1249,8 @@
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-sm-12">
-                        <div class="appointment-right">
-                            <img class="img-full appointment-right-img"
+                        <div class="callToAction-right">
+                            <img class="img-full callToAction-right-img"
                                 src="./image/home-page/appointment/appointment-img.png" alt="">
                         </div>
                     </div>
@@ -1246,9 +1258,9 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
         <!-- testimonial section -->
-        <section class="testimonial-section">
+        <!-- <section class="testimonial-section">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -1388,16 +1400,16 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- blog section -->
-        <section class="blog-section">
+        <!-- <section class="blog-section">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="testimonial">
                             <div class="line">
                             </div>
-                            <h5 class="large-paragraph line-text">Testimonial</h5>
+                            <h5 class="large-paragraph line-text">Blog</h5>
                         </div>
                         <h1 class="">Plumbing Insights and Tips</h1>
                     </div>
@@ -1473,17 +1485,14 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
 
-        </section>
+        </section> -->
 
     </main>
     <!-- footer section -->
-    <footer>
+    <!-- <footer>
         <section class="footer-section">
             <div class="container">
                 <div class="row mb-5 ">
@@ -1575,7 +1584,7 @@
             </div>
 
         </section>
-    </footer>
+    </footer> -->
 
     <!-- slick slider -->
     <script src="./plugins/jquery/jquery 3.7.1.js"></script>

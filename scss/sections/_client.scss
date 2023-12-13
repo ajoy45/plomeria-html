@@ -1,7 +1,9 @@
 @use "../abstract/"as *;
-.about-section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+.about-home-section{
+    @include desktop{
+        @include py(120px)
+    }
+     
 }
 .about-content-text{
     .service{
@@ -9,23 +11,38 @@
         justify-content: center;
         align-items: center;
     }
-    
+    .line-text{
+        margin-bottom: 0;
+    }
    
 }
+    .about-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .about-section-title{
+            @include desktop{
+                max-width: 806px;
+            }
+            margin-bottom: 24px;
+            @include heading-48;
+         }
+    }
+  
+ 
+
 .about-description{
     display: flex;
     justify-content: center;
     align-items: center;
-    h1{
-        max-width: 806px;
+    p {
+        @include desktop{
+            max-width: 665px;
+        }
+       
         margin-bottom: 24px;
-        @include heading-48;
-     }
-  p {
-         max-width: 665px;
-         margin-bottom: 24px;
-         @include paragraph-20;
-     } 
+        @include paragraph-20;
+    } 
 }
 .about-read{
     display: flex;
@@ -35,41 +52,34 @@
         color: var(--blue);
     }
 }
-.line-text{
-    margin-bottom: 0;
-}
+
 .about-arrow{
     width: 24px;
     height: 24px;
 }
-.about-img-content{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    justify-content: center;
-    gap:24px;
-}
+
 .about-img1{
     max-width: 400.21px;
     border-radius: 10px;
-    // padding: 0;
+   
     .img{
         border-radius: 10px !important;
+        padding: 0;
      }
 }
 .about-img2{
     max-width: 493.28px;
+
     .img{
         border-radius: 10px !important;
+        padding: 0;
      }
 }
 .about-img3{
     max-width: 400.21px;
         .img{
            border-radius: 10px !important;
+           padding: 0;
         }
 }
-.col-xl-4.col-lg-4.col-md-12 {
-    justify-content: center;
-    display: flex;
-}
+
