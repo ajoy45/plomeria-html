@@ -6,3 +6,36 @@
     padding-left: $left;
     padding-right: $right;
 }
+
+
+@mixin mobile{
+    @media (min-width:480px){
+        @content;
+    }
+}
+@mixin mobile-large{
+    @media (min-width:575px){
+        @content;
+    }
+}
+@mixin tablet{
+    @media (min-width:768px){
+        @content;
+    }
+}
+@mixin desktop{
+    @media (min-width:992px){
+        @content;
+    }
+}
+@mixin large-desktop{
+    @media (min-width:1200px){
+        @content;
+    }
+}
+@mixin extra-large-desktop{
+    @media (min-width:1200px){
+        @content;
+    }
+}
+
