@@ -1,30 +1,30 @@
 @use "../abstract/" as *;
 .callToAction-section{
-    background: var(--heading-color); 
-}
+    background: var(--heading-color);
 
-    .callToAction-title{
+}
+ .callToAction-title{
         color: var(--white);
         margin-bottom: 24px;
     }
-    .callToAction-paragraph{
+ .callToAction-paragraph{
         color: var(--white);
         opacity: 0.8;
         margin-bottom: 48px;
 
     }
 
-.callToAction-bottom{
-   display: flex;
-   align-items: center;
-   .callToAction-calling{
+ .callToAction-bottom{
     display: flex;
-    .app-calling-img{
+    align-items: center;
+    .callToAction-calling{
+     display: flex;
+     .app-calling-img{
         width: 51px;
-        height: 51px;
+         height: 51px;
         
     }
-    .callToAction-calling-right{
+  .callToAction-calling-right{
         display: flex;
         position: relative;
         .calling-img{
@@ -37,55 +37,123 @@
    }
 }
 .callToAction-left{
-    max-width: 623px;
     position: relative;
-   padding-top: 120px;
-   padding-bottom: 100px;
+    @include mobile{
+        @include py(30px);
+        .cruv{
+            display: none
+        }
+        .callToAction-bottom{
+            flex-direction: column
+        }
+        .callToAction-bottom-btn{
+               @include myb(10px)
+        }
+        .callToAction{
+            justify-content: center;
+        }
+        .callToAction-title{
+            text-align: center;
+        }
+        .callToAction-paragraph{
+            text-align: center;
+        }
+       
+
+    }
+    @include tablet{
+        @include py(40px);
+        .callToAction{
+            justify-content: center;
+        }
+        .callToAction-title{
+            text-align: center;
+        }
+        .callToAction-paragraph{
+            text-align: center;
+        }
+        .cruv{
+            right:7px !important;
+        }
+    };
+   @include desktop{
+    max-width: 623px;
+    .callToAction-bottom{
+        flex-direction:row;
+    }
     .callToAction{
-         display: flex;
-         align-items: center;
-         .callToAction-heading{
-            color: var(--white);
-            opacity: 0.8;
-         }
+        justify-content: start;
+    }
+    .callToAction-title{
+        text-align: start;
+    }
+    .callToAction-paragraph{
+        text-align: start;
     }
     .cruv{
+        display: block;
+        right: -140px !important;
+    }
+   }
+
+   .callToAction{
+    display: flex;
+    align-items: center;
+    .callToAction-heading{
+       color: var(--white);
+       opacity: 0.8;
+    }
+}
+  
+ .cruv{
         position: absolute;
         bottom: 0;
-        right: -90px;
+       
         .cruv-img{
             width: 158.7px;
             height: 139.88px;
         }
     }
-    }
+ }
     
 
 .callToAction-right{
-   max-width: 558px;
-    margin-top: -113px;
-}
-@media only screen and (max-width:1024px){
-  
-        .callToAction-left{
-            text-align: center;
-            margin: 60px 0;
-            .appointment{
-                justify-content: center;
-            }
-        }
-
-        .callToAction-right{
-            display: none;
-        }
-    }
-
-@media only screen and (max-width:699px){
-    .callToAction-bottom{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .cruv{
+    @include mobile{
         display: none;
     }
+    @include tablet{
+        display: none;
+    }
+    @include desktop{
+        max-width: 558px;
+       display: block;
+    }
+    
+    margin-top: -113px;
+    display: block;
+    
 }
+// @media only screen and (max-width:1024px){
+  
+//         .callToAction-left{
+//             text-align: center;
+//             margin: 60px 0;
+//             .appointment{
+//                 justify-content: center;
+//             }
+//         }
+
+//         .callToAction-right{
+//             display: none;
+//         }
+//     }
+
+// @media only screen and (max-width:699px){
+//     .callToAction-bottom{
+//         flex-direction: column;
+//         gap: 20px;
+//     }
+//     .cruv{
+//         display: none;
+//     }
+// }
