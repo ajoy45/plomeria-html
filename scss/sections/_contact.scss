@@ -1,5 +1,5 @@
 @use "../abstract/" as *;
-.contact-section{
+.content-section{
     padding-top: 120px;
     padding-bottom: 120px;
     .col-xl-6.col-lg-6.col-sm-12 {
@@ -8,7 +8,7 @@
         align-items: center;
     }
 }
-.contact-title{
+.content-title{
     margin-bottom: 24px;
 }
 .choose-us{
@@ -25,13 +25,13 @@
 }   
 .service-list-first{
     max-width: 299.5px;
-   .contact-service{
+   .content-service{
     margin-bottom: 16px;
    }
 }
 .service-list-second{
     max-width: 299.5px;
-    .contact-service{
+    .content-service{
         margin-bottom: 16px;
     }
 }
@@ -40,16 +40,16 @@
     margin-bottom: 0;
     margin-left: 10px;
 } 
-.contact-service{
+.content-service{
     display: flex;
     align-items: center;
 }
                                 
-.contact-service-title{
+.content-service-title{
     margin-bottom: 0;
     margin-left: 10px;
 }
-.contact-paragraph{
+.content-paragraph{
     max-width: 599px;
     margin-bottom: 24px;
    
