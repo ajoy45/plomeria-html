@@ -2051,7 +2051,14 @@ i.fa.fa-bars {
 }
 
 .portfolio-section {
-  padding: 120px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 992px) {
+  .portfolio-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .portfolio {
@@ -2086,6 +2093,7 @@ i.fa.fa-bars {
 
 .nav {
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .nav-item {
@@ -2113,7 +2121,33 @@ i.fa.fa-bars {
 
 .portfolio-card-container {
   display: grid !important;
-  grid-template-columns: repeat(3, 1fr);
+}
+@media (min-width: 480px) {
+  .portfolio-card-container .portfolio-card {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .portfolio-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .portfolio-card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .portfolio-card-container .large-paragraph {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .portfolio-card-container .large-paragraph {
+    font-size: 20px;
+  }
 }
 
 .portfolio-card {
@@ -2133,18 +2167,6 @@ i.fa.fa-bars {
   padding: 40px 0;
 }
 
-@media only screen and (max-width: 1024px) {
-  .portfolio-card-container {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-}
-@media only screen and (max-width: 783px) {
-  .portfolio-card-container {
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-  }
-}
 .testimonial-section {
   background: #f8fafd;
   padding: 120px 0;
