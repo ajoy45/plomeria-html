@@ -1,6 +1,9 @@
 @use '../abstract/' as *;
 .blog-section{
-    padding: 120px 0;
+    @include py(60px);
+    @include desktop{
+        @include py(120px)
+    }
     h1{
         @include heading-48;
         text-align: center;
@@ -24,6 +27,11 @@
    
     .blog-read{
         display: flex;
+        align-items: center;
+        .read-arrow{
+            width: 24px;
+            height: 24px;
+        }
         
     }
 }
@@ -32,7 +40,17 @@
     color: var(--blue);
 }
 .blog-right{
-    max-width: 626px;
+    @include mobile{
+        .block-title{
+            font-size: 18px;
+        }
+    }
+    @include desktop{
+        max-width: 626px;
+        .block-title{
+            font-size: 22px;
+        }
+    }
     .small-blog-img{
         border-radius: 10px;
     }
@@ -48,15 +66,17 @@
         }
         .blog-read{
             display: flex;
+            align-items: center;
+            .read-arrow{
+                width: 24px;
+                height: 24px;
+            }
         }
     }
 }
 .blog-small-title{
     max-width: 406px;
-}
-@media only screen and (max-width:992px){
-    .blog{
-        grid-template-columns: repeat(1,1fr);
-        justify-items: center;
+    .block-title{
+        @include myb(14px)
     }
 }
