@@ -2565,12 +2565,21 @@ i.fa.fa-bars {
 .blog-left {
   max-width: 644px;
   border-radius: 10px 10px 0 0;
+  margin-right: 25px;
 }
 .blog-left .blog-img {
   border-radius: 10px 10px 0 0;
 }
 .blog-left .blog-text {
-  box-shadow: 0px 4px 30px 0px rgba(19, 19, 37, 0.07);
+  display: flex;
+  padding: 48px 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 0px 0px 6px 6px;
+  background: var(--white, #FFF);
 }
 .blog-left .blog-read {
   display: flex;
@@ -2585,6 +2594,14 @@ i.fa.fa-bars {
   color: var(--blue);
 }
 
+.blog-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  flex: 1 0 0;
+  margin-left: 25px;
+}
 @media (min-width: 480px) {
   .blog-right .block-title {
     font-size: 18px;
@@ -2604,10 +2621,12 @@ i.fa.fa-bars {
 .blog-right .blog-part {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  gap: 20px;
+  align-self: stretch;
 }
 .blog-right .blog-part .blog-small-img {
   max-width: 241px;
+  height: 162px;
   border-radius: 10px;
   margin-right: 13px;
 }
