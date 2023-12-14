@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     $('.testimonial-card').slick({
         cssEase: 'cubic-bezier(1,1,1,.95)',
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1000,
@@ -28,7 +28,7 @@ $(document).ready(function () {
         infinite: true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -37,7 +37,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 2,
