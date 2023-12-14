@@ -7,6 +7,12 @@
 .footer-logo{
     display: flex;
     align-items: center;
+    @include mobile{
+        justify-content: center;
+    }
+    @include desktop{
+        justify-content: start;
+    }
 }
  .logo-img{
         width: 30px;
@@ -17,6 +23,12 @@
   
 .footer-paragraph{
     max-width: 596px;
+    @include mobile{
+        text-align: center;
+    }
+    @include desktop{
+        text-align:start;
+    }
    }
  .logo-title,.footer-paragraph{
     color: var(--white);
@@ -36,6 +48,12 @@
 .social-img{
         display: flex;
         align-items: center;
+        @include mobile{
+            justify-content: center;
+        }
+        @include desktop{
+            justify-content: start;
+        }
         margin-top: 30px;
         .social-img1{
             width: 50px;
@@ -86,21 +104,12 @@
 
 .footer-calling-right{
     display: flex;
-    
+    @include mobile{
+        justify-content: center;
+    }
+    @include desktop{
+        justify-content: end;
+    }
     margin-top: 30px;
 }
-@media only screen and (max-width:1399px){
-    .footer-middle{
-        gap: 10px;
-    }
-}
-@media only screen and (max-width:992px){
-    .footer-top{
-        justify-content: center;
-        flex-direction: column;
-    }
-    .footer-middle{
-        grid-template-columns: repeat(2,1fr);
-        justify-items: center;
-    }
-}
+
