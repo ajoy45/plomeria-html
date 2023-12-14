@@ -1,54 +1,78 @@
 @use "../abstract/" as *;
-.content-section{
+
+.content-section {
     @include py(60px);
- @include desktop{
-    @include py(120px);
- }
-}
-.choose-us{
-   @include mobile{
-     .content-title{
-        text-align: center;
-     }
-     .why-choose{
-        justify-content: center;
-     }
-     .content-paragraph{
-        text-align: center;
-     }
-     .service-list{
-        justify-content: center;
-     }
-     .content-btn{
-        text-align: center;
-     }
-     .content-img-wrapper{
-        display: flex;
-        justify-content: center;
-        img{
-            width: 100%;
-        }
-     }
-   }
-    @include desktop{
-        max-width: 670px;
-       .content-title{
-        text-align: start;
-       }
-        .content-paragraph{
-        text-align: start;
-      }
-      .why-choose{
-        justify-content: start;
-     }
-      .service-list{
-        justify-content: start;
-     }
-     .content-btn{
-        text-align: start;
-     }
+
+    @include desktop {
+        @include py(120px);
     }
-    .why-choose{
+}
+
+
+.choose-us-content-wrapper {
+
+    @include mobile {
+        .content-title {
+            text-align: center;
+        }
+
+        .why-choose {
+            justify-content: center;
+        }
+
+        .content-paragraph {
+            text-align: center;
+        }
+
+        .service-list {
+            justify-content: center;
+        }
+
+        .content-btn {
+            text-align: center;
+        }
+
+        .content-img-wrapper {
+            max-width: 493px;
+            flex-shrink: 0;
+
+        }
+    }
+
+    @include desktop {
+        max-width: 670px;
+
+        .row.gy-5.gy-lg-0.align-items-center {
+            column-gap: 42px;
+        }
+
+        .content-title {
+            text-align: start;
+            @include myb(24px);
+            max-width: 670px;
+        }
+
+        .content-paragraph {
+            max-width: 599px;
+            margin-bottom: 24px;
+            text-align: left;
+
+        }
+
+        .why-choose {
+            justify-content: start;
+        }
+
+        .service-list {
+            justify-content: start;
+        }
+
+        .content-btn {
+            text-align: start;
+        }
+    }
+
+    .why-choose {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
@@ -56,83 +80,93 @@
 }
 
 
-.service-list{
+.service-list {
     display: flex;
     gap: 38px;
-}   
-.service-list-first{
-    max-width: 299.5px;
-   .content-service{
-    margin-bottom: 16px;
-   }
 }
-.service-list-second{
+
+.service-list-first {
     max-width: 299.5px;
-    .content-service{
+
+    .content-service {
         margin-bottom: 16px;
     }
 }
- .fast-service{
+
+.service-list-second {
+    max-width: 299.5px;
+
+    .content-service {
+        margin-bottom: 16px;
+    }
+}
+
+.fast-service {
     margin-right: 56px;
     margin-bottom: 0;
     margin-left: 10px;
-} 
-.content-service{
+}
+
+.content-service {
     display: flex;
     align-items: center;
 }
-                                
-.content-service-title{
+
+.content-service-title {
     margin-bottom: 0;
     margin-left: 10px;
 }
-.content-paragraph{
-    max-width: 599px;
-    margin-bottom: 24px;
-   
-}
 
 
-.choose-image{
-    position: relative;
+
+
+.choose-image {
+    display: flex;
+    justify-content: center;
     max-width: 607px;
 }
-.hapynes-main-container{
+
+.hapynes-main-container {
     max-width: 230px;
 }
-.happynes-content{
+
+.happynes-content {
     background-color: var(--white);
     text-align: center;
     position: absolute;
     top: 67px;
-    left: -54px;
+    left: -72px;
     padding: 24px;
     box-shadow: 0px 0px 20px 0px rgba(104, 102, 102, 0.16);
     border-radius: 10px;
-    
+
 }
-.happynes{
+
+.happynes {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
-.emergency-main-container{
+
+.emergency-main-container {
     max-width: 241px;
 }
-.emergency-content{
+
+.emergency-content {
     background-color: var(--white);
     text-align: center;
     position: absolute;
     bottom: 67px;
-    right: -48px;
+    right: -64px;
     padding: 24px;
     box-shadow: 0px 0px 20px 0px rgba(104, 102, 102, 0.16);
     border-radius: 10px;
 }
-.emergency{
+
+.emergency {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
 }

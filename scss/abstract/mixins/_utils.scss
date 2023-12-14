@@ -1,47 +1,54 @@
-@mixin py($top,$bottom:$top){
+@mixin py($top, $bottom: $top) {
     padding-top: $top;
     padding-bottom: $bottom;
 }
-@mixin px($left,$right:$left){
+
+@mixin px($left, $right: $left) {
     padding-left: $left;
     padding-right: $right;
 }
-@mixin myt($top){
+
+@mixin myt($top) {
     margin-top: $top;
 }
-@mixin myb($bottom){
+
+@mixin myb($bottom) {
     margin-bottom: $bottom;
 }
 
 
-@mixin mobile{
-    @media (min-width:480px){
-        @content;
-    }
-}
-@mixin mobile-large{
-    @media (min-width:575px){
-        @content;
-    }
-}
-@mixin tablet{
-    @media (min-width:768px){
-        @content;
-    }
-}
-@mixin desktop{
-    @media (min-width:992px){
-        @content;
-    }
-}
-@mixin large-desktop{
-    @media (min-width:1200px){
-        @content;
-    }
-}
-@mixin extra-large-desktop{
-    @media (min-width:1400px){
+@mixin mobile {
+    @media (min-width:480px) {
         @content;
     }
 }
 
+@mixin mobile-large {
+    @media (min-width:575px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width:768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width:992px) {
+        @content;
+    }
+}
+
+@mixin large-desktop {
+    @media (min-width:1200px) {
+        @content;
+    }
+}
+
+@mixin extra-large-desktop {
+    @media (min-width:1400px) {
+        @content;
+    }
+}

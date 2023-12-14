@@ -22,7 +22,10 @@
 .blog-left {
     max-width: 644px;
     border-radius: 10px 10px 0 0;
-    margin-right: 25px;
+
+    @include desktop {
+        margin-right: 25px;
+    }
 
     .blog-img {
         border-radius: 10px 10px 0 0;
@@ -58,12 +61,59 @@
 }
 
 .blog-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 50px;
-    flex: 1 0 0;
-    margin-left: 25px;
+    @include mobile {
+        max-width: 626px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        flex: 1 0 0;
+
+        .blog-small-img {
+            max-width: 241px;
+
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    @include desktop {
+        max-width: 626px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        flex: 1 0 0;
+
+        .blog-small-img {
+            max-width: 241px;
+            height: 162px;
+            border-radius: 10px;
+            margin-right: 0px;
+        }
+
+        .block-title {
+            font-size: 22px;
+        }
+    }
+
+    @include large-desktop {
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        flex: 1 0 0;
+
+        .blog-small-img {
+            max-width: 241px;
+            height: 162px;
+            border-radius: 10px;
+            margin-right: 13px;
+        }
+    }
 
     @include mobile {
         .block-title {
@@ -71,13 +121,7 @@
         }
     }
 
-    @include desktop {
-        max-width: 626px;
 
-        .block-title {
-            font-size: 22px;
-        }
-    }
 
     .small-blog-img {
         border-radius: 10px;
@@ -89,12 +133,7 @@
         gap: 20px;
         align-self: stretch;
 
-        .blog-small-img {
-            max-width: 241px;
-            height: 162px;
-            border-radius: 10px;
-            margin-right: 13px;
-        }
+
 
         .blog-read {
             display: flex;

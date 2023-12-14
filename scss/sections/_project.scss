@@ -1,86 +1,112 @@
 @use "../abstract/" as *;
-.portfolio-section{
+
+.portfolio-section {
     @include py(60px);
-    @include desktop{
-    @include py(120px)
-  }
+
+    @include desktop {
+        @include py(120px)
+    }
 }
-.portfolio{
+
+.portfolio {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
-.portfolio-description{
+
+.portfolio-description {
     margin-bottom: 60px;
-    .section-title{
+
+    .section-title {
         @include heading-48;
-        text-align:center;
+        text-align: center;
         margin-bottom: 40px;
     }
 }
-.nav{
-    justify-content: center;
+
+.nav {
+    // justify-content: center;
     @include myb(60px)
 }
-.nav-item{
-    margin: 0px 30px;
+
+.nav-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav-item:first-child{
-    margin-left: 0px !important;
+
+
+.nav-link {
+    color: var(--text-dark) !important;
+
 }
-.nav-item:last-child{
-    margin-right: 0px !important;
-}
-.nav-link{
-    color: var(--secondary);
-    border:0 !important;
-    background-color: none !important;
+
+.nav-link.active {
+    color: var(--blue) !important;
     border-bottom: 2px solid var(--blue) !important;
 }
 
- .first-tap{
-        color: #0077FF !important;
-    }
-    
-    .portfolio-card-container{
-        display: grid !important;
-        @include mobile{
-            .portfolio-card{
-              @include myb(20px)
-            }
+
+
+.nav-link {
+    color: var(--secondary);
+    border: 0 !important;
+    background-color: none !important;
+    // border-bottom: 2px solid var(--blue) !important;
+}
+
+.first-tap {
+    color: #0077FF !important;
+}
+
+.portfolio-card-container {
+    display: grid !important;
+
+    @include mobile {
+        .portfolio-card {
+            @include myb(20px)
         }
-        @include tablet{
-            grid-template-columns: repeat(2,1fr);
-            align-items: center;
+    }
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+
+        .large-paragraph {
+            font-size: 18px;
         }
-        @include desktop{
-            grid-template-columns: repeat(3,1fr);
-            .large-paragraph{
-               font-size: 18px;
-            }
+    }
+
+    @include large-desktop {
+        grid-template-columns: repeat(3, 1fr);
+
+        .large-paragraph {
+            font-size: 20px;
         }
-        @include large-desktop{
-            grid-template-columns: repeat(3,1fr);
-            .large-paragraph{
-                font-size: 20px;
-             }
-        }
-        
     }
-    .portfolio-card{
-        background: #FFF;
-        padding: 10px; 
-        max-width: 423px; 
-        @include myb(50px)
-    }
-    .portfolio-card img{
-        border-radius: 8px 8px 0px 0px;
-    }
-    .portfolio-card-description{
-        text-align: center;
-        box-shadow: 0px 5px 5px 0px rgba(233, 226, 226, 0.5);
-        padding: 40px 0;    
-    }
-    
+
+}
+
+.portfolio-card {
+    background: #FFF;
+    padding: 10px;
+    max-width: 423px;
+    @include myb(50px)
+}
+
+.portfolio-card img {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.portfolio-card-description {
+    text-align: center;
+    box-shadow: 0px 5px 5px 0px rgba(233, 226, 226, 0.5);
+    padding: 40px 0;
+}
