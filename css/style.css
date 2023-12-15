@@ -2567,23 +2567,19 @@ i.fa.fa-bars {
 .blog-left {
   max-width: 644px;
   border-radius: 10px 10px 0 0;
-}
-@media (min-width: 992px) {
-  .blog-left {
-    margin-right: 25px;
-  }
+  margin-right: 25px;
 }
 .blog-left .blog-img {
   border-radius: 10px 10px 0 0;
 }
 .blog-left .blog-text {
+  padding: 48px 40px 40px 48px;
   display: flex;
-  padding: 48px 40px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 24px;
   align-self: stretch;
+  gap: 25px;
   border-radius: 0px 0px 6px 6px;
   background: var(--white, #FFF);
 }
@@ -2600,25 +2596,20 @@ i.fa.fa-bars {
   color: var(--blue);
 }
 
-@media (min-width: 480px) {
-  .blog-right {
-    max-width: 626px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    flex: 1 0 0;
-  }
-  .blog-right .blog-small-img {
-    max-width: 241px;
-    border-radius: 10px;
-    margin-right: 10px;
-  }
+.blog-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  flex: 1 0 0;
+  margin-left: 25px;
+  border-radius: 10px;
+  margin-right: 10px;
 }
 @media (min-width: 992px) {
   .blog-right {
     max-width: 626px;
+    height: 162px;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
@@ -2638,6 +2629,7 @@ i.fa.fa-bars {
 }
 @media (min-width: 1200px) {
   .blog-right {
+    max-width: 626px;
     margin-left: 25px;
     display: flex;
     flex-direction: column;
@@ -2657,26 +2649,53 @@ i.fa.fa-bars {
     font-size: 18px;
   }
 }
-.blog-right .small-blog-img {
+
+.small-blog-img {
+  height: 100%;
   border-radius: 10px;
 }
-.blog-right .blog-part {
+
+.blog-part {
   display: flex;
   align-items: center;
   gap: 20px;
   align-self: stretch;
 }
-.blog-right .blog-part .blog-read {
+.blog-part .blog-small-img {
+  max-width: 241px;
+  height: 162px;
+  border-radius: 10px;
+  margin-right: 13px;
+}
+.blog-part .blog-read {
   display: flex;
   align-items: center;
 }
-.blog-right .blog-part .blog-read .read-arrow {
+.blog-part .blog-read .read-arrow {
   width: 24px;
   height: 24px;
 }
 
-.blog-small-title {
-  max-width: 406px;
+@media (min-width: 480px) {
+  .blog-part {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+}
+@media (min-width: 575px) {
+  .blog-part {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+  }
+}
+@media (min-width: 992px) {
+  .blog-left {
+    box-shadow: none;
+  }
 }
 .blog-small-title .block-title {
   margin-bottom: 14px;

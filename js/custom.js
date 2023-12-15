@@ -19,14 +19,14 @@ $(document).ready(function () {
 
 
     $('.testimonial-card').slick({
-        cssEase: 'cubic-bezier(1,1,1,.95)',
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
-        speed: 1000,
+        autoplaySpeed: 1000, // Set the duration between slides in milliseconds
+        speed: 3000,
         infinite: true,
-        responsive: [
+        swipe:true,
+         responsive: [
             {
                 breakpoint: 992,
                 settings: {
