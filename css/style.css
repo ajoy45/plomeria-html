@@ -3028,6 +3028,32 @@ i.fa.fa-bars {
   }
 }
 
+.team-card {
+  max-width: 294px;
+  text-align: center;
+  position: relative;
+}
+.team-card .team-card-img img {
+  border-radius: 8px 8px 8px 8px;
+  width: 100%;
+}
+.team-card .team-card-body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 8px;
+  background: var(--white, #FFF);
+  box-shadow: 0px 4px 20px 0px rgba(19, 19, 37, 0.07);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.team-card .team-card-body h3 {
+  margin-bottom: 10px;
+}
+
 .img-full {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
