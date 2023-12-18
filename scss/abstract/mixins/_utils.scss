@@ -52,3 +52,15 @@
         @content;
     }
 }
+
+@mixin flex($display: flex) {
+    display: $display;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin column-gap($gap: 30px, $align: center, $flex: flex) {
+    display: $flex;
+    align-items: $align;
+    column-gap: $gap;
+}

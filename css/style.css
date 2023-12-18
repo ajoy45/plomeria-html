@@ -25,7 +25,34 @@
   }
 }
 
-.section-title {
+.section-title-block {
+  padding-bottom: 60px;
+}
+.section-title-block .subtitle {
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+@media (min-width: 768px) {
+  .section-title-block .subtitle {
+    font-size: 20px;
+  }
+}
+.section-title-block .subtitle::before {
+  content: "";
+  width: 36px;
+  height: 3px;
+  border-radius: 500px;
+  background-color: var(--yellow);
+  display: inline-block;
+}
+.section-title-block .section-title {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 700;
   line-height: 1.3em;
@@ -33,14 +60,34 @@
   font-size: 38px;
 }
 @media (min-width: 768px) {
-  .section-title {
+  .section-title-block .section-title {
     font-size: 42px;
   }
 }
 @media (min-width: 1400px) {
-  .section-title {
+  .section-title-block .section-title {
     font-size: 48px;
   }
+}
+.section-title-block .section-title + * {
+  padding-top: 14px;
+}
+.section-title-block p {
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .section-title-block p {
+    font-size: 20px;
+  }
+}
+.section-title-block p:last-of-type {
+  margin-bottom: 0;
+}
+.section-title-block p:last-of-type + * {
+  margin-top: 24px;
 }
 
 .medium-title {
@@ -83,8 +130,9 @@
 }
 
 .large-paragraph {
-  line-height: 1.74em;
+  line-height: 1.4;
   font-weight: 400;
+  letter-spacing: 0.01em;
   font-size: 18px;
 }
 @media (min-width: 768px) {
@@ -1460,6 +1508,9 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 16px;
   padding-left: 26px;
   padding-right: 26px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn-primary {
   color: var(--white) !important;
@@ -1468,6 +1519,33 @@ h1, h2, h3, h4, h5, h6 {
 .btn-lg {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.btn-link {
+  /* Button/button 1 */
+  font-family: "Be Vietnam Pro", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+}
+@media (min-width: 768px) {
+  .btn-link {
+    font-size: 20px;
+  }
+}
+.btn-link--primary {
+  color: rgba(var(--secondary-rgb), 0.8);
+}
+.btn-link__icon {
+  width: 16px;
+}
+.btn-link__icon path {
+  stroke: currentColor;
 }
 
 .appointment-form-wrapper {
@@ -1694,110 +1772,38 @@ Hero Section Styles
   font-size: 16px;
 }
 
+.home_about-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .home_about-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
 @media (min-width: 992px) {
-  .about-home-section {
+  .home_about-section {
     padding-top: 120px;
     padding-bottom: 120px;
   }
 }
 
-.about-content-text .service {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about-content-text .line-text {
-  margin-bottom: 0;
-}
-
-.about-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about-title .about-section-title {
-  margin-bottom: 24px;
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 700;
-  line-height: 1.3em;
-  letter-spacing: -0.015em;
-  font-size: 38px;
+.about-image-row {
+  max-width: 1242px;
+  margin: 0 auto;
 }
 @media (min-width: 992px) {
-  .about-title .about-section-title {
-    max-width: 806px;
+  .about-image-row {
+    align-items: center;
   }
 }
-@media (min-width: 768px) {
-  .about-title .about-section-title {
-    font-size: 42px;
-  }
+.about-image-row .about-image-block {
+  border-radius: 5px;
 }
-@media (min-width: 1400px) {
-  .about-title .about-section-title {
-    font-size: 48px;
-  }
-}
-
-.about-description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about-description p {
-  margin-bottom: 24px;
-  line-height: 1.74em;
-  font-weight: 400;
-  font-size: 18px;
-}
-@media (min-width: 992px) {
-  .about-description p {
-    max-width: 665px;
-  }
-}
-@media (min-width: 768px) {
-  .about-description p {
-    font-size: 20px;
-  }
-}
-
-.about-read {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 66px;
-}
-.about-read .about-read-color {
-  color: var(--blue);
-}
-
-.about-arrow {
-  width: 24px;
-  height: 24px;
-}
-
-.about-img1 {
-  max-width: 400.21px;
-  border-radius: 10px;
-}
-.about-img1 .img {
-  border-radius: 10px !important;
-  padding: 0;
-}
-
-.about-img2 {
-  max-width: 493.28px;
-}
-.about-img2 .img {
-  border-radius: 10px !important;
-  padding: 0;
-}
-
-.about-img3 {
-  max-width: 400.21px;
-}
-.about-img3 .img {
-  border-radius: 10px !important;
-  padding: 0;
+.about-image-row .about-image-block img {
+  border-radius: inherit;
+  width: 100%;
 }
 
 .header-section {
@@ -2714,7 +2720,6 @@ i.fa.fa-bars {
   align-items: center;
 }
 .about-section .about-content-wrapper .about-content-text {
-  max-width: 422px;
   padding: 40px 48px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
@@ -2731,26 +2736,48 @@ i.fa.fa-bars {
   letter-spacing: -0.015em;
   text-transform: capitalize;
 }
-.about-section .about-content-wrapper .about-content-text .about-block-title {
+.about-section .about-content-wrapper .about-content-text .about-content-sub-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.about-section .about-content-wrapper .about-content-text .about-content-sub-title-wrapper .about-block-title {
   color: white;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.3em;
   text-transform: capitalize;
-  margin-right: 6px;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
-.about-section .about-content-wrapper .about-content-text .about-block-text {
+.about-section .about-content-wrapper .about-content-text .about-content-sub-title-wrapper .about-block-text {
   color: var(--secondary);
   font-size: 20px;
   font-weight: 700;
   line-height: 1.3em;
   text-transform: capitalize;
-  margin-left: 6px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.about-section .about-content-wrapper .about-content-text .about-content-sub-title-wrapper img {
+  width: 24px;
+  height: 24px;
 }
 
-.experience-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.about_content-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .about_content-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .about_content-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .experience-title-wrapper .experience-title-text {
@@ -2769,11 +2796,21 @@ i.fa.fa-bars {
   margin-bottom: 60px;
 }
 
-.experience-content-image {
-  max-width: 622px;
+.about-content-image {
   position: relative;
 }
-.experience-content-image__block {
+@media (min-width: 768px) {
+  .about-content-image {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 992px) {
+  .about-content-image {
+    justify-content: initial;
+  }
+}
+.about-content-image__block {
   max-width: 355px;
   border-radius: 10px;
   border-left: 6px solid var(--blue-blue-01, #07F);
@@ -2783,7 +2820,7 @@ i.fa.fa-bars {
   bottom: 48px;
   left: 40px;
 }
-.experience-content-image__block h3 {
+.about-content-image__block h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.3em;
@@ -2791,53 +2828,153 @@ i.fa.fa-bars {
   padding: 12px 12px 0 12px;
   margin-bottom: 14px;
 }
-.experience-content-image__block p {
+.about-content-image__block p {
   padding: 0 12px 12px 12px;
 }
-
-.gap-90 {
-  gap: 90px;
+.about-content-image__block img {
+  width: 100%;
 }
 
-.experience-content-text {
-  max-width: 607px;
-  padding: 0;
+@media (min-width: 1200px) {
+  .gap-column {
+    -moz-column-gap: 90px;
+         column-gap: 90px;
+  }
 }
-.experience-content-text p {
+
+.about-content-text p {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.74em;
   margin-bottom: 30px;
 }
-.experience-content-text .experience-icon-text {
+.about-content-text .about-icon-text {
   max-width: 490px;
   display: flex;
   gap: 20px;
 }
-.experience-content-text .experience-icon-text h3 {
+.about-content-text .about-icon-text h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.3em;
   text-transform: capitalize;
   margin-bottom: 10px;
 }
-.experience-content-text .experience-icon-text p {
+.about-content-text .about-icon-text p {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.74em;
   color: #131325;
 }
-.experience-content-text .experience-icon-text img {
+.about-content-text .about-icon-text img {
   width: 50px;
   height: 50px;
 }
-
-.advantage-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  background-color: #F8FAFD;
+@media (min-width: 768px) {
+  .about-content-text .about-content-text-description {
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 426px;
+    margin: 0 auto;
+  }
+  .about-content-text .about-icon-text {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .about-content-text .about-icon-text p {
+    text-align: center;
+    max-width: 426px;
+    margin: 0 auto;
+  }
+  .about-content-text .about-icon-text h3 {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .about-content-text .about-content-text-description {
+    text-align: start;
+    margin-bottom: 18px;
+    max-width: initial;
+  }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  .about-content-text .about-content-text-description {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .about-content-text .about-icon-text {
+    justify-content: initial;
+    align-items: initial;
+    flex-direction: row;
+    margin-bottom: 18px;
+  }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  .about-content-text .about-icon-text {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .about-content-text .about-icon-text p {
+    text-align: initial;
+    max-width: initial;
+  }
+  .about-content-text .about-icon-text h3 {
+    text-align: initial;
+  }
 }
 
+.advantage-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #F8FAFD;
+}
+@media (min-width: 768px) {
+  .advantage-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .advantage-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantage-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+@media (min-width: 1400px) {
+  .advantage-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@media (min-width: 480px) {
+  .advantage-section-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media (min-width: 1400px) {
+  .advantage-section-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .advantage-content-wrapper {
+    margin: 0 auto;
+  }
+}
 .advantage-content-wrapper .advantage-title-text {
   display: flex;
   align-items: center;
@@ -2857,6 +2994,7 @@ i.fa.fa-bars {
   font-weight: 400;
   line-height: 1.74em;
   margin-bottom: 24px;
+  max-width: 671px !important;
 }
 .advantage-content-wrapper .advantage-point-wrapper .advantage-point {
   margin-bottom: 16px;
@@ -2873,33 +3011,21 @@ i.fa.fa-bars {
   line-height: 1.74em;
 }
 
-.team-title-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.team-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.team-title-wrapper .team-card .team-title-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
+@media (min-width: 768px) {
+  .team-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
-.team-title-wrapper .team-card .team-section-title {
-  max-width: 823px;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.3em;
-  letter-spacing: -0.015em;
-  text-transform: capitalize;
-  text-align: center;
-  margin-bottom: 24px;
-}
-.team-title-wrapper .team-card p {
-  max-width: 778px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.74em;
-  text-align: center;
+@media (min-width: 992px) {
+  .team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .img-full {

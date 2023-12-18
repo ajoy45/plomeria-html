@@ -1,31 +1,105 @@
+// @use "../abstract/" as *;
+
+// *{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//  }
+// .page-title{
+//     @include heading-64;
+// }
+// .section-title{
+//     @include heading-48;
+// }
+// .medium-title{
+//     @include heading-32;
+// }
+// .block-title{
+//     @include heading-24;
+// }
+// .small-heading{
+//     @include heading-20(600,1.40em)
+// }
+// .large-paragraph{
+//     @include paragraph-20;
+// }
+// .medium-paragraph{
+//     @include paragraph-18
+// }
+// .small-paragraph{
+// @include paragraph-16;
+// }
 @use "../abstract/" as *;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- }
-.page-title{
+}
+
+.page-title {
     @include heading-64;
 }
-.section-title{
-    @include heading-48;
+
+.section-title-block {
+    padding-bottom: 60px;
+
+    .subtitle {
+        @include paragraph-20;
+        margin-bottom: 10px;
+        @include column-gap($flex: inline-flex, $gap: 12px);
+
+        &::before {
+            content: "";
+            width: 36px;
+            height: 3px;
+            border-radius: 500px;
+            background-color: $yellow;
+            display: inline-block;
+        }
+    }
+
+    .section-title {
+        @include heading-48;
+
+        &+* {
+            padding-top: 14px;
+        }
+    }
+
+    p {
+        @include paragraph-20;
+
+        &:last-of-type {
+            margin-bottom: 0;
+
+            &+* {
+                margin-top: 24px;
+            }
+        }
+    }
 }
-.medium-title{
+
+.medium-title {
     @include heading-32;
 }
-.block-title{
+
+.block-title {
     @include heading-24;
 }
-.small-heading{
-    @include heading-20(600,1.40em)
+
+.small-heading {
+    @include heading-20(600, 1.40em)
 }
-.large-paragraph{
+
+.large-paragraph {
     @include paragraph-20;
 }
-.medium-paragraph{
+
+.medium-paragraph {
     @include paragraph-18
 }
-.small-paragraph{
-@include paragraph-16;
+
+.small-paragraph {
+    @include paragraph-16;
 }

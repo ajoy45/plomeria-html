@@ -1,81 +1,99 @@
-@mixin heading-64($weight:700){
+@mixin heading-64($weight: 700) {
     font-size: 42px;
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight:$weight;
+    font-weight: $weight;
     line-height: 1.08em;
     letter-spacing: -.015em;
-    @media (min-width:768px){
+
+    @media (min-width:768px) {
         font-size: 50px;
     }
-    @media (min-width:1400px){
+
+    @media (min-width:1400px) {
         font-size: 64px;
     }
-      
+
 }
-@mixin heading-48($weight:700){
+
+@mixin heading-48($weight: 700) {
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight:$weight;
+    font-weight: $weight;
     line-height: 1.3em;
     letter-spacing: -.015em;
     font-size: 38px;
-    @media (min-width:768px){
+
+    @media (min-width:768px) {
         font-size: 42px;
     }
-    @media (min-width:1400px){
+
+    @media (min-width:1400px) {
         font-size: 48px;
     }
-      
+
 }
-@mixin heading-32($weight:700){
+
+@mixin heading-32($weight: 700) {
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight:$weight;
+    font-weight: $weight;
     line-height: 1.30em;
     letter-spacing: -.015em;
     font-size: 28px;
-    @media (min-width:992px){
+
+    @media (min-width:992px) {
         font-size: 32px;
     }
-      
+
 }
-@mixin heading-24($weight:700){
+
+@mixin heading-24($weight: 700) {
     font-size: 24px;
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight:$weight;
-    line-height: 1.30em; 
+    font-weight: $weight;
+    line-height: 1.30em;
     font-size: 28px;
-    @media (min-width:768px){
+
+    @media (min-width:768px) {
         font-size: 22px;
-    }   
+    }
 }
-@mixin heading-20($weight:700,$line-height:1.30em){
+
+@mixin heading-20($weight: 700, $line-height: 1.30em) {
     font-size: 20px;
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight:$weight;
-    line-height: $line-height;   
+    font-weight: $weight;
+    line-height: $line-height;
     font-size: 18px;
-    @media (min-width:768px){
-        font-size: 20px;
-    } 
-}
-@mixin paragraph-20{
-    line-height: 1.74em;
-    font-weight: 400;
-    font-size: 18px;
-    @media (min-width:768px){
+
+    @media (min-width:768px) {
         font-size: 20px;
     }
 }
-@mixin paragraph-18{
+
+@mixin paragraph-20($line-height: 1.4, $letter-spacing: 0.01em, $font-weight: 400) {
+    line-height: $line-height;
+    font-weight: $font-weight;
+    letter-spacing: $letter-spacing;
+    font-size: 18px;
+
+    @media (min-width:768px) {
+        font-size: 20px;
+    }
+}
+
+@mixin paragraph-18 {
     font-size: 16px;
     line-height: 1.74em;
-    @media (min-width:768px){
+
+    @media (min-width:768px) {
         font-size: 18px;
     }
 }
-@mixin paragraph-16($line-height:1.74em){
+
+@mixin paragraph-16($line-height: 1.74em) {
     font-size: 14px;
     line-height: $line-height;
-    @media (min-width:768px){
+
+    @media (min-width:768px) {
         font-size: 16px;
     }
 }
