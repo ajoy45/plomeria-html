@@ -18,15 +18,15 @@ $(document).ready(function () {
     // })
 
 
-    $('.testimonial-card').slick({
+    $('.testimonial-card-wrapper').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1000, // Set the duration between slides in milliseconds
         speed: 3000,
         infinite: true,
-        swipe:true,
-         responsive: [
+        swipe: true,
+        responsive: [
             {
                 breakpoint: 992,
                 settings: {

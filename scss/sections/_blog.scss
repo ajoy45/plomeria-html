@@ -19,7 +19,7 @@
     margin-bottom: 60px;
 }
 
-.blog-left {
+.blog-card {
     max-width: 644px;
     border-radius: 10px 10px 0 0;
     margin-right: 25px;
@@ -28,7 +28,7 @@
         border-radius: 10px 10px 0 0;
     }
 
-    .blog-text {
+    .blog-text-block {
         padding: 48px 40px 40px 48px;
         display: flex;
         flex-direction: column;
@@ -168,7 +168,7 @@
 
 
 @include desktop {
-    .blog-left {
+    .blog-card {
         box-shadow: none;
     }
 }

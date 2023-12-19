@@ -1,140 +1,172 @@
 @use "../abstract/" as *;
-.callToAction-section{
+
+.cta-section {
     background: var(--heading-color);
 
 }
- .callToAction-title{
-        color: var(--white);
-        margin-bottom: 24px;
-    }
- .callToAction-paragraph{
-        color: var(--white);
-        opacity: 0.8;
-        margin-bottom: 48px;
 
-    }
+.cta-title-block {
+    color: var(--white);
 
- .callToAction-bottom{
+}
+
+.callToAction-paragraph {
+    color: var(--white);
+    opacity: 0.8;
+    margin-bottom: 48px;
+
+}
+
+.callToAction-bottom {
     display: flex;
     align-items: center;
-    .callToAction-calling{
-     display: flex;
-     .app-calling-img{
-        width: 51px;
-         height: 51px;
-        
-    }
-  .callToAction-calling-right{
+
+    .callToAction-calling {
         display: flex;
-        position: relative;
-        .calling-img{
-            position: absolute;
-            top: 0;
-            left: -29px;
+
+        .app-calling-img {
+            width: 51px;
+            height: 51px;
 
         }
+
+        .callToAction-calling-right {
+            display: flex;
+            position: relative;
+
+            .calling-img {
+                position: absolute;
+                top: 0;
+                left: -29px;
+
+            }
+        }
     }
-   }
 }
-.callToAction-left{
+
+.callToAction-left {
     position: relative;
-    @include mobile{
+
+    @include mobile {
         @include py(30px);
-        .cruv{
+
+        .cruv {
             display: none
         }
-        .callToAction-bottom{
+
+        .callToAction-bottom {
             flex-direction: column
         }
-        .callToAction-bottom-btn{
-               @include myb(10px)
+
+        .callToAction-bottom-btn {
+            @include myb(10px)
         }
-        .callToAction{
+
+        .callToAction {
             justify-content: center;
         }
-        .callToAction-title{
+
+        .callToAction-title {
             text-align: center;
         }
-        .callToAction-paragraph{
+
+        .callToAction-paragraph {
             text-align: center;
         }
-       
+
 
     }
-    @include tablet{
+
+    @include tablet {
         @include py(40px);
-        .callToAction{
+
+        .callToAction {
             justify-content: center;
         }
-        .callToAction-title{
-            text-align: center;
-        }
-        .callToAction-paragraph{
-            text-align: center;
-        }
-        .cruv{
-            right:7px !important;
-        }
-    };
-   @include desktop{
-    max-width: 623px;
-    .callToAction-bottom{
-        flex-direction:row;
-    }
-    .callToAction{
-        justify-content: start;
-    }
-    .callToAction-title{
-        text-align: start;
-    }
-    .callToAction-paragraph{
-        text-align: start;
-    }
-    .cruv{
-        display: block;
-        right: -140px !important;
-    }
-   }
 
-   .callToAction{
-    display: flex;
-    align-items: center;
-    .callToAction-heading{
-       color: var(--white);
-       opacity: 0.8;
+        .callToAction-title {
+            text-align: center;
+        }
+
+        .callToAction-paragraph {
+            text-align: center;
+        }
+
+        .cruv {
+            right: 7px !important;
+        }
     }
-}
-  
- .cruv{
+
+    ;
+
+    @include desktop {
+        max-width: 623px;
+
+        .callToAction-bottom {
+            flex-direction: row;
+        }
+
+        .callToAction {
+            justify-content: start;
+        }
+
+        .callToAction-title {
+            text-align: start;
+        }
+
+        .callToAction-paragraph {
+            text-align: start;
+        }
+
+        .cruv {
+            display: block;
+            right: -140px !important;
+        }
+    }
+
+    .callToAction {
+        display: flex;
+        align-items: center;
+
+        .callToAction-heading {
+            color: var(--white);
+            opacity: 0.8;
+        }
+    }
+
+    .cruv {
         position: absolute;
         bottom: 0;
-       
-        .cruv-img{
+
+        .cruv-img {
             width: 158.7px;
             height: 139.88px;
         }
     }
- }
-    
+}
 
-.callToAction-right{
-    @include mobile{
+
+.callToAction-right {
+    @include mobile {
         display: none;
     }
-    @include tablet{
+
+    @include tablet {
         display: none;
     }
-    @include desktop{
+
+    @include desktop {
         max-width: 558px;
-       display: block;
+        display: block;
     }
-    
+
     margin-top: -113px;
     display: block;
-    
+
 }
+
 // @media only screen and (max-width:1024px){
-  
+
 //         .callToAction-left{
 //             text-align: center;
 //             margin: 60px 0;
