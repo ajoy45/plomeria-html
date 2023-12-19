@@ -1,0 +1,26 @@
+@use '../../abstract' as *;
+
+.home_about-section {
+    @include py(60px);
+
+    @include tablet {
+        @include py(80px);
+    }
+
+    @include desktop {
+        @include py(120px);
+    }
+}
+
+.about-image-row {
+    align-items: center;
+    justify-content: center;
+    max-width: 1242px;
+    .about-image-block {
+        border-radius: 5px;
+        img {
+            border-radius: inherit;
+            width: 100%;
+        }
+    }
+}

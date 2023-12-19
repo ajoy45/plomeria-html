@@ -1,17 +1,11 @@
 @use "../abstract/" as *;
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* ___________ Common Styles ___________ */ 
 .page-title {
     @include heading-64;
 }
 
-.section-title-block {
-    padding-bottom: 60px;
+.section-title-block,.content-title-block {
+    
 
     .subtitle {
         @include paragraph-20;
@@ -28,7 +22,7 @@
         }
     }
 
-    .section-title {
+    .section-title,.content-title {
         @include heading-48;
 
         &+* {
@@ -48,27 +42,39 @@
         }
     }
 }
-
-.medium-title {
-    @include heading-32;
+.section-title-block{
+    padding-bottom: 60px;
 }
 
-.block-title {
-    @include heading-24;
+
+.gutter-30{
+    --bs-gutter-x:1.875rem;
+    --bs-gutter-y:1.875rem;
+}
+.gutter-y-30{
+    --bs-gutter-y:1.875rem;
 }
 
-.small-heading {
-    @include heading-20(600, 1.40em)
-}
+// .medium-title {
+//     @include heading-32;
+// }
 
-.large-paragraph {
-    @include paragraph-20;
-}
+// .block-title {
+//     @include heading-24;
+// }
 
-.medium-paragraph {
-    @include paragraph-18
-}
+// .small-heading {
+//     @include heading-20(600, 1.40em)
+// }
 
-.small-paragraph {
-    @include paragraph-16;
-}
+// .large-paragraph {
+//     @include paragraph-20;
+// }
+
+// .medium-paragraph {
+//     @include paragraph-18
+// }
+
+// .small-paragraph {
+//     @include paragraph-16;
+// }

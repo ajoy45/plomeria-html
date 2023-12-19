@@ -5,6 +5,7 @@ $text-dark-hex:#424251;
 $text-light-hex:#DFDFDF;
 $white-hex:#FFFFFF;
 $blue-hex:#0077FF;
+$blue-fade-hex:#E5F1FF;
 $yellow-hex:#FFB700;
 
 // do not use dollar sign inside var because it is css variable
@@ -12,12 +13,13 @@ $primary:var(--primary);
 $primary-rgb:var(--primary-rgb);
 $secondary:var(--secondary);
 $secondary-rgb:var(--secondary-rgb);
-$heading-color:var(--heading-dark);
-$heading-color-rgb:var(--heading-dark-rgb);
+$heading-color:var(--heading-color);
+$heading-color-rgb:var(--heading-color-rgb);
 $text-dark:var(--text-dark);
 $text-light:var(--text-light);
 $white:var(--white);
 $blue:var(--blue);
+$blue-fade:var(--blue-fade);
 $yellow:var(--yellow);
 
 $heading-font:'Be Vietnam Pro', sans-serif;
