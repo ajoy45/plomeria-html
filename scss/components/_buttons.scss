@@ -11,7 +11,7 @@
     @include py(16px);
     @include px(26px);
     @include flex(inline-flex);
-
+    font-family: $heading-font;
     &-primary {
         color: var(--white) !important;
         background: var(--primary) !important;
@@ -27,7 +27,7 @@
         @include paragraph-20($line-height: 1.4, $letter-spacing: 0.01em, $font-weight: 400);
         text-decoration: none;
         @include column-gap($flex: inline-flex, $gap: 7px);
-
+        color: $heading-color;
         &--primary {
             color: rgba($secondary-rgb, 0.8);
         }
@@ -38,6 +38,10 @@
             path {
                 stroke: currentColor;
             }
+        }
+        &--sm{
+            @include paragraph-16;
+            column-gap: 8px;
         }
     }
 }

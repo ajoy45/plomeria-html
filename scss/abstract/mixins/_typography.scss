@@ -18,11 +18,12 @@
 @mixin heading-48($weight: 700) {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: $weight;
-    line-height: 1.3em;
+    line-height: 1.2em;
     letter-spacing: -.015em;
-    font-size: 38px;
+    font-size: 32px;
 
     @media (min-width:768px) {
+        line-height: 1.3em;
         font-size: 42px;
     }
 
@@ -69,13 +70,13 @@
     }
 }
 
-@mixin paragraph-20($line-height: 1.4, $letter-spacing: 0.01em, $font-weight: 400) {
+@mixin paragraph-20($line-height: 1.74, $letter-spacing: 0, $font-weight: 400) {
     line-height: $line-height;
     font-weight: $font-weight;
     letter-spacing: $letter-spacing;
     font-size: 18px;
 
-    @media (min-width:768px) {
+    @media (min-width:1200px) {
         font-size: 20px;
     }
 }
@@ -84,7 +85,7 @@
     font-size: 16px;
     line-height: 1.74em;
 
-    @media (min-width:768px) {
+    @media (min-width:992px) {
         font-size: 18px;
     }
 }
