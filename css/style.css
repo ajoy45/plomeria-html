@@ -1489,6 +1489,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
   color: var(--white) !important;
   background: var(--primary) !important;
+  --bs-btn-border-color: none;
 }
 .btn-lg {
   padding-top: 20px;
@@ -1572,6 +1573,14 @@ h1, h2, h3, h4, h5, h6 {
 .appointment-form .form-text-area {
   padding-top: 18px;
   padding-bottom: 90px;
+}
+.appointment-form .form-group {
+  position: relative;
+}
+.appointment-form .form-group .icon-abs {
+  position: absolute;
+  top: 40%;
+  right: 4%;
 }
 .appointment-form--black {
   background: rgba(0, 0, 0, 0.3);
@@ -2148,6 +2157,15 @@ Hero Section Styles
 }
 .hero-content-texts p {
   margin-bottom: 15px;
+  line-height: 1.74;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 18px;
+}
+@media (min-width: 1200px) {
+  .hero-content-texts p {
+    font-size: 20px;
+  }
 }
 .hero-content-texts p:last-of-type {
   margin-bottom: 0;
@@ -2278,6 +2296,27 @@ Hero Section Styles
   max-width: 241px;
   width: 38%;
   margin-bottom: 9.6%;
+}
+
+.home_service-area {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .home_service-area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .home_service-area {
+    padding-top: 120px;
+    padding-bottom: 240px;
+  }
+}
+.home_service-area .section-title-block p {
+  max-width: 621px;
+  margin: 0 auto;
 }
 
 .img-full {

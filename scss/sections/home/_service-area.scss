@@ -1,1 +1,20 @@
 @use "../../abstract" as *;
+
+.home_service-area {
+    @include py(60px);
+
+    @include tablet {
+        @include py(80px)
+    }
+
+    @include desktop {
+        @include py(120px, 240px)
+    }
+
+    .section-title-block {
+        p {
+            max-width: 621px;
+            margin: 0 auto;
+        }
+    }
+}

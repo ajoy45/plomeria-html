@@ -12,9 +12,11 @@
     @include px(26px);
     @include flex(inline-flex);
     font-family: $heading-font;
+
     &-primary {
         color: var(--white) !important;
         background: var(--primary) !important;
+        --bs-btn-border-color: none;
     }
 
     &-lg {
@@ -28,6 +30,7 @@
         text-decoration: none;
         @include column-gap($flex: inline-flex, $gap: 7px);
         color: $heading-color;
+
         &--primary {
             color: rgba($secondary-rgb, 0.8);
         }
@@ -39,7 +42,8 @@
                 stroke: currentColor;
             }
         }
-        &--sm{
+
+        &--sm {
             @include paragraph-16;
             column-gap: 8px;
         }
