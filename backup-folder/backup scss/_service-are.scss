@@ -1,0 +1,19 @@
+@use "../abstract" as*;
+
+.service-area-section {
+    @include py(60x);
+
+    @include tablet {
+        @include py(120px)
+    }
+
+    @include desktop {
+        @include py(120px)
+    }
+
+    .service-title-paragraph {
+        max-width: 621px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}

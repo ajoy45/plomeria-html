@@ -2767,6 +2767,28 @@ i.fa.fa-bars {
   margin-bottom: 14px;
 }
 
+.service-area-section {
+  padding-top: 60x;
+  padding-bottom: 60x;
+}
+@media (min-width: 768px) {
+  .service-area-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+@media (min-width: 992px) {
+  .service-area-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+.service-area-section .service-title-paragraph {
+  max-width: 621px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
 .img-full {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
