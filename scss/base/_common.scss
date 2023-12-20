@@ -2,60 +2,61 @@
 
 /* ___________ Common Styles ___________ */
 .page-title {
-    @include heading-64;
+  @include heading-64;
 }
 
 .section-title-block,
 .content-title-block {
+  .subtitle {
+    @include paragraph-20;
+    margin-bottom: 10px;
+    @include column-gap($flex: inline-flex, $gap: 12px);
 
-
-    .subtitle {
-        @include paragraph-20;
-        margin-bottom: 10px;
-        @include column-gap($flex: inline-flex, $gap: 12px);
-
-        &::before {
-            content: "";
-            width: 36px;
-            height: 3px;
-            border-radius: 500px;
-            background-color: $yellow;
-            display: inline-block;
-        }
+    &::before {
+      content: "";
+      width: 36px;
+      height: 3px;
+      border-radius: 500px;
+      background-color: $yellow;
+      display: inline-block;
     }
+  }
 
-    .section-title,
-    .content-title {
-        @include heading-48;
+  .section-title,
+  .content-title {
+    @include heading-48;
 
-        &+* {
-            padding-top: 14px;
-        }
+    & + * {
+      padding-top: 14px;
     }
+  }
 
-    p {
-        @include paragraph-20;
+  p {
+    @include paragraph-20;
 
-        &:last-of-type {
-            margin-bottom: 0;
+    &:last-of-type {
+      margin-bottom: 0;
 
-            &+* {
-                margin-top: 24px;
-            }
-        }
+      & + * {
+        margin-top: 24px;
+      }
     }
+  }
 }
 
 .section-title-block {
-    padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 
-
 .gutter-30 {
-    --bs-gutter-x: 1.875rem;
-    --bs-gutter-y: 1.875rem;
+  --bs-gutter-x: 1.875rem;
+  --bs-gutter-y: 1.875rem;
 }
 
 .gutter-y-30 {
-    --bs-gutter-y: 1.875rem;
+  --bs-gutter-y: 1.875rem;
+}
+
+.text-white {
+  color: var(--white);
 }
