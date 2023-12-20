@@ -1648,8 +1648,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-<<<<<<< HEAD
-=======
 .footer-section {
   background-color: var(--heading-color);
   padding-top: 120px;
@@ -1777,7 +1775,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
->>>>>>> 480576f39e4ad3a3a9d34bae238a7efacdad3ef9
 .about-section {
   background-position: center;
   background-size: cover;
@@ -1794,12 +1791,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 40px 48px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
-<<<<<<< HEAD
   backdrop-filter: blur(2px);
-=======
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
->>>>>>> 480576f39e4ad3a3a9d34bae238a7efacdad3ef9
   text-align: center;
 }
 .about-section .about-content-wrapper .about-content-text h1 {
@@ -1912,12 +1904,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1200px) {
   .gap-column {
-<<<<<<< HEAD
     column-gap: 90px;
-=======
-    -moz-column-gap: 90px;
-         column-gap: 90px;
->>>>>>> 480576f39e4ad3a3a9d34bae238a7efacdad3ef9
   }
 }
 
@@ -2286,23 +2273,106 @@ Hero Section Styles
   margin-bottom: 9.6%;
 }
 
-<<<<<<< HEAD
 .cta-section {
   color: var(--white);
   background: var(--heading-color);
   position: relative;
+  padding: 50px 0px;
+}
+@media (min-width: 992px) {
+  .cta-section {
+    margin-top: 140px;
+  }
 }
 .cta-section .cta-bg-white {
   background: white;
+  display: none;
   position: absolute;
   top: 0px;
   height: 16%;
   width: 100%;
 }
-
-.cta-image-wrap {
+@media (min-width: 992px) {
+  .cta-section .cta-bg-white {
+    display: block;
+  }
+}
+.cta-section .cta-image-wrap {
   position: relative;
   z-index: 1;
+  display: none;
+}
+@media (min-width: 992px) {
+  .cta-section .cta-image-wrap {
+    display: block;
+    margin-top: -140px;
+  }
+}
+.cta-section .cta-text-block {
+  position: relative;
+}
+.cta-section .cta-text-block .cta-shape {
+  position: absolute;
+  bottom: -50px;
+  right: -20px;
+}
+@media (min-width: 992px) {
+  .cta-section .cta-text-block .cta-shape {
+    bottom: -50px;
+    right: -95px;
+  }
+}
+.cta-section .cta-text-block .cta-shape img {
+  max-width: 158px;
+  display: none;
+}
+@media (min-width: 480px) {
+  .cta-section .cta-text-block .cta-shape img {
+    display: block;
+  }
+}
+
+.cta-action-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 48px;
+}
+@media (min-width: 768px) {
+  .cta-action-group {
+    flex-direction: row;
+  }
+}
+.cta-action-group .emergency-call-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.cta-action-group .emergency-call-block .avater-icon-block {
+  display: flex;
+  align-items: center;
+}
+.cta-action-group .emergency-call-block .avater-icon-block .cta-avater {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.cta-action-group .emergency-call-block .avater-icon-block .cta-avater img {
+  width: 100%;
+}
+.cta-action-group .emergency-call-block .avater-icon-block .cta-call-icon {
+  margin-left: -25px;
+}
+.cta-action-group .emergency-call-block .cta-call-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cta-action-group .emergency-call-block .cta-call-text p {
+  margin-bottom: 0px;
 }
 
 .home_service-section {
@@ -2311,8 +2381,6 @@ Hero Section Styles
   background: #f8fafd;
 }
 
-=======
->>>>>>> 480576f39e4ad3a3a9d34bae238a7efacdad3ef9
 .img-full {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
