@@ -1,46 +1,50 @@
-
 @use '../../abstract' as *;
+
 /*------ 
 Hero Section Styles 
--------------------*/ 
-.hero-section{
+-------------------*/
+.hero-section {
     padding-top: 32px;
     padding-bottom: 60px;
 }
 
-.hero-content-texts{
+.hero-content-texts {
     text-align: center;
-    @include desktop{
+
+    @include desktop {
         max-width: 598px;
         text-align: left;
     }
-    .page-title{
+
+    .page-title {
         margin-bottom: 24px;
     }
-    p{
+
+    p {
         margin-bottom: 15px;
-        &:last-of-type{
+        @include paragraph-20;
+
+        &:last-of-type {
             margin-bottom: 0;
         }
     }
-    .hero-logo-block{
+
+    .hero-logo-block {
         max-width: 397px;
         display: inline-flex;
         column-gap: 16px;
         padding-top: 30px;
-        @include tablet{
+
+        @include tablet {
             padding-top: 40px;
         }
-        @include desktop{
+
+        @include desktop {
             padding-top: 140px;
         }
-        img{
+
+        img {
             width: 100%;
         }
     }
 }
-
-
-
-
-
