@@ -1,52 +1,124 @@
 @use "../../abstract" as *;
 
 .home_service-area {
-  padding: 120px 0px;
+  @include py(60px);
+
+  @include tablet {
+    @include py(80px)
+  }
+
+  @include desktop {
+    @include py(120px)
+  }
+
+  .section-title-block {
+    p {
+      max-width: 621px;
+      margin: 0 auto;
+    }
+  }
 }
+
 .service-area-card {
   background: $white;
   box-shadow: 0px 4px 20px 0px rgba(19, 19, 37, 0.07);
   border-radius: 21px;
   overflow: hidden;
+  max-width: 420px;
+  border-radius: 8px;
+  position: relative;
+  margin: 0 15px;
 
   .service-card-image {
     height: 70%;
     width: 100%;
+
     img {
       width: 100%;
       object-fit: cover;
+      border-radius: 21px;
     }
   }
+
   .service-area-card-body {
-    padding: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+
+    @include tablet {
+      padding: 20px;
+    }
+
+    @include desktop {
+      padding: 24px;
+    }
+
+    box-shadow: 0px 4px 20px 0px rgba(19, 19, 37, 0.07);
+    border-radius: 21px;
+    background-color: $white;
+    width: 100%;
+
+    
+      .service-title {
+        @include mobile{
+          font-size: 14px;
+        }
+        @include tablet{
+          font-size:24px;
+        }
+        @include desktop{
+          margin-bottom: 10px;
+          
+        }
+        
+      }
+    
+
+    p {
+      margin-bottom: 0;
+    }
   }
 }
+
+
+
 .slick-list {
-  margin: 0px -30px;
-}
-.slick-slide {
   margin: 0px 30px;
 }
 
-.slick-prev,
+.slick-slide {
+
+  @include desktop {
+    margin: 0 30px;
+  }
+
+}
+
+.slick-prev {
+  border: 2px solid #919eab;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  margin-right: -32px;
+}
+
 .slick-next {
   border: 2px solid #919eab;
   height: 48px;
   width: 48px;
   border-radius: 50%;
-  margin-left: -52px;
+  margin-left: -32px;
 }
-.slick-next {
-  margin-right: -52px;
-}
-.slick-prev {
-  margin-left: -52px;
-}
+
+
+
 .slick-next.slick-arrow {
   &::before {
     content: url("https://i.ibb.co/wBjyWJJ/arrow-right-01-sharp.png");
   }
 }
+
 .slick-prev.slick-arrow {
   &::before {
     content: url("https://i.ibb.co/KXVcZX2/arrow-right-02-sharp.png");
