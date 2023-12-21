@@ -1335,7 +1335,13 @@ ul, li {
     --bs-gutter-y: 3rem;
   }
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin-bottom: 0;
 }
 
@@ -1815,6 +1821,73 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) {
   .recent-post-card .recent-post-title {
     font-size: 24px;
+  }
+}
+
+.common-hero-section {
+  background-image: url("../../image/about-page/banner1.png");
+  padding: 73px 0px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.common-hero-section .common-hero-content {
+  border-radius: 8px;
+  padding: 40px 48px;
+  max-width: max-content;
+  margin: 0px auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+}
+.common-hero-section .common-hero-content .common-hero-title {
+  font-size: 42px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.08em;
+  letter-spacing: -0.015em;
+  color: var(--white);
+  margin-bottom: 32px;
+}
+@media (min-width: 768px) {
+  .common-hero-section .common-hero-content .common-hero-title {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1400px) {
+  .common-hero-section .common-hero-content .common-hero-title {
+    font-size: 64px;
+  }
+}
+.common-hero-section .common-hero-content .common-hero-page-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.common-hero-section .common-hero-content .common-hero-page-info .prev-page {
+  font-size: 20px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.3em;
+  font-size: 18px;
+  color: var(--white);
+}
+@media (min-width: 768px) {
+  .common-hero-section .common-hero-content .common-hero-page-info .prev-page {
+    font-size: 20px;
+  }
+}
+.common-hero-section .common-hero-content .common-hero-page-info .current-page {
+  font-size: 20px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.3em;
+  font-size: 18px;
+  color: var(--blue);
+}
+@media (min-width: 768px) {
+  .common-hero-section .common-hero-content .common-hero-page-info .current-page {
+    font-size: 20px;
   }
 }
 

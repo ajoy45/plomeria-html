@@ -1,0 +1,38 @@
+@use "../abstract" as *;
+
+.common-hero-section {
+  background-image: url("../../image/about-page/banner1.png");
+  padding: 73px 0px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  .common-hero-content {
+    border-radius: 8px;
+    padding: 40px 48px;
+    max-width: max-content;
+    margin: 0px auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+
+    .common-hero-title {
+      @include heading-64;
+      color: $white;
+      margin-bottom: 32px;
+    }
+    .common-hero-page-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      .prev-page {
+        @include heading-20;
+        color: $white;
+      }
+      .current-page {
+        @include heading-20;
+        color: $blue;
+      }
+    }
+  }
+}
