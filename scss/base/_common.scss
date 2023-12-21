@@ -26,7 +26,7 @@
   .content-title {
     @include heading-48;
 
-    & + * {
+    &+* {
       padding-top: 14px;
     }
   }
@@ -37,7 +37,7 @@
     &:last-of-type {
       margin-bottom: 0;
 
-      & + * {
+      &+* {
         margin-top: 24px;
       }
     }
@@ -61,14 +61,11 @@
   --bs-gutter-x: 50px;
   --bs-gutter-y: 50px;
 }
-.text-white {
-  color: var(--white);
+
+.small-heading {
+  @include heading-24;
 }
 
-.gutter-left {
-  padding-left: 15px;
-}
-
-.text-white {
-  color: $white;
+.span-text {
+  @include paragraph-20;
 }
