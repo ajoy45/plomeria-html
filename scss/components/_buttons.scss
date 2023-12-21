@@ -14,8 +14,8 @@
     font-family: $heading-font;
 
     &-primary {
-        color: var(--white) !important;
-        background: var(--primary) !important;
+        color: $white !important;
+        background: $primary !important;
         --bs-btn-border-color: none;
     }
 

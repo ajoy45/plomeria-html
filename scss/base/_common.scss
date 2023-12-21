@@ -26,7 +26,7 @@
   .content-title {
     @include heading-48;
 
-    & + * {
+    &+* {
       padding-top: 14px;
     }
   }
@@ -37,7 +37,7 @@
     &:last-of-type {
       margin-bottom: 0;
 
-      & + * {
+      &+* {
         margin-top: 24px;
       }
     }
@@ -57,6 +57,14 @@
   --bs-gutter-y: 1.875rem;
 }
 
+.gutter-right {
+  padding-right: 15px;
+}
+
+.gutter-left {
+  padding-left: 15px;
+}
+
 .text-white {
-  color: var(--white);
+  color: $white;
 }
