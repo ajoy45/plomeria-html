@@ -1,4 +1,5 @@
-$(document).ready(function(){
+
+$(document).ready(function () {
     $('.service-area-slider').slick({
         infinite: true,
         slidesToShow: 3,
