@@ -1,0 +1,21 @@
+@use "../abstract" as *;
+
+.recent-post-card {
+  background: $white;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .recent-post-image-wrap {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .recent-post-date {
+    @include paragraph-16;
+  }
+  .recent-post-title {
+    @include heading-24;
+    margin-bottom: 14px;
+    text-transform: capitalize;
+  }
+}

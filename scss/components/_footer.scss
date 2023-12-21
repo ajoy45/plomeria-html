@@ -1,115 +1,83 @@
-@use '../abstract/' as *;
-.footer-section{
-    background-color: var(--heading-color);
-    padding-top: 120px;
-    padding-bottom: 32px;
+@use "../abstract/" as *;
+
+.section-footer {
+  background: $heading-color;
+  padding-top: 120px;
+  padding-bottom: 32px;
+  color: $white;
+
+  .footer-top {
+    padding-bottom: 60px;
+  }
+  .footer-middle {
+    padding-bottom: 60px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #5f5f5f;
+
+    .footer-link-title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 130%;
+      margin-bottom: 24px;
+      color: $white;
+    }
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      .footer-link {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 174%;
+        color: #dfdfdf;
+      }
+    }
+  }
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    @include mobile {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .call-block {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .call-text {
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 174%;
+          margin-bottom: 0px;
+        }
+        h6 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 130%;
+          color: rgba($white, 0.8);
+        }
+      }
+    }
+  }
 }
-.footer-logo{
+
+.social-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .social-item {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    @include mobile{
-        justify-content: center;
-    }
-    @include desktop{
-        justify-content: start;
-    }
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.3);
+  }
 }
- .logo-img{
-        width: 30px;
-        height: 42.83px;
-        margin-right: 10px;
-      }
-
-  
-.footer-paragraph{
-    max-width: 596px;
-    @include mobile{
-        text-align: center;
-    }
-    @include desktop{
-        text-align:start;
-    }
-   }
- .logo-title,.footer-paragraph{
-    color: var(--white);
- }
-
-
-.footer-title{
-    color: var(--white);
-    margin-bottom: 24px;
-}
-.text-color{
-    color: var(--text-light);
-    margin-bottom: 12px;
-}
-
-
-.social-img{
-        display: flex;
-        align-items: center;
-        @include mobile{
-            justify-content: center;
-        }
-        @include desktop{
-            justify-content: start;
-        }
-        margin-top: 30px;
-        .social-img1{
-            width: 50px;
-            height: 50px;
-            background-color:var(--text-dark);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 16px;
-            
-            .img1{
-                width: 8px;
-                height: 17px;  
-            }
-        }
-        .social-img2{
-            width: 50px;
-            height: 50px;
-            background-color:var(--text-dark);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 16px;
-            .img2{
-                width: 16.67px;
-                height: 13.33px;
-            }
-        
-        }
-        .social-img3{
-            width: 50px;
-            height: 50px;
-            background-color:var(--text-dark);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .img2{
-                width: 12px;
-                height: 12px;
-            }
-        
-        }
-       
-    }
-
-.footer-calling-right{
-    display: flex;
-    @include mobile{
-        justify-content: center;
-    }
-    @include desktop{
-        justify-content: end;
-    }
-    margin-top: 30px;
-}
-

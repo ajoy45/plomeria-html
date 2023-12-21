@@ -57,6 +57,10 @@
   --bs-gutter-y: 1.875rem;
 }
 
+.gutter-50 {
+  --bs-gutter-x: 50px;
+  --bs-gutter-y: 50px;
+}
 .text-white {
   color: var(--white);
 }

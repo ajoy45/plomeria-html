@@ -1,0 +1,54 @@
+@use "../../abstract" as *;
+
+.home_service-area {
+  padding: 120px 0px;
+}
+.service-area-card {
+  background: $white;
+  box-shadow: 0px 4px 20px 0px rgba(19, 19, 37, 0.07);
+  border-radius: 21px;
+  overflow: hidden;
+
+  .service-card-image {
+    height: 70%;
+    width: 100%;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .service-area-card-body {
+    padding: 24px;
+  }
+}
+.slick-list {
+  margin: 0px -30px;
+}
+.slick-slide {
+  margin: 0px 30px;
+}
+
+.slick-prev,
+.slick-next {
+  border: 2px solid #919eab;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  margin-left: -52px;
+}
+.slick-next {
+  margin-right: -52px;
+}
+.slick-prev {
+  margin-left: -52px;
+}
+.slick-next.slick-arrow {
+  &::before {
+    content: url("https://i.ibb.co/wBjyWJJ/arrow-right-01-sharp.png");
+  }
+}
+.slick-prev.slick-arrow {
+  &::before {
+    content: url("https://i.ibb.co/KXVcZX2/arrow-right-02-sharp.png");
+  }
+}

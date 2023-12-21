@@ -44,14 +44,13 @@
 }
 
 @mixin heading-24($weight: 700) {
-  font-size: 24px;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: $weight;
   line-height: 1.3em;
-  font-size: 28px;
+  font-size: 22px;
 
   @media (min-width: 768px) {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
