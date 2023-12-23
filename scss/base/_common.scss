@@ -64,6 +64,21 @@
 
 .small-heading {
   @include heading-24;
+
+  @include mobile {
+
+    font-size: 18px;
+
+  }
+
+  @include desktop {
+    font-size: 20px
+  }
+
+  @include large-desktop {
+    font-size: 24px
+  }
+
 }
 
 .span-text {
