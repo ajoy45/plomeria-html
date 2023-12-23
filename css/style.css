@@ -2068,7 +2068,7 @@ Hero Section Styles
 @media (min-width: 992px) {
   .home_service-area {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 240px;
   }
 }
 .home_service-area .section-title-block p {
