@@ -2142,6 +2142,36 @@ p {
   }
 }
 
+.comment-form {
+  max-width: 532px;
+}
+.comment-form .comment-area {
+  max-width: 468px;
+  position: relative;
+}
+.comment-form .comment-area .comment-profile {
+  position: absolute;
+  top: 0;
+  left: -13.5%;
+}
+.comment-form .comment-area .comment-profile img {
+  width: 48px;
+  height: 48px;
+}
+.comment-form .comment-area .comment-text {
+  border-radius: 8px;
+  border: 1px solid #C2C2C2;
+  background: var(--white);
+  padding: 20px 20px 78px 20px;
+}
+.comment-form .comment-area .comment-text input {
+  border: 0;
+  width: 100%;
+}
+.comment-form .comment-area .comment-text input:focus {
+  outline: 0;
+}
+
 .common-hero-section {
   background-image: url("../../image/about-page/banner1.png");
   padding: 73px 0px;
