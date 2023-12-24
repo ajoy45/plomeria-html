@@ -31,6 +31,23 @@
   }
 }
 
+@mixin heading-40($weight: 700) {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: $weight;
+  line-height: 1.3em;
+  letter-spacing: -0.015em;
+  font-size: 32px;
+
+  @media (min-width: 768px) {
+    line-height: 1.3em;
+    font-size: 42px;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: 40px;
+  }
+}
+
 @mixin heading-32($weight: 700) {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: $weight;

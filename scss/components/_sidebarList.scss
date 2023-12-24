@@ -1,0 +1,38 @@
+@use "../abstract" as *;
+
+.service-list {
+    max-width: 466px;
+    border-radius: 4px;
+    border-left: 3px solid $heading-color;
+    background: $white;
+    box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
+
+    .service-list-item {
+        padding: 24px;
+        position: relative;
+
+        li a {
+            color: $heading-color;
+            @include heading-20
+        }
+
+        .fa-angle-right {
+            position: absolute;
+            right: 5%;
+            top: 37%;
+            font-size: 24px;
+        }
+
+        &:hover {
+            background-color: $heading-color;
+
+            li a {
+                color: $white;
+            }
+
+            .fa-angle-right {
+                color: $white;
+            }
+        }
+    }
+}

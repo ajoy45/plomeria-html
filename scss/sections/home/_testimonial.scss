@@ -1,0 +1,51 @@
+@use "../../abstract/" as *;
+
+.testimonial-section {
+    @include py(60px);
+
+    @include tablet {
+        @include py(80px)
+    }
+
+    @include desktop {
+        @include py(120px)
+    }
+}
+
+.testimonial-card {
+    border-radius: 8px;
+    border-left: 3px solid var(--Blue-blue-01, #07F);
+    background: $white;
+    box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
+    max-width: 536px;
+    padding: 32px;
+
+
+
+    .testimonial-title-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        .fa-star {
+            color: $yellow;
+        }
+
+        .testimonial-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+
+    .testimonial-card-body {
+        p {
+            @include paragraph-18
+        }
+    }
+}
+
+.testimonial-card.slick-slide {
+    margin-right: 30px;
+}

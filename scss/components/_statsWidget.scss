@@ -1,0 +1,26 @@
+@use "../abstract/" as *;
+
+.stats-widget {
+    display: flex;
+    max-width: 200px;
+    align-items: center;
+    gap: 16px;
+
+    .stats-widget-icon {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .stats-widget-body {
+        h2 {
+            @include heading-40;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+}

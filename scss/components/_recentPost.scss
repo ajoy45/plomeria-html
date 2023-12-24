@@ -1,21 +1,30 @@
 @use "../abstract" as *;
 
-.recent-post-card {
-  background: $white;
+.recent-post {
+  max-width: 465px;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
+  align-self: stretch;
 
-  .recent-post-image-wrap {
-    border-radius: 10px;
-    overflow: hidden;
+  .recent-post-img {
+    img {
+      width: 166.667px;
+      height: 135px;
+      border-radius: 10px;
+    }
   }
-  .recent-post-date {
-    @include paragraph-16;
-  }
-  .recent-post-title {
-    @include heading-24;
-    margin-bottom: 14px;
-    text-transform: capitalize;
+
+  .recent-post-body {
+    .recent-post-title {
+      overflow: hidden;
+      color: $heading-color;
+      font-family: Be Vietnam;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.3em;
+      text-transform: capitalize;
+      margin-bottom: 14px;
+    }
   }
 }
