@@ -1722,7 +1722,20 @@ p {
 .section-footer .footer-top {
   padding-bottom: 60px;
 }
+.section-footer .footer-top p {
+  font-size: 14px;
+  line-height: 1.74em;
+  max-width: 596px;
+}
+@media (min-width: 768px) {
+  .section-footer .footer-top p {
+    font-size: 16px;
+  }
+}
 .section-footer .footer-middle {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding-bottom: 60px;
   margin-bottom: 32px;
   border-bottom: 1px solid #5f5f5f;
