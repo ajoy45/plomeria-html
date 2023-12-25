@@ -42,5 +42,9 @@ $(document).ready(function () {
         ]
 
     });
-
+    // pricing tab checkbox
+    document.getElementById("checkbox").addEventListener("click", function () {
+        const element = document.getElementById("checkbox");
+        element.setAttribute("src", "./image/home-page/checkbox2.png")
+    });
 });
