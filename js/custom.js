@@ -43,8 +43,17 @@ $(document).ready(function () {
 
     });
     // pricing tab checkbox
+    let toggle = true;
     document.getElementById("checkbox").addEventListener("click", function () {
+
+        toggle = !toggle
         const element = document.getElementById("checkbox");
-        element.setAttribute("src", "./image/home-page/checkbox2.png")
+        if (toggle) {
+
+            element.setAttribute("src", "./image/home-page/checkbox1.png")
+        }
+        else {
+            element.setAttribute("src", "./image/home-page/checkbox2.png")
+        }
     });
 });
