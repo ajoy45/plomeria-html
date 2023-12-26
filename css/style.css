@@ -47,6 +47,10 @@ ul, li {
   padding: 0;
 }
 
+button:focus, a:focus {
+  box-shadow: none;
+}
+
 /*!
  * Bootstrap Grid v5.3.0-alpha3 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -2221,54 +2225,32 @@ p {
 }
 
 .accordion-style {
-  max-width: 803px;
+  --accordion-item-extra-padding:
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-btn-focus-border-color: unset;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-body-padding-x: 40px;
+  --bs-accordion-body-padding-y: 30px;
+  --bs-accordion-btn-padding-x: 40px;
+  --bs-accordion-btn-padding-y: 30px;
+  --bs-accordion-border-width: 0;
 }
-
-.accordion-button:not(.collapsed)::after {
-  --bs-accordion-btn-active-icon: none;
+.accordion-style .accordion-item {
+  box-shadow: 0px 6px 16px 0px rgba(74, 58, 255, 0.1);
 }
-
-.accordion-button {
-  font-size: 20px;
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 700;
-  line-height: 1.3em;
-  font-size: 18px;
-  color: #170F49 !important;
-  padding-left: 40px;
-  padding-right: 40px;
+.accordion-style .accordion-button {
+  padding-bottom: 16px;
+  transition: padding 0.4s;
 }
-@media (min-width: 768px) {
-  .accordion-button {
-    font-size: 20px;
-  }
+.accordion-style .accordion-button[aria-expanded=false] {
+  padding-bottom: 30px;
 }
-.accordion-button::after {
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: var(--secondary);
-  flex-shrink: 0;
-  margin-left: auto;
-  --bs-accordion-btn-icon: none;
-  transition: var(--bs-accordion-btn-icon-transition);
+.accordion-style .accordion-button:not(.collapsed) {
+  background-color: transparent;
 }
-
-.accordion-body p {
-  padding-left: 17px;
-  padding-right: 70px;
-  font-size: 14px;
-  line-height: 1.74em;
-}
-@media (min-width: 768px) {
-  .accordion-body p {
-    font-size: 16px;
-  }
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: unset !important;
-  box-shadow: unset !important;
+.accordion-style .accordion-body {
+  padding-top: 0;
+  padding-bottom: 16px;
 }
 
 .process-widget {

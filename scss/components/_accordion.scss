@@ -1,48 +1,78 @@
 @use "../abstract" as *;
 
-.accordion-style {
-    max-width: 803px;
+// .accordion-style {
+//     max-width: 803px;
 
 
-}
+// }
 
-.accordion-button:not(.collapsed)::after {
+// .accordion-button:not(.collapsed)::after {
 
-    --bs-accordion-btn-active-icon: none;
+//     --bs-accordion-btn-active-icon: none;
 
-}
+// }
 
-.accordion-button {
-    @include heading-20;
-    color: #170F49 !important;
-    padding-left: 40px;
-    padding-right: 40px;
+// .accordion-button {
+//     @include heading-20;
+//     color: #170F49 !important;
+//     padding-left: 40px;
+//     padding-right: 40px;
 
-    &::after {
+//     &::after {
 
-        @include fontawesome("\f105");
-        color: $secondary;
-        flex-shrink: 0;
+//         @include fontawesome("\f105");
+//         color: $secondary;
+//         flex-shrink: 0;
 
-        margin-left: auto;
+//         margin-left: auto;
 
-        --bs-accordion-btn-icon: none;
+//         --bs-accordion-btn-icon: none;
 
-        transition: var(--bs-accordion-btn-icon-transition);
+//         transition: var(--bs-accordion-btn-icon-transition);
 
+//     }
+// }
+
+// .accordion-body {
+//     p {
+//         padding-left: 17px;
+//         padding-right: 70px;
+//         @include paragraph-16;
+//     }
+// }
+
+// .accordion-button:not(.collapsed) {
+//     background-color: unset !important;
+//     box-shadow: unset !important;
+
+// }
+
+.accordion-style{
+    --accordion-item-extra-padding: 
+    --bs-accordion-active-bg: transparent;
+    --bs-accordion-btn-focus-border-color: unset;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-body-padding-x: 40px;
+    --bs-accordion-body-padding-y: 30px;
+    --bs-accordion-btn-padding-x: 40px;
+    --bs-accordion-btn-padding-y: 30px;
+    --bs-accordion-border-width: 0;
+    .accordion-item{
+        // padding-bottom: 14px;
+        box-shadow: 0px 6px 16px 0px rgba(74, 58, 255, 0.10);
     }
-}
-
-.accordion-body {
-    p {
-        padding-left: 17px;
-        padding-right: 70px;
-        @include paragraph-16;
+    .accordion-button{
+        padding-bottom: 16px;
+        transition: padding .4s;
+        &[aria-expanded="false"]{
+            padding-bottom: 30px;
+        }
+        &:not(.collapsed){
+            background-color: transparent;
+        }
     }
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: unset !important;
-    box-shadow: unset !important;
-
+    .accordion-body{
+        padding-top: 0;
+        padding-bottom: 16px;
+    }
 }
