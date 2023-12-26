@@ -2016,18 +2016,27 @@ p {
   }
 }
 
-.service-list {
+.sidebar-list {
   max-width: 466px;
   border-radius: 4px;
   border-left: 3px solid var(--heading-color);
   background: var(--white);
   box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
 }
-.service-list .service-list-item {
+.sidebar-list .sidebar-list__item {
   padding: 24px;
   position: relative;
 }
-.service-list .service-list-item li a {
+.sidebar-list .sidebar-list__item li::after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 5%;
+  top: 24%;
+  font-size: 24px;
+}
+.sidebar-list .sidebar-list__item li a {
   color: var(--heading-color);
   font-size: 20px;
   font-family: "Be Vietnam Pro", sans-serif;
@@ -2036,23 +2045,27 @@ p {
   font-size: 18px;
 }
 @media (min-width: 768px) {
-  .service-list .service-list-item li a {
+  .sidebar-list .sidebar-list__item li a {
     font-size: 20px;
   }
 }
-.service-list .service-list-item .fa-angle-right {
+.sidebar-list .sidebar-list__item .fa-angle-right {
   position: absolute;
   right: 5%;
   top: 37%;
   font-size: 24px;
 }
-.service-list .service-list-item:hover {
+.sidebar-list .sidebar-list__item:hover {
   background-color: var(--heading-color);
+  transition: background-color 0.8s;
 }
-.service-list .service-list-item:hover li a {
+.sidebar-list .sidebar-list__item:hover li::after {
   color: var(--white);
 }
-.service-list .service-list-item:hover .fa-angle-right {
+.sidebar-list .sidebar-list__item:hover li a {
+  color: var(--white);
+}
+.sidebar-list .sidebar-list__item:hover .fa-angle-right {
   color: var(--white);
 }
 
@@ -2225,8 +2238,9 @@ p {
 }
 
 .accordion-style {
+  max-width: 803px;
   --accordion-item-extra-padding:
-  --bs-accordion-active-bg: transparent;
+      --bs-accordion-active-bg: transparent;
   --bs-accordion-btn-focus-border-color: unset;
   --bs-accordion-btn-focus-box-shadow: none;
   --bs-accordion-body-padding-x: 40px;
@@ -2237,10 +2251,26 @@ p {
 }
 .accordion-style .accordion-item {
   box-shadow: 0px 6px 16px 0px rgba(74, 58, 255, 0.1);
+  margin-bottom: 30px;
+}
+.accordion-style .accordion-item:last-child {
+  margin-bottom: 0;
 }
 .accordion-style .accordion-button {
   padding-bottom: 16px;
   transition: padding 0.4s;
+  position: relative;
+  font-size: 20px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.3em;
+  font-size: 18px;
+  color: #170F49;
+}
+@media (min-width: 768px) {
+  .accordion-style .accordion-button {
+    font-size: 20px;
+  }
 }
 .accordion-style .accordion-button[aria-expanded=false] {
   padding-bottom: 30px;
@@ -2248,9 +2278,41 @@ p {
 .accordion-style .accordion-button:not(.collapsed) {
   background-color: transparent;
 }
+.accordion-style .accordion-button:not(.collapsed)::after {
+  --bs-accordion-btn-active-icon: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  position: absolute;
+  right: 3.5%;
+  color: white;
+}
+.accordion-style .accordion-button::after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--secondary);
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --bs-accordion-btn-icon: none;
+}
 .accordion-style .accordion-body {
   padding-top: 0;
   padding-bottom: 16px;
+  --bs-accordion-btn-icon: none;
+}
+.accordion-style .accordion-body p {
+  font-size: 14px;
+  line-height: 1.74em;
+  max-width: 683px;
+}
+@media (min-width: 768px) {
+  .accordion-style .accordion-body p {
+    font-size: 16px;
+  }
 }
 
 .process-widget {
@@ -3013,6 +3075,30 @@ Hero Section Styles
   .about_content-text .about_content-feature-text .about_content-feature-title {
     font-size: 20px;
   }
+}
+
+.faq-content-section {
+  padding-top: 60px;
+  padding-bottom: 185px;
+}
+.faq-content-section .accordion-style {
+  padding-left: 64px;
+}
+
+.faq-contact p {
+  margin-bottom: 40px;
+  line-height: 1.74;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 18px;
+}
+@media (min-width: 1200px) {
+  .faq-contact p {
+    font-size: 20px;
+  }
+}
+.faq-contact p span {
+  color: var(--secondary);
 }
 
 .img-full {

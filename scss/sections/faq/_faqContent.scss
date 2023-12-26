@@ -1,0 +1,10 @@
+@use "../../abstract" as *;
+
+.faq-content-section {
+    padding-top: 60px;
+    padding-bottom: 185px;
+
+    .accordion-style {
+        padding-left: 64px;
+    }
+}

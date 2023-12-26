@@ -47,9 +47,10 @@
 
 // }
 
-.accordion-style{
-    --accordion-item-extra-padding: 
-    --bs-accordion-active-bg: transparent;
+.accordion-style {
+    max-width: 803px;
+    --accordion-item-extra-padding:
+        --bs-accordion-active-bg: transparent;
     --bs-accordion-btn-focus-border-color: unset;
     --bs-accordion-btn-focus-box-shadow: none;
     --bs-accordion-body-padding-x: 40px;
@@ -57,22 +58,65 @@
     --bs-accordion-btn-padding-x: 40px;
     --bs-accordion-btn-padding-y: 30px;
     --bs-accordion-border-width: 0;
-    .accordion-item{
+
+    .accordion-item {
         // padding-bottom: 14px;
         box-shadow: 0px 6px 16px 0px rgba(74, 58, 255, 0.10);
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
-    .accordion-button{
+
+    .accordion-button {
         padding-bottom: 16px;
         transition: padding .4s;
-        &[aria-expanded="false"]{
+        position: relative;
+        @include heading-20;
+        color: #170F49;
+
+        &[aria-expanded="false"] {
             padding-bottom: 30px;
         }
-        &:not(.collapsed){
+
+        &:not(.collapsed) {
             background-color: transparent;
+
+
+            &::after {
+                --bs-accordion-btn-active-icon: none;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: $secondary;
+                position: absolute;
+                right: 3.5%;
+                color: white;
+            }
+        }
+
+        &::after {
+            @include fontawesome("\f105");
+            color: $secondary;
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            --bs-accordion-btn-icon: none;
+
         }
     }
-    .accordion-body{
+
+    .accordion-body {
         padding-top: 0;
         padding-bottom: 16px;
+        --bs-accordion-btn-icon: none;
+
+        p {
+            @include paragraph-16;
+            max-width: 683px;
+        }
+
     }
 }

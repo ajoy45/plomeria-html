@@ -1,0 +1,12 @@
+@use "../../abstract" as *;
+
+.faq-contact {
+    p {
+        margin-bottom: 40px;
+        @include paragraph-20;
+
+        span {
+            color: $secondary;
+        }
+    }
+}
