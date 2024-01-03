@@ -62,6 +62,10 @@
   --bs-gutter-y: 50px;
 }
 
+.gutter-x-90 {
+  --bs-gutter-x: 90px;
+}
+
 .small-heading {
   @include heading-24;
 
