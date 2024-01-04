@@ -1,0 +1,19 @@
+@use "../../abstract" as *;
+
+.service-section-1 {
+    @include py(60px);
+
+    @include tablet {
+        @include py(80px)
+    }
+
+    @include desktop {
+        @include py(120px)
+    }
+
+    .service-card_body {
+        a {
+            color: $blue ;
+        }
+    }
+}

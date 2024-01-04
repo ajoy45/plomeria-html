@@ -1866,7 +1866,6 @@ p {
 }
 
 .team-card {
-  max-width: 294px;
   position: relative;
 }
 .team-card .team-card-img img {
@@ -3384,6 +3383,26 @@ Hero Section Styles
 }
 .faq-contact p span {
   color: var(--secondary);
+}
+
+.service-section-1 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .service-section-1 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .service-section-1 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+.service-section-1 .service-card_body a {
+  color: var(--blue);
 }
 
 .img-full {
