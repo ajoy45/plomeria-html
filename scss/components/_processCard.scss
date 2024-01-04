@@ -1,23 +1,22 @@
 @use "../abstract" as *;
 
 .process-card {
-    max-width: 418px;
     border-radius: 12px;
     background: $white;
     box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
     padding: 40px;
 
-    .process-card-img {
+    .process-card-top {
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: relative;
 
-        h4 {
-            @include heading-24
+        .process-title {
+            @include heading-24;
         }
 
-        h4:before {
+        .process-title:before {
             content: "";
             width: 58px;
             height: 3px;
@@ -29,16 +28,17 @@
 
         }
 
-        img {
-            width: 77px;
-            height: 69px;
+        .process-count {
+            @include heading-64;
+            color: $text-light
         }
+
     }
 
-    .process-card-body {
-        p {
-            @include paragraph-16;
-            padding-top: 24px;
-        }
+
+    p {
+        @include paragraph-16;
+        padding-top: 24px;
     }
+
 }

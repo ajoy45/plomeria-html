@@ -15,12 +15,12 @@
     }
 
     .stats-widget-body {
-        h2 {
+        h3 {
             @include heading-40;
             margin-bottom: 8px;
         }
 
-        p {
+        span {
             font-size: 15px;
         }
     }

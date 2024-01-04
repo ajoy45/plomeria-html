@@ -1,0 +1,42 @@
+@use"../../abstract" as *;
+
+.about_service-section {
+    @include py(60px);
+
+    @include tablet {
+        @include py(80px);
+    }
+
+    @include desktop {
+        @include py(120px);
+    }
+
+    background-color: $bg-color;
+}
+
+.about_service-card-wrapper {
+    max-width: 580px;
+}
+
+.about_service-content {
+    .content-title-block {
+        margin-bottom: 24px;
+        padding-bottom: 0;
+
+
+    }
+
+    .content-title {
+        margin-bottom: 10px;
+    }
+
+    .list-type-check {
+        li {
+            @include paragraph-20;
+        }
+
+        li:last-child {
+            margin-bottom: 0 !important;
+        }
+    }
+}

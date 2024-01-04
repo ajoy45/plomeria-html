@@ -1,29 +1,29 @@
-$primary-hex:#D20D0C;
-$secondary-hex:#07F;
-$heading-dark-hex:#131325;
-$text-dark-hex:#424251;
-$text-light-hex:#DFDFDF;
-$white-hex:#FFFFFF;
-$blue-hex:#0077FF;
-$blue-fade-hex:#E5F1FF;
-$yellow-hex:#FFB700;
-
+$primary-hex: #D20D0C;
+$secondary-hex: #07F;
+$heading-dark-hex: #131325;
+$text-dark-hex: #424251;
+$text-light-hex: #DFDFDF;
+$white-hex: #FFFFFF;
+$blue-hex: #0077FF;
+$blue-fade-hex: #E5F1FF;
+$yellow-hex: #FFB700;
+$bg-hex: #F8FAFD;
 // do not use dollar sign inside var because it is css variable
-$primary:var(--primary);
-$primary-rgb:var(--primary-rgb);
-$secondary:var(--secondary);
-$secondary-rgb:var(--secondary-rgb);
-$heading-color:var(--heading-color);
-$heading-color-rgb:var(--heading-color-rgb);
-$text-dark:var(--text-dark);
-$text-light:var(--text-light);
-$white:var(--white);
-$blue:var(--blue);
-$blue-fade:var(--blue-fade);
-$yellow:var(--yellow);
+$primary: var(--primary);
+$primary-rgb: var(--primary-rgb);
+$secondary: var(--secondary);
+$secondary-rgb: var(--secondary-rgb);
+$heading-color: var(--heading-color);
+$heading-color-rgb: var(--heading-color-rgb);
+$text-dark: var(--text-dark);
+$text-light: var(--text-light);
+$white: var(--white);
+$blue: var(--blue);
+$blue-fade: var(--blue-fade);
+$yellow: var(--yellow);
+$bg-color: var(--bg-color);
 
-$heading-font:'Be Vietnam Pro', sans-serif;
-$body-font:'ABeeZee', sans-serif;
-$logo-font:"'Smooch Sans', sans-serif";
-$body-font-weight:400;
-
+$heading-font: 'Be Vietnam Pro', sans-serif;
+$body-font: 'ABeeZee', sans-serif;
+$logo-font: "'Smooch Sans', sans-serif";
+$body-font-weight: 400;

@@ -21,6 +21,7 @@
   --blue-fade:#E5F1FF;
   --blue-fade-rgb:229, 241, 255;
   --yellow:#FFB700;
+  --bg-color:#F8FAFD;
   --bs-body-color: #424251;
 }
 
@@ -32,7 +33,9 @@ body {
 h1,
 h2,
 h3,
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-family: "Be Vietnam Pro", sans-serif;
   color: var(--heading-color);
 }
@@ -41,13 +44,15 @@ a {
   text-decoration: none;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-button:focus, a:focus {
+button:focus,
+a:focus {
   box-shadow: none;
 }
 
@@ -1879,35 +1884,53 @@ p {
   bottom: 0;
   left: 0;
 }
-.team-card .team-card-body h4 {
+.team-card .team-card-body .team-name {
   margin-bottom: 10px;
+  font-size: 20px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.3em;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .team-card .team-card-body .team-name {
+    font-size: 20px;
+  }
+}
+.team-card .team-card-body span {
+  font-size: 14px;
+  line-height: 1.74em;
+}
+@media (min-width: 768px) {
+  .team-card .team-card-body span {
+    font-size: 16px;
+  }
 }
 
 .process-card {
-  max-width: 418px;
   border-radius: 12px;
   background: var(--white);
   box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
   padding: 40px;
 }
-.process-card .process-card-img {
+.process-card .process-card-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
 }
-.process-card .process-card-img h4 {
+.process-card .process-card-top .process-title {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 700;
   line-height: 1.3em;
   font-size: 22px;
 }
 @media (min-width: 768px) {
-  .process-card .process-card-img h4 {
+  .process-card .process-card-top .process-title {
     font-size: 24px;
   }
 }
-.process-card .process-card-img h4:before {
+.process-card .process-card-top .process-title:before {
   content: "";
   width: 58px;
   height: 3px;
@@ -1917,17 +1940,31 @@ p {
   position: absolute;
   bottom: 0;
 }
-.process-card .process-card-img img {
-  width: 77px;
-  height: 69px;
+.process-card .process-card-top .process-count {
+  font-size: 42px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.08em;
+  letter-spacing: -0.015em;
+  color: var(--text-light);
 }
-.process-card .process-card-body p {
+@media (min-width: 768px) {
+  .process-card .process-card-top .process-count {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1400px) {
+  .process-card .process-card-top .process-count {
+    font-size: 64px;
+  }
+}
+.process-card p {
   font-size: 14px;
   line-height: 1.74em;
   padding-top: 24px;
 }
 @media (min-width: 768px) {
-  .process-card .process-card-body p {
+  .process-card p {
     font-size: 16px;
   }
 }
@@ -1944,7 +1981,7 @@ p {
 .stats-widget .stats-widget-icon img {
   width: 100%;
 }
-.stats-widget .stats-widget-body h2 {
+.stats-widget .stats-widget-body h3 {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 700;
   line-height: 1.3em;
@@ -1953,17 +1990,17 @@ p {
   margin-bottom: 8px;
 }
 @media (min-width: 768px) {
-  .stats-widget .stats-widget-body h2 {
+  .stats-widget .stats-widget-body h3 {
     line-height: 1.3em;
     font-size: 42px;
   }
 }
 @media (min-width: 1400px) {
-  .stats-widget .stats-widget-body h2 {
+  .stats-widget .stats-widget-body h3 {
     font-size: 40px;
   }
 }
-.stats-widget .stats-widget-body p {
+.stats-widget .stats-widget-body span {
   font-size: 15px;
 }
 
@@ -3213,6 +3250,116 @@ Hero Section Styles
 }
 .about-content-text .about-btn {
   margin-top: 40px;
+}
+
+.about_service-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bg-color);
+}
+@media (min-width: 768px) {
+  .about_service-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .about_service-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.about_service-card-wrapper {
+  max-width: 580px;
+}
+
+.about_service-content .content-title-block {
+  margin-bottom: 24px;
+  padding-bottom: 0;
+}
+.about_service-content .content-title {
+  margin-bottom: 10px;
+}
+.about_service-content .list-type-check li {
+  line-height: 1.74;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 18px;
+}
+@media (min-width: 1200px) {
+  .about_service-content .list-type-check li {
+    font-size: 20px;
+  }
+}
+.about_service-content .list-type-check li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.about_team-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .about_team-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .about_team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.team-section-title-wrapper .section-title-block {
+  padding-bottom: 56px;
+}
+.team-section-title-wrapper .section-title {
+  margin-bottom: 10px;
+}
+
+.about_process-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--heading-color);
+}
+@media (min-width: 768px) {
+  .about_process-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .about_process-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.process-section-heading .section-title-block {
+  color: var(--white);
+}
+.process-section-heading .section-title {
+  color: var(--white);
+}
+
+.about_location-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .about_location-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .about_location-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .faq-content-section {

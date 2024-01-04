@@ -22,8 +22,13 @@
         bottom: 0;
         left: 0;
 
-        h4 {
+        .team-name {
             margin-bottom: 10px;
+            @include heading-20;
+        }
+
+        span {
+            @include paragraph-16;
         }
     }
 }

@@ -1,0 +1,24 @@
+@use "../../abstract" as *;
+
+.about_team-section {
+    @include py(60px);
+
+    @include tablet {
+        @include py(80px)
+    }
+
+    @include desktop {
+        @include py(120px)
+    }
+}
+
+.team-section-title-wrapper {
+    .section-title-block {
+        padding-bottom: 56px;
+
+    }
+
+    .section-title {
+        margin-bottom: 10px;
+    }
+}

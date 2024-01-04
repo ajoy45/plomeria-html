@@ -1,0 +1,25 @@
+@use "../../abstract" as *;
+
+.about_process-section {
+    @include py(60px);
+
+    @include tablet {
+        @include py(80px)
+    }
+
+    @include desktop {
+        @include py(120px)
+    }
+
+    background-color: $heading-color;
+}
+
+.process-section-heading {
+    .section-title-block {
+        color: $white;
+    }
+
+    .section-title {
+        color: $white;
+    }
+}

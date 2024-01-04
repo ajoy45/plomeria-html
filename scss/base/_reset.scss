@@ -23,6 +23,7 @@
     --blue-fade:#{$blue-fade-hex};
     --blue-fade-rgb:#{to-rgb($blue-fade-hex)};
     --yellow:#{$yellow-hex};
+    --bg-color:#{$bg-hex};
     --bs-body-color: #{$text-dark-hex};
 }
 
@@ -34,7 +35,9 @@ body {
 h1,
 h2,
 h3,
-h4,h5,h6 {
+h4,
+h5,
+h6 {
     font-family: $heading-font;
     color: $heading-color;
 }
@@ -43,14 +46,16 @@ a {
     text-decoration: none;
 }
 
-ul,li{
+ul,
+li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-button,a{
-    &:focus{
+button,
+a {
+    &:focus {
         box-shadow: none;
     }
 }
