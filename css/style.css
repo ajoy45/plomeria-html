@@ -2464,7 +2464,7 @@ p {
 .banner-section .banner-content .banner-text .fa-angle-right {
   font-size: 24px;
 }
-.banner-section .banner-content .banner-text p {
+.banner-section .banner-content .banner-text span {
   font-size: 20px;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 700;
@@ -2472,7 +2472,7 @@ p {
   font-size: 18px;
 }
 @media (min-width: 768px) {
-  .banner-section .banner-content .banner-text p {
+  .banner-section .banner-content .banner-text span {
     font-size: 20px;
   }
 }
