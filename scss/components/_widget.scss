@@ -1,0 +1,39 @@
+@use "../abstract" as *;
+
+// blog widget
+.blog-card-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex: 1 0 0;
+
+    .blog-widget {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        max-width: 626px;
+
+        .blog-widget-title {
+            margin-bottom: 14px !important;
+            @include heading-24;
+        }
+
+        .blog-widget-link {
+            @include heading-20;
+        }
+
+        .blog-widget-img {
+            // width: 200px;
+
+            // img {
+            //     width: 100%;
+            //     border-radius: 6px;
+            // }
+            img {
+                max-width: 241px;
+                height: 162px;
+                border-radius: 6px;
+            }
+        }
+    }
+}

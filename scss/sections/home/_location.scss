@@ -1,6 +1,6 @@
 @use "../../abstract" as *;
 
-.home_service-area {
+.location-section {
   @include py(60px);
 
   @include tablet {
