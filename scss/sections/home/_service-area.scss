@@ -20,25 +20,14 @@
   }
 }
 
-.service-area-card {
-  background: $white;
-  box-shadow: 0px 4px 20px 0px rgba(19, 19, 37, 0.07);
+.location-card {
   border-radius: 21px;
-  overflow: hidden;
   max-width: 420px;
   border-radius: 8px;
   position: relative;
   margin: 0 15px;
 
-
-
-
-
-
-  .service-card-image {
-    height: 70%;
-    width: 100%;
-
+  .location-card_image {
     img {
       width: 100%;
       object-fit: cover;
@@ -46,11 +35,15 @@
     }
   }
 
-  .service-area-card-body {
+  .location-card-body {
+    box-shadow: 0px 4px 20px 0px rgba(19, 19, 37, 0.07);
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 10px;
+    border-radius: 21px;
+    background-color: $white;
+    width: 100%;
 
     @include tablet {
       padding: 20px;
@@ -60,13 +53,7 @@
       padding: 24px;
     }
 
-    box-shadow: 0px 4px 20px 0px rgba(19, 19, 37, 0.07);
-    border-radius: 21px;
-    background-color: $white;
-    width: 100%;
-
-
-    .service-title {
+    .location-title {
       @include mobile {
         font-size: 14px;
       }
@@ -82,9 +69,9 @@
 
     }
 
-
-    p {
-      margin-bottom: 0;
+    span {
+      @include paragraph-20;
+      color: $text-dark;
     }
   }
 }

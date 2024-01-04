@@ -6,32 +6,45 @@
     border-radius: 16px;
     box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
     text-align: center;
-    transition: 0.5s ease-in-out;
 
-    &__icon {
+
+    &_icon {
         width: 64px;
         display: inline-block;
+        margin-bottom: 32px;
 
         img {
             width: 100%;
-            margin-bottom: 32px;
         }
     }
 
-    &__link {
-        margin-top: 17px;
-    }
+    &_body {
+        &_title {
+            @include heading-24;
+            margin-bottom: 12px
+        }
 
-    &__title {
-        @include heading-24;
-        margin-bottom: 12px;
+        p {
+            @include paragraph-16;
+            margin-bottom: 32px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            @include heading-16;
+            color: rgba($secondary, 0.8);
+        }
     }
 
     &:hover {
         background-color: #131325;
         color: $white;
+        transition: background-color 0.5s ease-in-out;
 
-        .service-card-title {
+        .service-card_body_title {
             color: $white;
         }
 

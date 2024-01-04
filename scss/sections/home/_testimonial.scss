@@ -21,8 +21,7 @@
     padding: 32px;
 
 
-
-    .testimonial-title-block {
+    .testimonial-card-top {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -32,18 +31,37 @@
             color: $yellow;
         }
 
-        .testimonial-title {
+        .user-profile {
             display: flex;
             align-items: center;
             gap: 12px;
+
+            &_image {
+                width: 48px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &_body {
+                &_title {
+                    @include heading-20;
+                    margin-bottom: 4px;
+                }
+
+                span {
+                    @include paragraph-14;
+                }
+            }
         }
+
     }
 
-    .testimonial-card-body {
-        p {
-            @include paragraph-18
-        }
+    p {
+        @include paragraph-18;
     }
+
 }
 
 .testimonial-card.slick-slide {
