@@ -1863,18 +1863,29 @@ p {
 }
 
 .copy-right {
-  display: flex;
-  justify-content: center;
   border-top: 1px solid #5f5f5f;
   margin-top: 60px;
+}
+.copy-right > * {
+  margin-top: 32px;
+}
+
+.copy-right-text {
+  margin-top: 32px;
+  font-size: 14px;
+  line-height: 1.74em;
+}
+@media (min-width: 768px) {
+  .copy-right-text {
+    font-size: 16px;
+  }
 }
 
 .social-group {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   gap: 16px;
-  margin-top: 32px;
 }
 .social-group .social-item {
   height: 40px;
