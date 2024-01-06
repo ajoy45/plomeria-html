@@ -43,9 +43,32 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 12px;
+  }
+
+  .call-icon {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+
+    img {
+      width: 100%;
+    }
+
+    &::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      border-radius: 500px;
+      background-color: $primary;
+      position: absolute;
+      z-index: -1;
+    }
   }
 
   .call-text {
@@ -84,8 +107,6 @@
   align-items: center;
   justify-content: end;
   gap: 16px;
-
-
 
   .social-item {
     height: 40px;
