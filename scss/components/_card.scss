@@ -7,7 +7,7 @@
     box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
     text-align: center;
 
-    .first-2 {
+    .icon-hover {
         display: none;
     }
 
@@ -15,6 +15,7 @@
         width: 64px;
         display: inline-block;
         margin-bottom: 32px;
+        max-height: 64px;
 
         img {
             width: 100%;
@@ -47,11 +48,11 @@
         color: $white;
         transition: background-color 0.5s ease-in-out;
 
-        .first-2 {
+        .icon-hover {
             display: block;
         }
 
-        .first-1 {
+        .icon-normal {
             display: none;
         }
 
