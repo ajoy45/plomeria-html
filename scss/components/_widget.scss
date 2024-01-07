@@ -23,17 +23,42 @@
         }
 
         .blog-widget-img {
-            // width: 200px;
 
-            // img {
-            //     width: 100%;
-            //     border-radius: 6px;
-            // }
             img {
                 max-width: 241px;
                 height: 162px;
                 border-radius: 6px;
             }
+        }
+    }
+}
+
+.blog-widget {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .blog-widget-date {
+        margin-bottom: 4px;
+    }
+
+    .blog-widget-title {
+        margin-bottom: 14px;
+        @include heading-24;
+    }
+
+    .blog-widget-img {
+        --sizeX: 200px;
+        --sizeY: 165px;
+        @include size(var(--sizeX), var(--sizeY));
+        border-radius: 12px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: inherit;
         }
     }
 }

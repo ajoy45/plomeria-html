@@ -1,40 +1,56 @@
 @use "../abstract" as *;
 
-.comment-form {
-    max-width: 532px;
+.comment-area {
+    display: flex;
+    column-gap: 16px;
 
-    .comment-area {
 
-        max-width: 468px;
-        position: relative;
+    .comment-profile {
 
-        .comment-profile {
-            position: absolute;
-            top: 0;
-            left: -13.5%;
-
-            img {
-                width: 48px;
-                height: 48px;
-            }
+        img {
+            width: 48px;
+            height: 48px;
         }
+    }
 
-        .comment-text {
-            border-radius: 8px;
-            border: 1px solid #C2C2C2;
-            background: $white;
-            padding: 20px 20px 78px 20px;
 
-            input {
-                border: 0;
-                width: 100%;
+}
 
-            }
+.comment-text {
+    border-radius: 8px;
+    border: 1px solid #C2C2C2;
+    background: $white;
+    padding: 20px 20px 78px 20px;
+    width: 100%;
 
-            input:focus {
-                outline: 0;
-            }
+    input {
+        border: 0;
+        width: 100%;
 
-        }
+    }
+
+    input:focus {
+        outline: 0;
+    }
+
+}
+
+.comment-write-area {
+    button {
+        border: 0;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.4em;
+        letter-spacing: 0.01em;
+        margin-top: 32px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        padding-right: 24px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Be Vietnam Pro", sans-serif;
     }
 }

@@ -8,6 +8,7 @@ $blue-hex: #0077FF;
 $blue-fade-hex: #E5F1FF;
 $yellow-hex: #FFB700;
 $bg-hex: #F8FAFD;
+$gray-hex: #919EAB;
 // do not use dollar sign inside var because it is css variable
 $primary: var(--primary);
 $primary-rgb: var(--primary-rgb);
@@ -22,6 +23,7 @@ $blue: var(--blue);
 $blue-fade: var(--blue-fade);
 $yellow: var(--yellow);
 $bg-color: var(--bg-color);
+$gray-color: var(--gray-color);
 
 $heading-font: 'Be Vietnam Pro', sans-serif;
 $body-font: 'ABeeZee', sans-serif;

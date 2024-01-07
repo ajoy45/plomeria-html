@@ -1,0 +1,65 @@
+@use "../../abstract" as *;
+
+.contact-info-section {
+    @include py(60px);
+
+    @include tablet {
+        @include py(80px)
+    }
+
+    @include desktop {
+        @include py(120px)
+    }
+}
+
+.contact-info-content {
+    max-width: 601px;
+    padding: 77px 64px;
+    background-color: $bg-color;
+
+    .content-title-block {
+        margin-bottom: 40px;
+
+        .content-title {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+.contact-widget {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+
+    &:not(:last-of-type) {
+        margin-bottom: 32px;
+    }
+}
+
+.contact-widget-icon {
+    background-color: $blue;
+    width: 42px;
+    height: 42px;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+
+    img {
+        width: 18px;
+    }
+
+}
+
+.contact-widget-body {
+    .title {
+        @include paragraph-16;
+        margin-bottom: 6px;
+    }
+
+    span {
+        @include heading-20;
+    }
+}

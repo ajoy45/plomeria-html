@@ -71,3 +71,20 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
+
+@mixin square($size, $radius: null) {
+    min-width: $size;
+    max-width: $size;
+    min-height: $size;
+    max-height: $size;
+    border-radius: $radius;
+}
+
+@mixin size($sizeX, $sizeY) {
+    min-width: $sizeX;
+    max-width: $sizeX;
+    min-height: $sizeY;
+    max-height: $sizeY;
+    width: $sizeX;
+    height: $sizeY;
+}

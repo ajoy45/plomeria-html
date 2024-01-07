@@ -66,6 +66,14 @@
   --bs-gutter-x: 90px;
 }
 
+.gutter-x-99 {
+  --bs-gutter-x: 99px;
+}
+
+.gutter-x-87 {
+  --bs-gutter-x: 87px;
+}
+
 .small-heading {
   @include heading-24;
 

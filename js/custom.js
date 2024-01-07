@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+    $('select').niceSelect();
 
     $('.testimonial-card-wrapper').slick({
         slidesToShow: 3,
@@ -7,6 +8,7 @@ $(document).ready(function () {
         // autoplay: true,
         autoplaySpeed: 2000,
     });
+
     $('.service-area-slider').slick({
         infinite: true,
         slidesToShow: 3,
@@ -42,6 +44,7 @@ $(document).ready(function () {
         ]
 
     });
+
     // pricing tab checkbox
     let toggle = true;
     document.getElementById("checkbox").addEventListener("click", function () {
@@ -56,4 +59,6 @@ $(document).ready(function () {
             element.setAttribute("src", "./image/home-page/checkbox2.png")
         }
     });
+
+
 });
