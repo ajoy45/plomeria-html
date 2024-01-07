@@ -147,7 +147,7 @@ span {
     }
 }
 
-.comment-title {
+.blog-heading {
     @include heading-32;
     position: relative;
     margin-bottom: 32px;
@@ -168,9 +168,7 @@ span {
     margin-top: 48px;
 }
 
-.blog-details-right {
-    max-width: 465px;
-}
+
 
 .blog-search {
     display: flex;
@@ -222,4 +220,19 @@ span {
             margin-bottom: 29px;
         }
     }
+}
+
+.category {
+    margin-top: 64px;
+    margin-bottom: 32px;
+
+    .sidebar-list {
+        margin-bottom: 8px;
+    }
+}
+
+.tags-btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
