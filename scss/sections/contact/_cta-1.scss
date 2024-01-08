@@ -11,10 +11,14 @@
         @include py(120px)
     }
 
-    .content-title {
-        color: $white;
-        margin-bottom: 16px;
+    .cta-content {
+        .content-title {
+            @include heading-48;
+            color: $white;
+            margin-bottom: 16px;
+        }
     }
+
 
     p {
         max-width: 583px;

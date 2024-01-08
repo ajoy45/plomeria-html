@@ -1,0 +1,80 @@
+@use "../../abstract" as *;
+
+.service-details-section {
+    @include py(60px);
+
+    @include tablet {
+        @include py(80px)
+    }
+
+    @include desktop {
+        @include py(120px)
+    }
+}
+
+.service-details-left {
+    max-width: 466px;
+
+    .sidebar-list {
+        margin-bottom: 8px;
+    }
+
+    .cta-widget {
+        margin-top: 48px;
+    }
+}
+
+.service-details-content-head {
+    .section-title-block {
+        padding-bottom: 0;
+    }
+
+    .section-title {
+        margin-bottom: 36px;
+        font-size: 46px;
+    }
+
+
+
+    img {
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 36px;
+    }
+
+    p {
+        @include paragraph-20;
+        margin-bottom: 40px;
+    }
+
+    .service-widget {
+        margin-bottom: 40px;
+    }
+}
+
+.service-details-bottom {
+    .service-bottom-title {
+        @include heading-32;
+        margin-bottom: 24px;
+
+    }
+
+    img {
+        width: 100%;
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+
+    p {
+        @include paragraph-20;
+        margin-bottom: 36px;
+    }
+
+    .list-type-check {
+        margin-bottom: 36px;
+
+        li {
+            @include paragraph-20;
+        }
+    }
+}
