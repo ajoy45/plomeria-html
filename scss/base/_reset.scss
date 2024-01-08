@@ -19,6 +19,7 @@
     --text-dark:#{$text-dark-hex};
     --text-light:#{$text-light-hex};
     --white:#{$white-hex};
+    --white-rgb:#{to-rgb($white-hex)};
     --blue:#{$blue-hex};
     --blue-fade:#{$blue-fade-hex};
     --blue-fade-rgb:#{to-rgb($blue-fade-hex)};

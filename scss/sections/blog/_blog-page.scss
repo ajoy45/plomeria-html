@@ -1,0 +1,11 @@
+@use "../../abstract" as *;
+
+.blog-section-1 {
+    @include desktop {
+        @include py(120px)
+    }
+
+    @include desktop {
+        @include py(120px)
+    }
+}

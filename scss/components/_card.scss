@@ -65,3 +65,105 @@
         }
     }
 }
+
+// process card
+.process-card {
+    border-radius: 12px;
+    background: $white;
+    box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
+    padding: 40px;
+
+    .process-card-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        .process-title {
+            @include heading-24;
+        }
+
+        .process-title:before {
+            content: "";
+            width: 58px;
+            height: 3px;
+            border-radius: 500px;
+            background: $yellow;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+
+        }
+
+        .process-count {
+            @include heading-64;
+            color: $text-light
+        }
+
+    }
+
+
+    p {
+        @include paragraph-16;
+        padding-top: 24px;
+    }
+
+}
+
+// project card
+.project-card {
+    box-shadow: 0px 6px 40px 0px rgba(19, 19, 37, 0.07);
+    max-width: 442.67px;
+
+    .project-card-img {
+        img {
+            width: 100%;
+            border-radius: 8px 8px 0px 0px;
+        }
+    }
+
+    .project-card-body {
+        padding: 30px;
+        border-radius: 0px 0px 8px 8px;
+        background: $white;
+
+        p {
+            @include paragraph-20;
+            text-align: center;
+        }
+    }
+}
+
+// team card
+.team-card {
+
+    position: relative;
+
+    .team-card-img {
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    .team-card-body {
+        padding: 20px 24px;
+        border-radius: 8px;
+        background: $white;
+        box-shadow: 0px 4px 20px 0px rgba(19, 19, 37, 0.07);
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        .team-name {
+            margin-bottom: 10px;
+            @include heading-20;
+        }
+
+        span {
+            @include paragraph-16;
+        }
+    }
+}

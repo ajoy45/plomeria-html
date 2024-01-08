@@ -1,0 +1,50 @@
+@use "../../abstract" as *;
+
+.cta-section-2 {
+    @include py(60px);
+
+    @include tablet {
+        @include py(120px)
+    }
+
+    @include desktop {
+        @include py(120px)
+    }
+
+    .content-title {
+        color: $white;
+        margin-bottom: 16px;
+    }
+
+    p {
+        max-width: 583px;
+        @include paragraph-20;
+        text-align: center;
+        margin: 0 auto;
+        color: rgba($white-color-rgb, 0.8);
+
+    }
+
+    .cta-content-bottom {
+        max-width: 583px;
+        margin: 0 auto;
+        margin-top: 48px;
+
+        .span-text {
+            color: rgba($white-color-rgb, 0.8);
+        }
+
+        .small-heading {
+            color: $white;
+        }
+    }
+}
+
+.cta-bg-1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    padding-top: 96px;
+    padding-bottom: 86px;
+}

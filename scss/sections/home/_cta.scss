@@ -25,41 +25,7 @@
     }
   }
 
-  .cta-content-bottom {
-    display: flex;
-    column-gap: 40px;
-    align-items: center;
-    position: relative;
 
-    .cta-content-call {
-      display: flex;
-      column-gap: 42px;
-      align-items: center;
-      position: relative;
-
-      .person-img {
-        width: 51px;
-        height: 51px;
-      }
-
-      .calling-icon {
-        width: 51px;
-        height: 51px;
-        position: absolute;
-        left: 29px;
-        top: 7px;
-
-      }
-    }
-
-    .cta-shape {
-      display: none;
-
-      @include tablet {
-        display: block;
-      }
-    }
-  }
 
   .cta-shape {
     position: absolute;
@@ -84,6 +50,41 @@
   }
 }
 
+.cta-content-bottom {
+  display: flex;
+  column-gap: 40px;
+  align-items: center;
+  position: relative;
+
+  .cta-content-call {
+    display: flex;
+    column-gap: 42px;
+    align-items: center;
+    position: relative;
+
+    .person-img {
+      width: 51px;
+      height: 51px;
+    }
+
+    .calling-icon {
+      width: 51px;
+      height: 51px;
+      position: absolute;
+      left: 29px;
+      top: 7px;
+
+    }
+  }
+
+  .cta-shape {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+}
 
 .cta-image-wrapper {
   display: none;
@@ -107,102 +108,3 @@
     margin-top: -129px;
   }
 }
-
-
-// .cta-section {
-//   color: var(--white);
-//   background: var(--heading-color);
-//   position: relative;
-//   padding: 50px 0px;
-//   @include desktop {
-//     margin-top: 140px;
-//     padding: 0px;
-//   }
-
-//   .cta-bg-white {
-//     background: white;
-//     display: none;
-//     position: absolute;
-//     top: 0px;
-//     height: 16%;
-//     width: 100%;
-//     @include desktop {
-//       display: block;
-//     }
-//   }
-//   .cta-image-wrap {
-//     position: relative;
-//     z-index: 1;
-//     display: none;
-//     @include desktop {
-//       display: block;
-//       margin-top: -140px;
-//     }
-//   }
-//   .cta-text-block {
-//     position: relative;
-
-//     .cta-shape {
-//       position: absolute;
-//       bottom: -50px;
-//       right: -20px;
-//       @include desktop {
-//         bottom: -50px;
-//         right: -95px;
-//       }
-
-//       img {
-//         max-width: 158px;
-//         display: none;
-//         @include mobile {
-//           display: block;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// .cta-action-group {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   gap: 40px;
-//   margin-top: 48px;
-//   @include tablet {
-//     flex-direction: row;
-//   }
-
-//   .emergency-call-block {
-//     position: relative;
-//     display: flex;
-//     align-items: center;
-//     gap: 16px;
-//     .avater-icon-block {
-//       display: flex;
-//       align-items: center;
-//       .cta-avater {
-//         width: 51px;
-//         height: 51px;
-//         border-radius: 50%;
-//         overflow: hidden;
-
-//         img {
-//           width: 100%;
-//         }
-//       }
-//       .cta-call-icon {
-//         margin-left: -25px;
-//       }
-//     }
-
-//     .cta-call-text {
-//       display: flex;
-//       flex-direction: column;
-//       gap: 8px;
-
-//       p {
-//         margin-bottom: 0px;
-//       }
-//     }
-//   }
-// }

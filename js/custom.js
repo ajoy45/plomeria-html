@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    $('select').niceSelect();
+
 
     $('.testimonial-card-wrapper').slick({
         slidesToShow: 3,
