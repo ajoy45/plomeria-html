@@ -2155,19 +2155,44 @@ p {
   border-radius: 8px 8px 0px 0px;
 }
 .project-card .project-card-body {
-  padding: 30px;
+  padding: 30px 38px;
   border-radius: 0px 0px 8px 8px;
   background: var(--white);
 }
-.project-card .project-card-body p {
-  line-height: 1.74;
+.project-card .project-card-body .project-card-date {
+  font-size: 14px;
+  line-height: 1.74em;
   font-weight: 400;
-  letter-spacing: 0;
-  font-size: 18px;
-  text-align: center;
+  margin-bottom: 4px;
 }
-@media (min-width: 1200px) {
-  .project-card .project-card-body p {
+@media (min-width: 768px) {
+  .project-card .project-card-body .project-card-date {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.project-card .project-card-body .project-card-title {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.3em;
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .project-card .project-card-body .project-card-title {
+    font-size: 24px;
+  }
+}
+.project-card .project-card-body a {
+  font-size: 20px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.3em;
+  font-size: 18px;
+  color: var(--blue);
+}
+@media (min-width: 768px) {
+  .project-card .project-card-body a {
     font-size: 20px;
   }
 }
@@ -3299,6 +3324,9 @@ Hero Section Styles
     padding-top: 120px;
     padding-bottom: 120px;
   }
+}
+.blog-section-1 .project-card {
+  margin-bottom: 36px;
 }
 
 .blog-details-section {

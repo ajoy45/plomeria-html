@@ -8,4 +8,8 @@
     @include desktop {
         @include py(120px)
     }
+
+    .project-card {
+        margin-bottom: 36px;
+    }
 }
