@@ -1,0 +1,64 @@
+@use "../../abstract" as *;
+
+.terms-condition-section {
+    @include py(60px);
+
+    @include tablet {
+        @include py(80px)
+    }
+
+    @include desktop {
+        padding-top: 120px
+    }
+}
+
+.terms-condition-content-top {
+    span {
+        @include paragraph-20;
+
+    }
+
+    p {
+        @include paragraph-20;
+        margin-bottom: 36px;
+        margin-top: 36px;
+    }
+}
+
+.terms-condition-content-body {
+    margin-bottom: 36px;
+
+    h4 {
+        @include heading-20;
+        margin-bottom: 16px;
+    }
+
+    p {
+        @include paragraph-20;
+        margin-bottom: 16px;
+    }
+
+    ul {
+        li {
+            list-style-type: disc;
+            list-style-position: inside;
+            @include paragraph-20;
+
+            &:last-child {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+.terms-condition-content-bottom {
+    h4 {
+        @include heading-20;
+        margin-bottom: 16px;
+    }
+
+    p {
+        @include paragraph-20;
+        margin-bottom: 36px;
+    }
+}

@@ -4196,6 +4196,118 @@ span {
   }
 }
 
+.terms-condition-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .terms-condition-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .terms-condition-section {
+    padding-top: 120px;
+  }
+}
+
+.terms-condition-content-top span {
+  line-height: 1.74;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 18px;
+}
+@media (min-width: 1200px) {
+  .terms-condition-content-top span {
+    font-size: 20px;
+  }
+}
+.terms-condition-content-top p {
+  line-height: 1.74;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 18px;
+  margin-bottom: 36px;
+  margin-top: 36px;
+}
+@media (min-width: 1200px) {
+  .terms-condition-content-top p {
+    font-size: 20px;
+  }
+}
+
+.terms-condition-content-body {
+  margin-bottom: 36px;
+}
+.terms-condition-content-body h4 {
+  font-size: 20px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.3em;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .terms-condition-content-body h4 {
+    font-size: 20px;
+  }
+}
+.terms-condition-content-body p {
+  line-height: 1.74;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+@media (min-width: 1200px) {
+  .terms-condition-content-body p {
+    font-size: 20px;
+  }
+}
+.terms-condition-content-body ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  line-height: 1.74;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 18px;
+}
+@media (min-width: 1200px) {
+  .terms-condition-content-body ul li {
+    font-size: 20px;
+  }
+}
+.terms-condition-content-body ul li:last-child {
+  margin-bottom: 16px;
+}
+
+.terms-condition-content-bottom h4 {
+  font-size: 20px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.3em;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .terms-condition-content-bottom h4 {
+    font-size: 20px;
+  }
+}
+.terms-condition-content-bottom p {
+  line-height: 1.74;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 18px;
+  margin-bottom: 36px;
+}
+@media (min-width: 1200px) {
+  .terms-condition-content-bottom p {
+    font-size: 20px;
+  }
+}
+
 .img-full {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
