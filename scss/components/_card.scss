@@ -167,3 +167,55 @@
         }
     }
 }
+
+// testimonial card
+.testimonial-card {
+    border-radius: 8px;
+    border-left: 3px solid var(--Blue-blue-01, #07F);
+    background: $white;
+    box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
+    padding: 32px;
+
+
+    .testimonial-card-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        .fa-star {
+            color: $yellow;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            &_image {
+                width: 48px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &_body {
+                &_title {
+                    @include heading-20;
+                    margin-bottom: 4px;
+                }
+
+                span {
+                    @include paragraph-14;
+                }
+            }
+        }
+
+    }
+
+    p {
+        @include paragraph-18;
+    }
+
+}

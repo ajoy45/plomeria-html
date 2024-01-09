@@ -2215,6 +2215,66 @@ p {
   }
 }
 
+.testimonial-card {
+  border-radius: 8px;
+  border-left: 3px solid var(--Blue-blue-01, #07F);
+  background: var(--white);
+  box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
+  padding: 32px;
+}
+.testimonial-card .testimonial-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.testimonial-card .testimonial-card-top .fa-star {
+  color: var(--yellow);
+}
+.testimonial-card .testimonial-card-top .user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.testimonial-card .testimonial-card-top .user-profile_image {
+  width: 48px;
+}
+.testimonial-card .testimonial-card-top .user-profile_image img {
+  width: 100%;
+}
+.testimonial-card .testimonial-card-top .user-profile_body_title {
+  font-size: 20px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.3em;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+@media (min-width: 768px) {
+  .testimonial-card .testimonial-card-top .user-profile_body_title {
+    font-size: 20px;
+  }
+}
+.testimonial-card .testimonial-card-top .user-profile_body span {
+  font-size: 12px;
+  line-height: 1.74em;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .testimonial-card .testimonial-card-top .user-profile_body span {
+    font-size: 14px;
+  }
+}
+.testimonial-card p {
+  font-size: 16px;
+  line-height: 1.74em;
+}
+@media (min-width: 992px) {
+  .testimonial-card p {
+    font-size: 18px;
+  }
+}
+
 .list-type-check {
   margin-bottom: -16px;
 }
@@ -2942,67 +3002,6 @@ Hero Section Styles
   .testimonial-section {
     padding-top: 120px;
     padding-bottom: 120px;
-  }
-}
-
-.testimonial-card {
-  border-radius: 8px;
-  border-left: 3px solid var(--Blue-blue-01, #07F);
-  background: var(--white);
-  box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
-  max-width: 536px;
-  padding: 32px;
-}
-.testimonial-card .testimonial-card-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 24px;
-}
-.testimonial-card .testimonial-card-top .fa-star {
-  color: var(--yellow);
-}
-.testimonial-card .testimonial-card-top .user-profile {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.testimonial-card .testimonial-card-top .user-profile_image {
-  width: 48px;
-}
-.testimonial-card .testimonial-card-top .user-profile_image img {
-  width: 100%;
-}
-.testimonial-card .testimonial-card-top .user-profile_body_title {
-  font-size: 20px;
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 700;
-  line-height: 1.3em;
-  font-size: 18px;
-  margin-bottom: 4px;
-}
-@media (min-width: 768px) {
-  .testimonial-card .testimonial-card-top .user-profile_body_title {
-    font-size: 20px;
-  }
-}
-.testimonial-card .testimonial-card-top .user-profile_body span {
-  font-size: 12px;
-  line-height: 1.74em;
-  font-weight: 400;
-}
-@media (min-width: 768px) {
-  .testimonial-card .testimonial-card-top .user-profile_body span {
-    font-size: 14px;
-  }
-}
-.testimonial-card p {
-  font-size: 16px;
-  line-height: 1.74em;
-}
-@media (min-width: 992px) {
-  .testimonial-card p {
-    font-size: 18px;
   }
 }
 
@@ -4306,6 +4305,18 @@ span {
   .terms-condition-content-bottom p {
     font-size: 20px;
   }
+}
+
+.testimonial-section-2 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.testimonial-card-2 {
+  margin-bottom: 55px;
+}
+.testimonial-card-2 .testimonial-card {
+  background-color: var(--bg-color);
 }
 
 .img-full {
