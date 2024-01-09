@@ -3718,7 +3718,8 @@ span {
     padding-bottom: 120px;
   }
 }
-.cta-section-2 .cta-content .content-title {
+
+.cta-content .content-title {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 700;
   line-height: 1.2em;
@@ -3728,17 +3729,17 @@ span {
   margin-bottom: 16px;
 }
 @media (min-width: 768px) {
-  .cta-section-2 .cta-content .content-title {
+  .cta-content .content-title {
     line-height: 1.3em;
     font-size: 42px;
   }
 }
 @media (min-width: 1400px) {
-  .cta-section-2 .cta-content .content-title {
+  .cta-content .content-title {
     font-size: 48px;
   }
 }
-.cta-section-2 p {
+.cta-content p {
   max-width: 583px;
   line-height: 1.74;
   font-weight: 400;
@@ -3749,19 +3750,20 @@ span {
   color: rgba(var(--white-rgb), 0.8);
 }
 @media (min-width: 1200px) {
-  .cta-section-2 p {
+  .cta-content p {
     font-size: 20px;
   }
 }
-.cta-section-2 .cta-content-bottom {
+
+.cta-content-bottom {
   max-width: 583px;
   margin: 0 auto;
   margin-top: 48px;
 }
-.cta-section-2 .cta-content-bottom .span-text {
+.cta-content-bottom .span-text {
   color: rgba(var(--white-rgb), 0.8);
 }
-.cta-section-2 .cta-content-bottom .small-heading {
+.cta-content-bottom .small-heading {
   color: var(--white);
 }
 
@@ -4345,6 +4347,10 @@ span {
 }
 .testimonial-card-2 .testimonial-card {
   background-color: var(--bg-color);
+}
+
+.cta-section-3 {
+  padding-bottom: 120px;
 }
 
 .section-404 {
