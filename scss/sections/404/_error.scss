@@ -1,0 +1,36 @@
+@use"../../abstract" as *;
+
+.section-404 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content-404 {
+    padding-top: 90.5px;
+    padding-bottom: 161.5px;
+
+    .title-1 {
+        font-size: 262px;
+        font-weight: 700;
+        color: $white;
+        margin-bottom: 36px;
+
+    }
+
+    .title-2 {
+        @include heading-48;
+        color: $white;
+        margin-bottom: 12px;
+    }
+
+    p {
+        @include paragraph-20;
+        color: $white;
+        margin-bottom: 36px;
+    }
+
+    button {
+        @include paragraph-16;
+    }
+}

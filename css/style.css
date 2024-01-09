@@ -4319,6 +4319,67 @@ span {
   background-color: var(--bg-color);
 }
 
+.section-404 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content-404 {
+  padding-top: 90.5px;
+  padding-bottom: 161.5px;
+}
+.content-404 .title-1 {
+  font-size: 262px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 36px;
+}
+.content-404 .title-2 {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.2em;
+  letter-spacing: -0.015em;
+  font-size: 32px;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+  .content-404 .title-2 {
+    line-height: 1.3em;
+    font-size: 42px;
+  }
+}
+@media (min-width: 1400px) {
+  .content-404 .title-2 {
+    font-size: 48px;
+  }
+}
+.content-404 p {
+  line-height: 1.74;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 18px;
+  color: var(--white);
+  margin-bottom: 36px;
+}
+@media (min-width: 1200px) {
+  .content-404 p {
+    font-size: 20px;
+  }
+}
+.content-404 button {
+  font-size: 14px;
+  line-height: 1.74em;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .content-404 button {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
 .img-full {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
