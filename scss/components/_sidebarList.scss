@@ -1,49 +1,49 @@
 @use "../abstract" as *;
 
 .sidebar-list {
-    border-radius: 4px;
-    border-left: 3px solid $heading-color;
     background: $white;
     box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
 
     .sidebar-list__item {
-        padding: 24px;
         position: relative;
-
-        li::after {
-            @include fontawesome("\f105");
-            position: absolute;
-            right: 5%;
-            top: 24%;
-            font-size: 24px;
-        }
-
-        li a {
-            color: $heading-color;
-            @include heading-20
-        }
-
-        .fa-angle-right {
-            position: absolute;
-            right: 5%;
-            top: 37%;
-            font-size: 24px;
-        }
-
-        &:hover {
+        border-radius: 4px;
+        color: $heading-color;
+        @include heading-20;
+        overflow: hidden;
+        transition: .4s;
+        z-index: 1;
+        &::before{
+            content: "";
+            width: 3px;
+            height: 100%;
             background-color: $heading-color;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: inherit;
+            transition: .4s;
+            z-index: -1;
+        }
+        &>*{
+            padding: 24px;
+        }
+        a {
+            color: inherit!important;
+            display: flex;
+            justify-content: space-between;
+            column-gap: 15px;
+            transition: .4s;
+            height: 100%;
+            &:after {
+                @include fontawesome("\f105");
+            }
+        }
+        &:hover {
+            // background-color: $heading-color;
             transition: background-color .8s;
-
-            li::after {
-                color: $white;
-            }
-
-            li a {
-                color: $white;
-            }
-
-            .fa-angle-right {
-                color: $white;
+            color: $white;
+            &::before {
+                width: 100%;
             }
         }
     }

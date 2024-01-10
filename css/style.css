@@ -2336,55 +2336,62 @@ p {
 }
 
 .sidebar-list {
-  border-radius: 4px;
-  border-left: 3px solid var(--heading-color);
   background: var(--white);
   box-shadow: 6px 12px 40px 0px rgba(19, 19, 37, 0.07);
 }
 .sidebar-list .sidebar-list__item {
-  padding: 24px;
   position: relative;
-}
-.sidebar-list .sidebar-list__item li::after {
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  right: 5%;
-  top: 24%;
-  font-size: 24px;
-}
-.sidebar-list .sidebar-list__item li a {
+  border-radius: 4px;
   color: var(--heading-color);
   font-size: 20px;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 700;
   line-height: 1.3em;
   font-size: 18px;
+  overflow: hidden;
+  transition: 0.4s;
+  z-index: 1;
 }
 @media (min-width: 768px) {
-  .sidebar-list .sidebar-list__item li a {
+  .sidebar-list .sidebar-list__item {
     font-size: 20px;
   }
 }
-.sidebar-list .sidebar-list__item .fa-angle-right {
+.sidebar-list .sidebar-list__item::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: var(--heading-color);
   position: absolute;
-  right: 5%;
-  top: 37%;
-  font-size: 24px;
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+  transition: 0.4s;
+  z-index: -1;
+}
+.sidebar-list .sidebar-list__item > * {
+  padding: 24px;
+}
+.sidebar-list .sidebar-list__item a {
+  color: inherit !important;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  transition: 0.4s;
+  height: 100%;
+}
+.sidebar-list .sidebar-list__item a:after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 .sidebar-list .sidebar-list__item:hover {
-  background-color: var(--heading-color);
   transition: background-color 0.8s;
-}
-.sidebar-list .sidebar-list__item:hover li::after {
   color: var(--white);
 }
-.sidebar-list .sidebar-list__item:hover li a {
-  color: var(--white);
-}
-.sidebar-list .sidebar-list__item:hover .fa-angle-right {
-  color: var(--white);
+.sidebar-list .sidebar-list__item:hover::before {
+  width: 100%;
 }
 
 .single-comment-wrapper p {
