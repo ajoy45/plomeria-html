@@ -1,0 +1,50 @@
+@use "../abstract" as *;
+
+.single-comment-wrapper {
+    p {
+        padding-left: 62px;
+        @include paragraph-16;
+    }
+}
+
+.single-comment-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-widget {
+    display: flex;
+
+    column-gap: 12px;
+
+    img {
+
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.profile-widget-body {
+    margin-bottom: 16px;
+
+    .profile-name {
+        @include heading-20;
+        margin-bottom: 4px
+    }
+
+    span {
+        @include paragraph-14;
+    }
+}
+
+.comment-reply {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.single-comment-1 {
+    padding-left: 55px;
+    margin-top: 48px;
+}

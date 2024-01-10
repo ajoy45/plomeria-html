@@ -1,37 +1,5 @@
 @use "../abstract" as *;
 
-// blog widget
-.blog-card-right {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    flex: 1 0 0;
-
-    .blog-widget {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        max-width: 626px;
-
-        .blog-widget-title {
-            margin-bottom: 14px !important;
-            @include heading-24;
-        }
-
-        .blog-widget-link {
-            @include heading-20;
-        }
-
-        .blog-widget-img {
-
-            img {
-                max-width: 241px;
-                height: 162px;
-                border-radius: 6px;
-            }
-        }
-    }
-}
 
 // blog widget
 .blog-widget {
@@ -103,8 +71,8 @@
 
     .cta-widget-body {
 
-        padding-left: 66px;
-        padding-right: 66px;
+        padding-left: 80px;
+        padding-right: 80px;
         padding-top: 306px;
         padding-bottom: 70px;
 
@@ -127,6 +95,41 @@
             }
         }
     }
+}
+
+// cta contact widget
+.cta-widget-1 {
+    display: flex;
+    column-gap: 42px;
+    align-items: center;
+    position: relative;
+
+    .person-img {
+        width: 51px;
+        height: 51px;
+    }
+
+    .calling-icon {
+        width: 51px;
+        height: 51px;
+        position: absolute;
+        left: 29px;
+        top: 7px;
+
+    }
+
+    .cta-widget-1-body {
+        h3 {
+            color: rgba($white-color-rgb, 0.8);
+            @include paragraph-20
+        }
+
+        span {
+            color: $white;
+            @include heading-24;
+        }
+    }
+
 }
 
 // process widget
@@ -156,6 +159,16 @@
         background: #F8FAFD;
         @include paragraph-20;
     }
+
+    .process-widget-body-1 {
+        max-width: 838px;
+        padding: 40px;
+        border-radius: 8px;
+        border-right: 3px solid $secondary;
+        background: #F8FAFD;
+        @include paragraph-20;
+    }
+
 }
 
 // service widget
@@ -214,3 +227,97 @@
         }
     }
 }
+
+// footer contact widget
+.contact-widget {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .contact-widget-icon {
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+
+        img {
+            width: 100%;
+        }
+
+        &::before {
+            content: "";
+            width: 50px;
+            height: 50px;
+            border-radius: 500px;
+            background-color: $primary;
+            position: absolute;
+            z-index: -1;
+        }
+    }
+
+    .contact-widget-body {
+        margin-left: 8px;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 174%;
+            margin-bottom: 0px;
+            color: rgba($white, 0.8);
+
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 130%;
+
+        }
+    }
+}
+
+// contact page contact widget
+.contact-widget-1 {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+
+    &:not(:last-of-type) {
+        margin-bottom: 32px;
+    }
+}
+
+.contact-widget-1-icon {
+    background-color: $blue;
+    width: 42px;
+    height: 42px;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+
+    img {
+        width: 18px;
+    }
+
+}
+
+.contact-widget-1-body {
+    .title {
+        @include paragraph-16;
+        margin-bottom: 6px;
+    }
+
+    span {
+        @include heading-20;
+    }
+}
+
+// process widget

@@ -3,8 +3,6 @@
 .cta-section {
   background-color: $heading-color;
 
-
-
 }
 
 .cta-content-wrapper {
@@ -55,27 +53,6 @@
   column-gap: 40px;
   align-items: center;
   position: relative;
-
-  .cta-content-call {
-    display: flex;
-    column-gap: 42px;
-    align-items: center;
-    position: relative;
-
-    .person-img {
-      width: 51px;
-      height: 51px;
-    }
-
-    .calling-icon {
-      width: 51px;
-      height: 51px;
-      position: absolute;
-      left: 29px;
-      top: 7px;
-
-    }
-  }
 
   .cta-shape {
     display: none;

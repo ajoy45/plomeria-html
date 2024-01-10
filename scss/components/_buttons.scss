@@ -24,7 +24,7 @@
     }
 
     &-link {
-        /* Button/button 1 */
+
         font-family: $heading-font;
         @include paragraph-20($line-height: 1.4, $letter-spacing: 0.01em, $font-weight: 400);
         text-decoration: none;
@@ -51,12 +51,11 @@
 }
 
 // tags button
-.tag-button {
-    .tag-btn {
-        background: none;
-        padding: 8px 14px;
-        border-radius: 4px;
-        border: 1px solid var(--Grey-grey-03, #919EAB);
-        @include paragraph-16;
-    }
+
+.tag-btn {
+    background: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    border: 1px solid var(--Grey-grey-03, #919EAB);
+    @include paragraph-16;
 }

@@ -21,20 +21,8 @@
 }
 
 .process-content {
-    .process-widget {
+    &>*:not(:last-of-type) {
         margin-bottom: 47px;
     }
-}
 
-.process-widget-body-2 {
-    max-width: 838px;
-    padding: 40px;
-    border-radius: 8px;
-    border-right: 3px solid $secondary;
-    background: #F8FAFD;
-    @include paragraph-20;
-
-    p {
-        text-align: right;
-    }
 }
