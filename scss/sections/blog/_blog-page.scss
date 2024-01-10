@@ -1,7 +1,9 @@
 @use "../../abstract" as *;
 
 .blog-section-1 {
-    @include desktop {
+    @include py(600px);
+
+    @include tablet {
         @include py(120px)
     }
 
@@ -9,7 +11,4 @@
         @include py(120px)
     }
 
-    .project-card {
-        margin-bottom: 36px;
-    }
 }

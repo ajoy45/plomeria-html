@@ -1486,6 +1486,14 @@ p {
   --bs-gutter-y: 1.875rem;
 }
 
+.gutter-x-30 {
+  --bs-gutter-x: 1.875rem;
+}
+
+.gutter-y-36 {
+  --bs-gutter-y: 36px;
+}
+
 .gutter-50 {
   --bs-gutter-x: 50px;
   --bs-gutter-y: 50px;
@@ -2296,32 +2304,31 @@ p {
   }
 }
 
-.project-card {
+.blog-card-1 {
   box-shadow: 0px 6px 40px 0px rgba(19, 19, 37, 0.07);
-  max-width: 442.67px;
 }
-.project-card .project-card-img img {
+.blog-card-1 .blog-card-1-img img {
   width: 100%;
   border-radius: 8px 8px 0px 0px;
 }
-.project-card .project-card-body {
+.blog-card-1 .blog-card-1-body {
   padding: 30px 38px;
   border-radius: 0px 0px 8px 8px;
   background: var(--white);
 }
-.project-card .project-card-body .project-card-date {
+.blog-card-1 .blog-card-1-body .blog-card-1-date {
   font-size: 14px;
   line-height: 1.74em;
   font-weight: 400;
   margin-bottom: 4px;
 }
 @media (min-width: 768px) {
-  .project-card .project-card-body .project-card-date {
+  .blog-card-1 .blog-card-1-body .blog-card-1-date {
     font-size: 16px;
     font-weight: 400;
   }
 }
-.project-card .project-card-body .project-card-title {
+.blog-card-1 .blog-card-1-body .blog-card-1-title {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 700;
   line-height: 1.3em;
@@ -2329,11 +2336,11 @@ p {
   margin-bottom: 24px;
 }
 @media (min-width: 768px) {
-  .project-card .project-card-body .project-card-title {
+  .blog-card-1 .blog-card-1-body .blog-card-1-title {
     font-size: 24px;
   }
 }
-.project-card .project-card-body a {
+.blog-card-1 .blog-card-1-body a {
   font-size: 20px;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 700;
@@ -2342,7 +2349,7 @@ p {
   color: var(--blue);
 }
 @media (min-width: 768px) {
-  .project-card .project-card-body a {
+  .blog-card-1 .blog-card-1-body a {
     font-size: 20px;
   }
 }
@@ -2403,7 +2410,7 @@ p {
   justify-content: space-between;
   margin-bottom: 24px;
 }
-.testimonial-card .testimonial-card-top .fa-star {
+.testimonial-card .testimonial-card-top i {
   color: var(--yellow);
 }
 .testimonial-card .testimonial-card-top .user-profile {
@@ -3460,7 +3467,11 @@ Hero Section Styles
   flex-wrap: wrap;
 }
 
-@media (min-width: 992px) {
+.blog-section-1 {
+  padding-top: 600px;
+  padding-bottom: 600px;
+}
+@media (min-width: 768px) {
   .blog-section-1 {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -3471,9 +3482,6 @@ Hero Section Styles
     padding-top: 120px;
     padding-bottom: 120px;
   }
-}
-.blog-section-1 .project-card {
-  margin-bottom: 36px;
 }
 
 .blog-details-section {
