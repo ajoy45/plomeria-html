@@ -47,16 +47,16 @@ $(document).ready(function () {
 
     // pricing tab checkbox
     let toggle = true;
-    document.getElementById("checkbox").addEventListener("click", function () {
+    document.querySelector(".pricing-level-list").addEventListener("click", function () {
 
         toggle = !toggle
         const element = document.getElementById("checkbox");
         if (toggle) {
 
-            element.setAttribute("src", "./image/home-page/checkbox1.png")
+            element.setAttribute("src", "./image/icons/checkbox1.png")
         }
         else {
-            element.setAttribute("src", "./image/home-page/checkbox2.png")
+            element.setAttribute("src", "./image/icons/checkbox2.png")
         }
     });
 

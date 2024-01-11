@@ -1,5 +1,31 @@
 @use"../../abstract" as *;
 
 .cta-section-3 {
-    padding-bottom: 120px;
+    @include py(60px);
+
+    @include tablet {
+
+        @include py(80px)
+    }
+
+    @include desktop {
+
+        @include py(120px)
+    }
+}
+
+.testimonial-section-1 {
+    background-color: $bg-color;
+    @include py(60px);
+
+    @include tablet {
+
+        @include py(80px)
+    }
+
+    @include desktop {
+
+        @include py(120px)
+    }
+
 }

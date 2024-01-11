@@ -1,0 +1,67 @@
+@use "../abstract" as *;
+
+.pricing-section {
+    @include py(60px);
+
+    @include tablet {
+        @include py(80px)
+    }
+
+    @include desktop {
+        @include py(120px)
+    }
+}
+
+.service-list {
+    &>*:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+
+    position: relative;
+
+    .service-list-item {
+        @include heading-20;
+        padding: 30px 40px;
+        border-radius: 12px;
+        background: $white;
+        box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+        display: flex;
+        justify-content: space-between;
+
+        .service-box {
+            @include paragraph-20;
+            color: $text-dark;
+
+
+        }
+
+        &:after {
+            @include fontawesome("\f111");
+        }
+
+    }
+}
+
+
+.pricing-level-list {
+    padding: 36px 40px;
+    border-radius: 16px;
+    border: 1px solid #B0D3FD;
+    background: $bg-color;
+
+    .pricing-list {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #B0D3FD;
+        padding-bottom: 28px;
+        margin-bottom: 28px;
+        @include paragraph-20;
+    }
+
+
+}
+
+.service-request-btn {
+    text-align: center;
+    margin-top: 40px;
+}
