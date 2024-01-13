@@ -1,0 +1,58 @@
+@use "../../abstract" as *;
+
+.site-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.menu-block-wrapper {
+
+    position: relative;
+
+    .menu-block .site-menu-main {
+        display: flex;
+        column-gap: 44px;
+        align-items: center;
+        @include paragraph-20;
+
+        .nav-item {
+            .nav-link-item {
+
+                color: $heading-color;
+            }
+
+            &:hover .nav-link-item {
+                color: $primary;
+                transition: .4s linear;
+            }
+        }
+
+    }
+}
+
+
+
+
+.sub-menu-list {
+    display: none;
+    position: absolute;
+    top: 80%;
+    right: 40%;
+}
+
+ul li:hover .sub-menu-list {
+    display: block;
+    z-index: 1;
+    @include paragraph-20;
+
+}
+
+.sub-menu-item {
+    .menu-item-text {
+        @include paragraph-20;
+        color: $heading-color;
+    }
+}
