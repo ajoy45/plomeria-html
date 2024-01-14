@@ -11,6 +11,13 @@
         @include py(120px)
     }
 
+    .cta-content-bottom {
+        max-width: 583px;
+        margin: 0 auto;
+        margin-top: 48px;
+
+
+    }
 
 }
 
@@ -34,13 +41,7 @@
 
 
 
-.cta-content-bottom {
-    max-width: 583px;
-    margin: 0 auto;
-    margin-top: 48px;
 
-
-}
 
 .cta-bg-1 {
     background-position: center;

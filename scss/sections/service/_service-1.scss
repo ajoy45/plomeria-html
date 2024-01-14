@@ -8,7 +8,8 @@
     }
 
     @include desktop {
-        @include py(120px)
+        @include py(120px);
+
     }
 
     .service-card_body {
@@ -16,4 +17,6 @@
             color: $blue ;
         }
     }
+
+    margin-bottom: 45px;
 }

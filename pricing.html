@@ -18,349 +18,432 @@
 </head>
 
 <body>
-    <!-- ==================
-     pricing banner section
-     =====================-->
-    <section class="banner-section">
+    <!--==============
+     header section 
+    ==================-->
+    <header class="header-section ">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-3">
-                    <div class="banner-content">
-                        <h1 class="banner-title">Pricing</h1>
-                        <div class="banner-text">
-                            <span>Home</span>
-                            <i class="fa fa-angle-right"></i>
-                            <span class="banner-page-name">Pricing</span>
-                        </div>
+            <div class="row">
+                <nav class="site-navbar">
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~
+        Brand Logo
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <div class="brand-logo">
+                        <a href="#">
+                            <img class="logo" src="./image/home-page/header/logo.png" alt="brand logo">
+                        </a>
                     </div>
-                </div>
-            </div>
-        </div>
+                    <div class="menu-block-wrapper">
 
-    </section>
-    <!--====================
-     pricing list 
-  =======================-->
+                        <nav class="menu-block" id="append-menu-header">
 
-    <section class="pricing-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-7">
-                    <div class="section-title-block text-center">
-                        <h3 class="subtitle">Pricing Plan</h3>
-                        <h2 class="section-title">
-                            Pricing for Specific service
-                        </h2>
-                        <p>
-                            When it comes to your plumbing requirements, we understand that you have choices.
-                            Here's why you should choose us as your trusted partner:
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row gutter-x-40">
-                <div class="col-xl-6">
-                    <ul class="nav flex-column nav-pills service-list " id="v-pills-tab" role="tablist"
-                        aria-orientation="vertical">
-                        <li class="nav-link active service-list-item" id="v-pills-home-tab"
-                            data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab"
-                            aria-controls="v-pills-home" aria-selected="true">
-                            <a class="service-box" href="#">Drain and Sewer Cleaning</a>
-                        </li>
-                        <li class="nav-link service-list-item" id="v-pills-profile-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-2" type="button" role="tab"
-                            aria-controls="v-pills-profile" aria-selected="false">
-                            <a class="service-box" href="#">Drain and Sewer Cleaning</a>
-                        </li>
+                            <ul class="site-menu-main">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link-item drop-trigger">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link-item drop-trigger">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link-item drop-trigger">Blog</a>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger">Services <i
+                                            class="fas fa-angle-down"></i>
+                                    </a>
+                                    <div class="sub-menu" id="submenu-1">
+                                        <ul class="sub-menu-list">
+                                            <li class="sub-menu-item">
+                                                <a href="#">
+                                                    <span class="menu-item-text">Digital agency</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="#">
+                                                    <span class="menu-item-text">Chat software</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="#">
+                                                    <span class="menu-item-text">Fitness App</span>
+                                                </a>
+                                            </li>
 
-                        <li class="nav-link service-list-item" id="v-pills-messages-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-3" type="button" role="tab"
-                            aria-controls="v-pills-messages" aria-selected="false">
-                            <a class="service-box" href="#"> Pipe Installation and Repiping</a>
-                        </li>
-                        <li class="nav-link service-list-item" id="v-pills-settings-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-4" type="button" role="tab"
-                            aria-controls="v-pills-settings" aria-selected="false">
-                            <a class="service-box" href="#"> Bathroom Remodeling</a>
-                        </li>
-                        <li class="nav-link service-list-item" id="v-pills-settings-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-5" type="button" role="tab"
-                            aria-controls="v-pills-settings" aria-selected="false">
-                            <a class="service-box" href="#"> Leak Detection and Repair</a>
-                        </li>
-                        <li class="nav-link service-list-item" id="v-pills-settings-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-6" type="button" role="tab"
-                            aria-controls="v-pills-settings" aria-selected="false">
-                            <a class="service-box" href="#"> Water Filtration</a>
-                        </li>
-                        <li class="nav-link service-list-item" id="v-pills-settings-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-7" type="button" role="tab"
-                            aria-controls="v-pills-settings" aria-selected="false">
-                            <a class="service-box" href="#"> Commercial Plumbing</a>
-                        </li>
-                    </ul>
-                </div>
-                <dv class="col-xl-6">
-                    <ul class="tab-content" id="v-pills-tabContent">
-                        <li class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
-                            aria-labelledby="v-pills-home-tab" tabindex="0">
-                            <ul class="pricing-level-list">
-                                <li class="pricing-list">
-                                    <span>Clog Removal</span>
-                                    <span>$125</span>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li class="pricing-list">
-                                    <span>Hydro-Jetting Services</span>
-                                    <span>$125</span>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link-item drop-trigger">Contact us</a>
                                 </li>
-                                <li class="pricing-list">
-                                    <span>Rooter Services</span>
-                                    <span>$125</span>
+                                <li class="nav-item">
+                                    <div class="contact-widget">
+                                        <div class="contact-widget-icon">
+                                            <img src="./image/icons/call.png" alt="">
+                                        </div>
+                                        <div class="contact-widget-body">
+                                            <h3>Emergency call</h3>
+                                            <span>070 4531 9507 </span>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li class="pricing-list">
-                                    <span>Video Inspection</span>
-                                    <span>$125</span>
-                                </li>
-                                <li class="pricing-list">
-                                    <span>Trenchless Sewer Repair</span>
-                                    <span>$125</span>
-                                </li>
-                                <li class="pricing-list">
-                                    <span>Grease Trap Cleaning</span>
-                                    <span>$125</span>
-                                </li>
-                                <li class="pricing-list">
-                                    <span>Sewer Line Descaling</span>
-                                    <span>$125</span>
-                                </li>
+
+
+
+
                             </ul>
-                            <div class="service-request-btn">
-                                <button class="btn btn-primary">Request a service </button>
-                            </div>
-                        </li>
-                        <li class="tab-pane fade" id="v-pills-2" role="tabpanel"
-                            aria-labelledby="v-pills-profile-tab" tabindex="0">2</li>
+                        </nav>
+                    </div>
 
-                        <li class="tab-pane fade" id="v-pills-3" role="tabpanel"
-                            aria-labelledby="v-pills-messages-tab" tabindex="0">3</li>
-                        <li class="tab-pane fade" id="v-pills-4" role="tabpanel"
-                            aria-labelledby="v-pills-settings-tab" tabindex="0">4</li>
-                        <li class="tab-pane fade" id="v-pills-5" role="tabpanel"
-                            aria-labelledby="v-pills-settings-tab" tabindex="0">5</li>
-                        <li class="tab-pane fade" id="v-pills-6" role="tabpanel"
-                            aria-labelledby="v-pills-settings-tab" tabindex="0">6</li>
-                        <li class="tab-pane fade" id="v-pills-7" role="tabpanel"
-                            aria-labelledby="v-pills-settings-tab" tabindex="0">7</li>
-                    </ul>
-                </dv>
+                </nav>
             </div>
         </div>
-    </section>
+    </header>
+    <main>
+        <!-- ==================
+     pricing banner section
+    =====================-->
+        <section class="banner-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-3">
+                        <div class="banner-content">
+                            <h1 class="banner-title">Pricing</h1>
+                            <div class="banner-text">
+                                <span>Home</span>
+                                <i class="fa fa-angle-right"></i>
+                                <span class="banner-page-name">Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <!-- ====================
-     pricing: testimonial section 
+        </section>
+        <!--====================
+     pricing list 
+     =======================-->
+
+        <section class="pricing-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7">
+                        <div class="section-title-block text-center">
+                            <h3 class="subtitle">Pricing Plan</h3>
+                            <h2 class="section-title">
+                                Pricing for Specific service
+                            </h2>
+                            <p>
+                                When it comes to your plumbing requirements, we understand that you have
+                                choices.
+                                Here's why you should choose us as your trusted partner:
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gutter-x-40">
+                    <div class="col-xl-6">
+                        <ul class="nav flex-column nav-pills service-list " id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <li class="nav-link active service-list-item" id="v-pills-home-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab"
+                                aria-controls="v-pills-home" aria-selected="true">
+                                <a class="service-box" href="#">Drain and Sewer Cleaning</a>
+                            </li>
+                            <li class="nav-link service-list-item" id="v-pills-profile-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">
+                                <a class="service-box" href="#">Drain and Sewer Cleaning</a>
+                            </li>
+
+                            <li class="nav-link service-list-item" id="v-pills-messages-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">
+                                <a class="service-box" href="#"> Pipe Installation and Repiping</a>
+                            </li>
+                            <li class="nav-link service-list-item" id="v-pills-settings-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">
+                                <a class="service-box" href="#"> Bathroom Remodeling</a>
+                            </li>
+                            <li class="nav-link service-list-item" id="v-pills-settings-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-5" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">
+                                <a class="service-box" href="#"> Leak Detection and Repair</a>
+                            </li>
+                            <li class="nav-link service-list-item" id="v-pills-settings-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-6" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">
+                                <a class="service-box" href="#"> Water Filtration</a>
+                            </li>
+                            <li class="nav-link service-list-item" id="v-pills-settings-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-7" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">
+                                <a class="service-box" href="#"> Commercial Plumbing</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <dv class="col-xl-6">
+                        <ul class="tab-content" id="v-pills-tabContent">
+                            <li class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab" tabindex="0">
+                                <ul class="pricing-level-list">
+                                    <li class="pricing-list">
+                                        <span>Clog Removal</span>
+                                        <span>$125</span>
+                                    </li>
+                                    <li class="pricing-list">
+                                        <span>Hydro-Jetting Services</span>
+                                        <span>$125</span>
+                                    </li>
+                                    <li class="pricing-list">
+                                        <span>Rooter Services</span>
+                                        <span>$125</span>
+                                    </li>
+                                    <li class="pricing-list">
+                                        <span>Video Inspection</span>
+                                        <span>$125</span>
+                                    </li>
+                                    <li class="pricing-list">
+                                        <span>Trenchless Sewer Repair</span>
+                                        <span>$125</span>
+                                    </li>
+                                    <li class="pricing-list">
+                                        <span>Grease Trap Cleaning</span>
+                                        <span>$125</span>
+                                    </li>
+                                    <li class="pricing-list">
+                                        <span>Sewer Line Descaling</span>
+                                        <span>$125</span>
+                                    </li>
+                                </ul>
+                                <div class="service-request-btn">
+                                    <button class="btn btn-primary">Request a service </button>
+                                </div>
+                            </li>
+                            <li class="tab-pane fade" id="v-pills-2" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab" tabindex="0">2</li>
+
+                            <li class="tab-pane fade" id="v-pills-3" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab" tabindex="0">3</li>
+                            <li class="tab-pane fade" id="v-pills-4" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab" tabindex="0">4</li>
+                            <li class="tab-pane fade" id="v-pills-5" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab" tabindex="0">5</li>
+                            <li class="tab-pane fade" id="v-pills-6" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab" tabindex="0">6</li>
+                            <li class="tab-pane fade" id="v-pills-7" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab" tabindex="0">7</li>
+                        </ul>
+                    </dv>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================
+    pricing: testimonial section 
     ======================-->
-    <section class="testimonial-section-1">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-8">
-                    <div class="section-title-block text-center">
-                        <span class="subtitle">Testimonial</span>
-                        <h2 class="section-title">What Our Clients Say</h2>
+        <section class="testimonial-section-1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="section-title-block text-center">
+                            <span class="subtitle">Testimonial</span>
+                            <h2 class="section-title">What Our Clients Say</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="testimonial-card-wrapper">
-            <div class="testimonial-card">
-                <div class="testimonial-card-top">
-                    <div class="user-profile">
-                        <div class="user-profile_image">
-                            <img src="./image/home-page/testimonial.png" alt="">
-                        </div>
-                        <div class="user-profile_body">
-                            <h3 class="user-profile_body_title">Donna Behrens</h3>
-                            <span>October 30, 2023</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card_ratting-star">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="testimonial-card-body">
-                    <p>“They were knowledgeable, clearly explaining the work they needed to do. I really
-                        appreciated that. Our kitchen sink got plugged up. </p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-card-top">
-                    <div class="user-profile">
-                        <div class="user-profile_image">
-                            <img src="./image/home-page/testimonial.png" alt="">
-                        </div>
-                        <div class="user-profile_body">
-                            <h3 class="user-profile_body_title">Donna Behrens</h3>
-                            <span>October 30, 2023</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card_ratting-star">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="testimonial-card-body">
-                    <p>“They were knowledgeable, clearly explaining the work they needed to do. I really
-                        appreciated
-                        that. Our kitchen sink got plugged up.</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-card-top">
-                    <div class="user-profile">
-                        <div class="user-profile_image">
-                            <img src="./image/home-page/testimonial.png" alt="">
-                        </div>
-                        <div class="user-profile_body">
-                            <h3 class="user-profile_body_title">Donna Behrens</h3>
-                            <span>October 30, 2023</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card_ratting-star">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="testimonial-card-body">
-                    <p>“They were knowledgeable, clearly explaining the work they needed to do. I really
-                        appreciated
-                        that. Our kitchen sink got plugged up.</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-card-top">
-                    <div class="user-profile">
-                        <div class="user-profile_image">
-                            <img src="./image/home-page/testimonial.png" alt="">
-                        </div>
-                        <div class="user-profile_body">
-                            <h3 class="user-profile_body_title">Donna Behrens</h3>
-                            <span>October 30, 2023</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card_ratting-star">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="testimonial-card-body">
-                    <p>“They were knowledgeable, clearly explaining the work they needed to do. I really
-                        appreciated
-                        that. Our kitchen sink got plugged up.</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-card-top">
-                    <div class="user-profile">
-                        <div class="user-profile_image">
-                            <img src="./image/home-page/testimonial.png" alt="">
-                        </div>
-                        <div class="user-profile_body">
-                            <h3 class="user-profile_body_title">Donna Behrens</h3>
-                            <span>October 30, 2023</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card_ratting-star">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="testimonial-card-body">
-                    <p>“They were knowledgeable, clearly explaining the work they needed to do. I really
-                        appreciated
-                        that. Our kitchen sink got plugged up.</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-card-top">
-                    <div class="user-profile">
-                        <div class="user-profile_image">
-                            <img src="./image/home-page/testimonial.png" alt="">
-                        </div>
-                        <div class="user-profile_body">
-                            <h3 class="user-profile_body_title">Donna Behrens</h3>
-                            <span>October 30, 2023</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-card_ratting-star">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <p>“They were knowledgeable, clearly explaining the work they needed to do. I really
-                    appreciated
-                    that. Our kitchen sink got plugged up.</p>
-
-            </div>
-
-        </div>
-    </section>
-    <!--========================
-     pricing: cta-2 section 
-  =============================-->
-    <section class="cta-section-3">
-        <div class="container cta-bg-1" style="background-image: url('./image/contact-page/cta-1.png');">
-            <div class="row justify-content-center">
-                <div class="col-xl-7">
-                    <div class="cta-content text-center">
-                        <h2 class="content-title">
-                            Having a plumbing problem? <br>
-                            Get it fixed today!
-                        </h2>
-                        <p>
-                            We are dedicated to delivering top-quality plumbing solutions to a wide range
-                            of
-                            locations in our service areas
-                        </p>
-
-                    </div>
-                    <div class="cta-content-bottom">
-                        <a href="#" class="btn btn-primary">make appointment</a>
-                        <div class="cta-widget-1">
-                            <img class="person-img" src="./image/home-page/cta-person1.png" alt="">
-                            <img class="calling-icon" src="./image/icons/cta-icon1.png" alt="">
-                            <div class="cta-widget-1-body">
-                                <h3>Emergency call</h3>
-                                <span>070 4531 9507 </span>
+            <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                    <div class="testimonial-card-top">
+                        <div class="user-profile">
+                            <div class="user-profile_image">
+                                <img src="./image/home-page/testimonial.png" alt="">
+                            </div>
+                            <div class="user-profile_body">
+                                <h3 class="user-profile_body_title">Donna Behrens</h3>
+                                <span>October 30, 2023</span>
                             </div>
                         </div>
+                        <div class="testimonial-card_ratting-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-body">
+                        <p>“They were knowledgeable, clearly explaining the work they needed to do. I really
+                            appreciated that. Our kitchen sink got plugged up. </p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card-top">
+                        <div class="user-profile">
+                            <div class="user-profile_image">
+                                <img src="./image/home-page/testimonial.png" alt="">
+                            </div>
+                            <div class="user-profile_body">
+                                <h3 class="user-profile_body_title">Donna Behrens</h3>
+                                <span>October 30, 2023</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card_ratting-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-body">
+                        <p>“They were knowledgeable, clearly explaining the work they needed to do. I really
+                            appreciated
+                            that. Our kitchen sink got plugged up.</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card-top">
+                        <div class="user-profile">
+                            <div class="user-profile_image">
+                                <img src="./image/home-page/testimonial.png" alt="">
+                            </div>
+                            <div class="user-profile_body">
+                                <h3 class="user-profile_body_title">Donna Behrens</h3>
+                                <span>October 30, 2023</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card_ratting-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-body">
+                        <p>“They were knowledgeable, clearly explaining the work they needed to do. I really
+                            appreciated
+                            that. Our kitchen sink got plugged up.</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card-top">
+                        <div class="user-profile">
+                            <div class="user-profile_image">
+                                <img src="./image/home-page/testimonial.png" alt="">
+                            </div>
+                            <div class="user-profile_body">
+                                <h3 class="user-profile_body_title">Donna Behrens</h3>
+                                <span>October 30, 2023</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card_ratting-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-body">
+                        <p>“They were knowledgeable, clearly explaining the work they needed to do. I really
+                            appreciated
+                            that. Our kitchen sink got plugged up.</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card-top">
+                        <div class="user-profile">
+                            <div class="user-profile_image">
+                                <img src="./image/home-page/testimonial.png" alt="">
+                            </div>
+                            <div class="user-profile_body">
+                                <h3 class="user-profile_body_title">Donna Behrens</h3>
+                                <span>October 30, 2023</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card_ratting-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-body">
+                        <p>“They were knowledgeable, clearly explaining the work they needed to do. I really
+                            appreciated
+                            that. Our kitchen sink got plugged up.</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card-top">
+                        <div class="user-profile">
+                            <div class="user-profile_image">
+                                <img src="./image/home-page/testimonial.png" alt="">
+                            </div>
+                            <div class="user-profile_body">
+                                <h3 class="user-profile_body_title">Donna Behrens</h3>
+                                <span>October 30, 2023</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card_ratting-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <p>“They were knowledgeable, clearly explaining the work they needed to do. I really
+                        appreciated
+                        that. Our kitchen sink got plugged up.</p>
 
+                </div>
+
+            </div>
+        </section>
+        <!--========================
+    pricing: cta-2 section 
+    =============================-->
+        <section class="cta-section-3">
+            <div class="container cta-bg-1" style="background-image: url('./image/contact-page/cta-1.png');">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7">
+                        <div class="cta-content text-center">
+                            <h2 class="content-title">
+                                Having a plumbing problem? <br>
+                                Get it fixed today!
+                            </h2>
+                            <p>
+                                We are dedicated to delivering top-quality plumbing solutions to a wide range
+                                of
+                                locations in our service areas
+                            </p>
+
+                        </div>
+                        <div class="cta-content-bottom">
+                            <a href="#" class="btn btn-primary">make appointment</a>
+                            <div class="cta-widget-1">
+                                <img class="person-img" src="./image/home-page/cta-person1.png" alt="">
+                                <img class="calling-icon" src="./image/icons/cta-icon1.png" alt="">
+                                <div class="cta-widget-1-body">
+                                    <h3>Emergency call</h3>
+                                    <span>070 4531 9507 </span>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <!--=====================
     pricing : footer section 
-  =========================-->
+    =========================-->
     <footer class="footer-section">
         <div class="container">
             <div class="footer-main">
@@ -452,7 +535,7 @@
         </div>
     </footer>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~
-         slick slider 
+    slick slider 
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <script src="./plugins/jquery/jquery 3.7.1.js"></script>
     <script src="./plugins/jquery/migrate 3.4.1.js"></script>

@@ -3489,6 +3489,7 @@ Hero Section Styles
 .service-section-1 {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-bottom: 45px;
 }
 @media (min-width: 768px) {
   .service-section-1 {
@@ -3844,6 +3845,11 @@ span {
     padding-bottom: 120px;
   }
 }
+.cta-section-2 .cta-content-bottom {
+  max-width: 583px;
+  margin: 0 auto;
+  margin-top: 48px;
+}
 
 .cta-content .content-title {
   font-family: "Be Vietnam Pro", sans-serif;
@@ -3879,12 +3885,6 @@ span {
   .cta-content p {
     font-size: 20px;
   }
-}
-
-.cta-content-bottom {
-  max-width: 583px;
-  margin: 0 auto;
-  margin-top: 48px;
 }
 
 .cta-bg-1 {

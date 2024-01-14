@@ -9,388 +9,471 @@
     <link href="./plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Font awesome -->
     <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css" />
-    <!-- Slick slider -->
-    <link rel="stylesheet" href="./plugins/slick/slick-theme.css" />
-    <link rel="stylesheet" href="./plugins/slick/slick.css" />
-
     <!-- main style sheet -->
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <!--================================
-     Service 1 :  banner section 
-    ==================================-->
-    <section class="banner-section">
+    <!--==============
+     header section 
+   ==================-->
+    <header class="header-section ">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-4">
-                    <div class="banner-content">
-                        <h1 class="banner-title">Services</h1>
-                        <div class="banner-text">
-                            <span>Home</span>
-                            <i class="fa fa-angle-right"></i>
-                            <span style="color:#07F;">Services</span>
+            <div class="row">
+                <nav class="site-navbar">
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~
+            Brand Logo
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <div class="brand-logo">
+                        <a href="#">
+                            <img class="logo" src="./image/home-page/header/logo.png" alt="brand logo">
+                        </a>
+                    </div>
+                    <div class="menu-block-wrapper">
+
+                        <nav class="menu-block" id="append-menu-header">
+
+                            <ul class="site-menu-main">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link-item drop-trigger">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link-item drop-trigger">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link-item drop-trigger">Blog</a>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger">Services <i
+                                            class="fas fa-angle-down"></i>
+                                    </a>
+                                    <div class="sub-menu" id="submenu-1">
+                                        <ul class="sub-menu-list">
+                                            <li class="sub-menu-item">
+                                                <a href="#">
+                                                    <span class="menu-item-text">Digital agency</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="#">
+                                                    <span class="menu-item-text">Chat software</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu-item">
+                                                <a href="#">
+                                                    <span class="menu-item-text">Fitness App</span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link-item drop-trigger">Contact us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="contact-widget">
+                                        <div class="contact-widget-icon">
+                                            <img src="./image/icons/call.png" alt="">
+                                        </div>
+                                        <div class="contact-widget-body">
+                                            <h3>Emergency call</h3>
+                                            <span>070 4531 9507 </span>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+
+                            </ul>
+                        </nav>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--================================
+     Service 1 :  banner section 
+     ==================================-->
+        <section class="banner-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-4">
+                        <div class="banner-content">
+                            <h1 class="banner-title">Services</h1>
+                            <div class="banner-text">
+                                <span>Home</span>
+                                <i class="fa fa-angle-right"></i>
+                                <span style="color:#07F;">Services</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </section>
+        </section>
 
-    <!--=================================
+        <!--=================================
      Service 1: service section 
       ===================================-->
-    <section class="service-section-1">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-8">
-                    <div class="section-title-block text-center">
-                        <span class="subtitle">Services</span>
-                        <h2 class="section-title">Explore our services & solutions</h2>
+        <section class="service-section-1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="section-title-block text-center">
+                            <span class="subtitle">Services</span>
+                            <h2 class="section-title">Explore our services & solutions</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center gutter-x-30 gutter-y-30">
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="service-card_icon">
+                                <img class="icon-normal" src="./image/icons/service-icon1.png" alt="" />
+                                <img class="icon-hover" src="./image/icons/screw-2.png" alt="" />
+                            </div>
+                            <div class="service-card_body">
+                                <h3 class="service-card_body_title">
+                                    Emergency <br />
+                                    Plumbing Services
+                                </h3>
+                                <p>
+                                    We offer a comprehensive range of plumbing services to meet
+                                    the diverse needs of our valued clients. With a team of
+                                    experienced
+                                </p>
+                                <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="service-card_icon">
+                                <img class="icon-normal" src="./image/icons/service-home.png" alt="" />
+                                <img class="icon-hover" src="./image/icons/service-icon2.png" alt="" />
+                            </div>
+                            <div class="service-card_body">
+                                <h3 class="service-card_body_title">
+                                    Drain and <br> Sewer Cleaning
+                                </h3>
+                                <p>
+                                    We offer a comprehensive range of plumbing services to meet
+                                    the diverse needs of our valued clients. With a team of
+                                    experienced
+                                </p>
+                                <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="service-card_icon">
+                                <img class="icon-normal" src="./image/icons/service-icon3.png" alt="" />
+                                <img class="icon-hover" src="./image/icons/service-icon-white.png" alt="" />
+                            </div>
+                            <div class="service-card_body">
+                                <h3 class="service-card_body_title">
+                                    Commercial <br> Plumbing
+                                </h3>
+                                <p>
+                                    We offer a comprehensive range of plumbing services to meet
+                                    the diverse needs of our valued clients. With a team of
+                                    experienced
+                                </p>
+                                <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="service-card_icon">
+                                <img class="icon-normal" src="./image/icons/service-icon4.png" alt="" />
+                                <img class="icon-hover" src="./image/icons/service-button-white.png" alt="" />
+                            </div>
+                            <div class="service-card_body">
+                                <h3 class="service-card_body_title">
+                                    Bathroom <br> Remodeling
+                                </h3>
+                                <p>
+                                    We offer a comprehensive range of plumbing services to meet
+                                    the diverse needs of our valued clients. With a team of
+                                    experienced
+                                </p>
+                                <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="service-card_icon">
+                                <img class="icon-normal" src="./image/icons/service-icon5.png" alt="" />
+                                <img class="icon-hover" src="./image/icons/service-pipe-white.png" alt="" />
+                            </div>
+                            <div class="service-card_body">
+                                <h3 class="service-card_body_title">
+                                    Pipe Installation <br> and Repiping
+                                </h3>
+                                <p>
+                                    We offer a comprehensive range of plumbing services to meet
+                                    the diverse needs of our valued clients. With a team of
+                                    experienced
+                                </p>
+                                <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="service-card_icon">
+                                <img class="icon-normal" src="./image/icons/service-icon6.png" alt="" />
+                                <img class="icon-hover" src="./image/icons/service-cleaner-white.png"
+                                    alt="" />
+                            </div>
+                            <div class="service-card_body">
+                                <h3 class="service-card_body_title">
+                                    Skilled and <br>
+                                    Trained Personnel
+                                </h3>
+                                <p>
+                                    We offer a comprehensive range of plumbing services to meet
+                                    the diverse needs of our valued clients. With a team of
+                                    experienced
+                                </p>
+                                <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="service-card_icon">
+                                <img class="icon-normal" src="./image/icons/service-icon7.png" alt="" />
+                                <img class="icon-hover" src="./image/icons/leaking-2.png" alt="" />
+                            </div>
+                            <div class="service-card_body">
+                                <h3 class="service-card_body_title">
+                                    Leak Detection <br>
+                                    and Repair
+                                </h3>
+                                <p>
+                                    We offer a comprehensive range of plumbing services to meet
+                                    the diverse needs of our valued clients. With a team of
+                                    experienced
+                                </p>
+                                <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="service-card_icon">
+                                <img class="icon-normal" src="./image/icons/service-icon8.png" alt="" />
+                                <img class="icon-hover" src="./image/icons/wrench.png" alt="" />
+                            </div>
+                            <div class="service-card_body">
+                                <h3 class="service-card_body_title">
+                                    Fixture Installation <br> and Repair
+                                </h3>
+                                <p>
+                                    We offer a comprehensive range of plumbing services to meet
+                                    the diverse needs of our valued clients. With a team of
+                                    experienced
+                                </p>
+                                <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="service-card_icon">
+                                <img class="icon-normal" src="./image/icons/service-icon9.png" alt="" />
+                                <img class="icon-hover" src="./image/icons/plunger-2.png" alt="" />
+                            </div>
+                            <div class="service-card_body">
+                                <h3 class="service-card_body_title">
+                                    Sewer <br>Line Services
+                                </h3>
+                                <p>
+                                    We offer a comprehensive range of plumbing services to meet
+                                    the diverse needs of our valued clients. With a team of
+                                    experienced
+                                </p>
+                                <a href="" class="btn-link">View Details<i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="service-card_icon">
+                                <img class="icon-normal" src="./image/icons/service-icon10.png" alt="" />
+                                <img class="icon-hover" src="./image/icons/water-control.png" alt="" />
+                            </div>
+                            <div class="service-card_body">
+                                <h3 class="service-card_body_title">
+                                    Sump Pump <br>Installation and Repair
+                                </h3>
+                                <p>
+                                    We offer a comprehensive range of plumbing services to meet
+                                    the diverse needs of our valued clients. With a team of
+                                    experienced
+                                </p>
+                                <a href="" class="btn-link">View Details<i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="service-card_icon">
+                                <img class="icon-normal" src="./image/icons/service-icon11.png" alt="" />
+                                <img class="icon-hover" src="./image/icons/home-2.png" alt="" />
+                            </div>
+                            <div class="service-card_body">
+                                <h3 class="service-card_body_title">
+                                    Water Filtration <br>and Purification
+                                </h3>
+                                <p>
+                                    We offer a comprehensive range of plumbing services to meet
+                                    the diverse needs of our valued clients. With a team of
+                                    experienced
+                                </p>
+                                <a href="" class="btn-link">View Details<i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-sm-6">
+                        <div class="service-card">
+                            <div class="service-card_icon">
+                                <img class="icon-normal" src="./image/icons/service-icon12.png" alt="" />
+                                <img class="icon-hover" src="./image/icons/van.png" alt="" />
+                            </div>
+                            <div class="service-card_body">
+                                <h3 class="service-card_body_title">
+                                    Backflow <br>Prevention Services
+                                </h3>
+                                <p>
+                                    We offer a comprehensive range of plumbing services to meet
+                                    the diverse needs of our valued clients. With a team of
+                                    experienced
+                                </p>
+                                <a href="" class="btn-link">View Details<i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center gutter-x-30 gutter-y-30">
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <div class="service-card_icon">
-                            <img class="icon-normal" src="./image/icons/service-icon1.png" alt="" />
-                            <img class="icon-hover" src="./image/icons/screw-2.png" alt="" />
-                        </div>
-                        <div class="service-card_body">
-                            <h3 class="service-card_body_title">
-                                Emergency <br />
-                                Plumbing Services
-                            </h3>
-                            <p>
-                                We offer a comprehensive range of plumbing services to meet
-                                the diverse needs of our valued clients. With a team of
-                                experienced
-                            </p>
-                            <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <div class="service-card_icon">
-                            <img class="icon-normal" src="./image/icons/service-home.png" alt="" />
-                            <img class="icon-hover" src="./image/icons/service-icon2.png" alt="" />
-                        </div>
-                        <div class="service-card_body">
-                            <h3 class="service-card_body_title">
-                                Drain and <br> Sewer Cleaning
-                            </h3>
-                            <p>
-                                We offer a comprehensive range of plumbing services to meet
-                                the diverse needs of our valued clients. With a team of
-                                experienced
-                            </p>
-                            <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <div class="service-card_icon">
-                            <img class="icon-normal" src="./image/icons/service-icon3.png" alt="" />
-                            <img class="icon-hover" src="./image/icons/service-icon-white.png" alt="" />
-                        </div>
-                        <div class="service-card_body">
-                            <h3 class="service-card_body_title">
-                                Commercial <br> Plumbing
-                            </h3>
-                            <p>
-                                We offer a comprehensive range of plumbing services to meet
-                                the diverse needs of our valued clients. With a team of
-                                experienced
-                            </p>
-                            <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <div class="service-card_icon">
-                            <img class="icon-normal" src="./image/icons/service-icon4.png" alt="" />
-                            <img class="icon-hover" src="./image/icons/service-button-white.png" alt="" />
-                        </div>
-                        <div class="service-card_body">
-                            <h3 class="service-card_body_title">
-                                Bathroom <br> Remodeling
-                            </h3>
-                            <p>
-                                We offer a comprehensive range of plumbing services to meet
-                                the diverse needs of our valued clients. With a team of
-                                experienced
-                            </p>
-                            <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <div class="service-card_icon">
-                            <img class="icon-normal" src="./image/icons/service-icon5.png" alt="" />
-                            <img class="icon-hover" src="./image/icons/service-pipe-white.png" alt="" />
-                        </div>
-                        <div class="service-card_body">
-                            <h3 class="service-card_body_title">
-                                Pipe Installation <br> and Repiping
-                            </h3>
-                            <p>
-                                We offer a comprehensive range of plumbing services to meet
-                                the diverse needs of our valued clients. With a team of
-                                experienced
-                            </p>
-                            <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <div class="service-card_icon">
-                            <img class="icon-normal" src="./image/icons/service-icon6.png" alt="" />
-                            <img class="icon-hover" src="./image/icons/service-cleaner-white.png" alt="" />
-                        </div>
-                        <div class="service-card_body">
-                            <h3 class="service-card_body_title">
-                                Skilled and <br>
-                                Trained Personnel
-                            </h3>
-                            <p>
-                                We offer a comprehensive range of plumbing services to meet
-                                the diverse needs of our valued clients. With a team of
-                                experienced
-                            </p>
-                            <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <div class="service-card_icon">
-                            <img class="icon-normal" src="./image/icons/service-icon7.png" alt="" />
-                            <img class="icon-hover" src="./image/icons/leaking-2.png" alt="" />
-                        </div>
-                        <div class="service-card_body">
-                            <h3 class="service-card_body_title">
-                                Leak Detection <br>
-                                and Repair
-                            </h3>
-                            <p>
-                                We offer a comprehensive range of plumbing services to meet
-                                the diverse needs of our valued clients. With a team of
-                                experienced
-                            </p>
-                            <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <div class="service-card_icon">
-                            <img class="icon-normal" src="./image/icons/service-icon8.png" alt="" />
-                            <img class="icon-hover" src="./image/icons/wrench.png" alt="" />
-                        </div>
-                        <div class="service-card_body">
-                            <h3 class="service-card_body_title">
-                                Fixture Installation <br> and Repair
-                            </h3>
-                            <p>
-                                We offer a comprehensive range of plumbing services to meet
-                                the diverse needs of our valued clients. With a team of
-                                experienced
-                            </p>
-                            <a href="" class="btn-link">View Details <i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <div class="service-card_icon">
-                            <img class="icon-normal" src="./image/icons/service-icon9.png" alt="" />
-                            <img class="icon-hover" src="./image/icons/plunger-2.png" alt="" />
-                        </div>
-                        <div class="service-card_body">
-                            <h3 class="service-card_body_title">
-                                Sewer <br>Line Services
-                            </h3>
-                            <p>
-                                We offer a comprehensive range of plumbing services to meet
-                                the diverse needs of our valued clients. With a team of
-                                experienced
-                            </p>
-                            <a href="" class="btn-link">View Details<i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <div class="service-card_icon">
-                            <img class="icon-normal" src="./image/icons/service-icon10.png" alt="" />
-                            <img class="icon-hover" src="./image/icons/water-control.png" alt="" />
-                        </div>
-                        <div class="service-card_body">
-                            <h3 class="service-card_body_title">
-                                Sump Pump <br>Installation and Repair
-                            </h3>
-                            <p>
-                                We offer a comprehensive range of plumbing services to meet
-                                the diverse needs of our valued clients. With a team of
-                                experienced
-                            </p>
-                            <a href="" class="btn-link">View Details<i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <div class="service-card_icon">
-                            <img class="icon-normal" src="./image/icons/service-icon11.png" alt="" />
-                            <img class="icon-hover" src="./image/icons/home-2.png" alt="" />
-                        </div>
-                        <div class="service-card_body">
-                            <h3 class="service-card_body_title">
-                                Water Filtration <br>and Purification
-                            </h3>
-                            <p>
-                                We offer a comprehensive range of plumbing services to meet
-                                the diverse needs of our valued clients. With a team of
-                                experienced
-                            </p>
-                            <a href="" class="btn-link">View Details<i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <div class="service-card_icon">
-                            <img class="icon-normal" src="./image/icons/service-icon12.png" alt="" />
-                            <img class="icon-hover" src="./image/icons/van.png" alt="" />
-                        </div>
-                        <div class="service-card_body">
-                            <h3 class="service-card_body_title">
-                                Backflow <br>Prevention Services
-                            </h3>
-                            <p>
-                                We offer a comprehensive range of plumbing services to meet
-                                the diverse needs of our valued clients. With a team of
-                                experienced
-                            </p>
-                            <a href="" class="btn-link">View Details<i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    </section>
-    <!--================================
+        </section>
+        <!--================================
          Service 1 : cta section 
     ====================================-->
-    <section class="cta-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-7 col-md-10 col-sm-12">
-                    <div class="cta-content-wrapper">
-                        <div class="content-title-block text-white">
-                            <h3 class="subtitle text-white">Emergency need help</h3>
-                            <h2 class="content-title text-white">24 hours emergency plumbing service all time
-                            </h2>
-                            <p>We are dedicated to delivering top-quality plumbing solutions to a wide range
-                                of locations
-                                in
-                                our service areas of both residential and commercial clients. Below, you'll
-                                find:</p>
-                        </div>
-                        <div class="cta-content-bottom">
-                            <a href="" class="btn btn-primary">make appointment</a>
-                            <div class="cta-widget-1">
-                                <img class="person-img" src="./image/home-page/cta-person1.png" alt="">
-                                <img class="calling-icon" src="./image/icons/cta-icon1.png" alt="">
-                                <div class="cta-widget-1-body">
-                                    <h3>Emergency call</h3>
-                                    <span>070 4531 9507 </span>
+        <section class="cta-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-7 col-md-10 col-sm-12">
+                        <div class="cta-content-wrapper">
+                            <div class="content-title-block text-white">
+                                <h3 class="subtitle text-white">Emergency need help</h3>
+                                <h2 class="content-title text-white">24 hours emergency plumbing service all
+                                    time
+                                </h2>
+                                <p>We are dedicated to delivering top-quality plumbing solutions to a wide
+                                    range
+                                    of locations
+                                    in
+                                    our service areas of both residential and commercial clients. Below,
+                                    you'll
+                                    find:</p>
+                            </div>
+                            <div class="cta-content-bottom">
+                                <a href="" class="btn btn-primary">make appointment</a>
+                                <div class="cta-widget-1">
+                                    <img class="person-img" src="./image/home-page/cta-person1.png" alt="">
+                                    <img class="calling-icon" src="./image/icons/cta-icon1.png" alt="">
+                                    <div class="cta-widget-1-body">
+                                        <h3>Emergency call</h3>
+                                        <span>070 4531 9507 </span>
+                                    </div>
+                                </div>
+                                <div class="cta-shape">
+                                    <img src="./image/icons/cta-icon2.png" alt="">
                                 </div>
                             </div>
-                            <div class="cta-shape">
-                                <img src="./image/icons/cta-icon2.png" alt="">
-                            </div>
+
                         </div>
-
                     </div>
-                </div>
-                <div class="col-xl-6 col-lg-5">
-                    <div class="cta-image-wrapper">
-                        <img src="./image/home-page/cta.png" alt="">
+                    <div class="col-xl-6 col-lg-5">
+                        <div class="cta-image-wrapper">
+                            <img src="./image/home-page/cta.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--===================================
+        </section>
+        <!--===================================
          service 1: location section 
-    =======================================-->
+      =======================================-->
 
-    <section class="about_location-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 ">
-                    <div class=" content-title-block  text-center">
-                        <h2 class="section-title location-title">We are working Everything</h2>
-                        <p>We are dedicated to delivering top-quality plumbing solutions to a wide range of
-                            locations in our service areas.</p>
+        <section class="about_location-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 ">
+                        <div class=" content-title-block  text-center">
+                            <h2 class="section-title location-title">We are working Everything</h2>
+                            <p>We are dedicated to delivering top-quality plumbing solutions to a wide range
+                                of
+                                locations in our service areas.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="location-image-wrapper">
+                    <img src="./image/about-page/map1.png" alt="">
+                </div>
+                <div class="location-stats-wrapper">
+                    <div class="stats-widget">
+                        <div class="stats-widget-icon">
+                            <img src="./image/icons/stats1.png" alt="">
+                        </div>
+                        <div class="stats-widget-body">
+                            <h3>150+</h3>
+                            <span>Staffs Worldwide</span>
+                        </div>
+                    </div>
+                    <div class="stats-widget">
+                        <div class="stats-widget-icon">
+                            <img src="./image/icons/stats2.png" alt="">
+                        </div>
+                        <div class="stats-widget-body">
+                            <h3>756</h3>
+                            <span>Project Done</span>
+                        </div>
+                    </div>
+                    <div class="stats-widget">
+                        <div class="stats-widget-icon">
+                            <img src="./image/icons/stats3.png" alt="">
+                        </div>
+                        <div class="stats-widget-body">
+                            <h3>143</h3>
+                            <span>Satisfied Client</span>
+                        </div>
+                    </div>
+                    <div class="stats-widget">
+                        <div class="stats-widget-icon">
+                            <img src="./image/icons/stats4.png" alt="">
+                        </div>
+                        <div class="stats-widget-body">
+                            <h3>25</h3>
+                            <span>Years Industry</span>
+                        </div>
                     </div>
                 </div>
 
             </div>
-            <div class="location-image-wrapper">
-                <img src="./image/about-page/map1.png" alt="">
-            </div>
-            <div class="location-stats-wrapper">
-                <div class="stats-widget">
-                    <div class="stats-widget-icon">
-                        <img src="./image/icons/stats1.png" alt="">
-                    </div>
-                    <div class="stats-widget-body">
-                        <h3>150+</h3>
-                        <span>Staffs Worldwide</span>
-                    </div>
-                </div>
-                <div class="stats-widget">
-                    <div class="stats-widget-icon">
-                        <img src="./image/icons/stats2.png" alt="">
-                    </div>
-                    <div class="stats-widget-body">
-                        <h3>756</h3>
-                        <span>Project Done</span>
-                    </div>
-                </div>
-                <div class="stats-widget">
-                    <div class="stats-widget-icon">
-                        <img src="./image/icons/stats3.png" alt="">
-                    </div>
-                    <div class="stats-widget-body">
-                        <h3>143</h3>
-                        <span>Satisfied Client</span>
-                    </div>
-                </div>
-                <div class="stats-widget">
-                    <div class="stats-widget-icon">
-                        <img src="./image/icons/stats4.png" alt="">
-                    </div>
-                    <div class="stats-widget-body">
-                        <h3>25</h3>
-                        <span>Years Industry</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
+        </section>
+    </main>
     <!--=====================
      Service : footer section 
   =========================-->
@@ -485,14 +568,10 @@
         </div>
     </footer>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~
-         slick slider 
+       Bootstrap
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <script src="./plugins/jquery/jquery 3.7.1.js"></script>
-    <script src="./plugins/jquery/migrate 3.4.1.js"></script>
-    <script src="./plugins/slick/slick.min.js"></script>
     <script src="./plugins/bootstrap/js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="./js/custom.js"></script>
-    <script type="text/javascript" src="./js/inlineSvg.min.js"></script>
+
 </body>
 
 </html>
