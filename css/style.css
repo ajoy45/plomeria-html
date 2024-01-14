@@ -1490,12 +1490,20 @@ p {
   --bs-gutter-x: 1.875rem;
 }
 
+.gutter-x-26 {
+  --bs-gutter-x: 26px;
+}
+
 .gutter-x-40 {
   --bs-gutter-x: 40px;
 }
 
 .gutter-y-36 {
   --bs-gutter-y: 36px;
+}
+
+.gutter-y-60 {
+  --bs-gutter-y: 60px;
 }
 
 .gutter-50 {
@@ -2572,6 +2580,29 @@ p {
   }
 }
 
+.project-card {
+  border-radius: 0px 0px 8px 8px;
+  background: var(--white);
+  box-shadow: 0px 6px 40px 0px rgba(19, 19, 37, 0.07);
+}
+.project-card .project-card-img img {
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+.project-card p {
+  line-height: 1.74;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 18px;
+  padding: 32px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .project-card p {
+    font-size: 20px;
+  }
+}
+
 .list-type-check {
   margin-bottom: -16px;
 }
@@ -3247,6 +3278,48 @@ Hero Section Styles
 
 .testimonial-card.slick-slide {
   margin-right: 30px;
+}
+
+.project-section {
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .project-section {
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .project-section {
+    padding-bottom: 120px;
+  }
+}
+.project-section .nav {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.project-section .nav-tabs {
+  --bs-nav-tabs-border-width: 0;
+  border-bottom: 1px solid var(--gray-color);
+}
+.project-section .nav-link {
+  line-height: 1.74;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 18px;
+  color: var(--text-dark);
+}
+@media (min-width: 1200px) {
+  .project-section .nav-link {
+    font-size: 20px;
+  }
+}
+.project-section .nav-link.active {
+  color: var(--blue) !important;
+  border-bottom: 2px solid var(--blue);
+}
+
+.tab-list {
+  margin-bottom: 60px;
 }
 
 .about_content-section {

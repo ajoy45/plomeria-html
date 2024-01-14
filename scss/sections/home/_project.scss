@@ -1,0 +1,43 @@
+@use "../../abstract" as *;
+
+.project-section {
+    padding-bottom: 60px;
+
+    @include tablet {
+        padding-bottom: 80px;
+    }
+
+    @include desktop {
+        padding-bottom: 120px;
+    }
+
+    .nav {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+
+    .nav-tabs {
+        --bs-nav-tabs-border-width: 0;
+        border-bottom: 1px solid $gray-color;
+    }
+
+
+
+    .nav-link {
+        @include paragraph-20;
+        color: $text-dark;
+    }
+
+    .nav-link.active {
+        color: $blue !important;
+        border-bottom: 2px solid $blue;
+    }
+
+
+}
+
+.tab-list {
+    margin-bottom: 60px;
+}
