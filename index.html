@@ -12,7 +12,8 @@
   <!-- Slick slider -->
   <link rel="stylesheet" href="./plugins/slick/slick-theme.css" />
   <link rel="stylesheet" href="./plugins/slick/slick.css" />
-
+  <!-- nice select -->
+  <link rel="stylesheet" href="./css/nice-select.css">
   <!-- main style sheet -->
   <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -130,24 +131,24 @@
           </div>
           <div class="col-xl-6 col-lg-6 col-sm-12">
 
+
             <div class="appointment-form-wrapper" style="
-                  background-image: url(./image/home-page/form-bg-pattern.png);
-                ">
-              <form action="" class="appointment-form">
+                    background-image: url(./image/home-page/form-bg-pattern.png);
+                  ">
+              <form action="" class="appointment-form ">
                 <div class="form-group">
                   <input name="name" type="text" placeholder="Name" class="form-control" />
                 </div>
                 <div class="form-group">
                   <input name="email" type="email" placeholder="Email" class="form-control" />
                 </div>
-                <div class="form-group relative">
-                  <select class="form-control" name="service">
+                <div class="z-3">
+                  <select>
                     <option value="">select service</option>
                     <option value="">Option 1</option>
                     <option value="">Option 1</option>
                     <option value="">Option 1</option>
                   </select>
-                  <i class="fa fa-angle-down icon-abs"></i>
                 </div>
                 <div class="form-group">
                   <textarea name="message" class="form-control form-text-area"
@@ -339,7 +340,53 @@
         </div>
       </div>
     </section>
-
+    <!--========================
+     Home 1 : content section 
+    ============================-->
+    <section class="content-section">
+      <div class="container">
+        <div class="row justify-content-center gutter-y-30">
+          <div class="col-xl-6 col-lg-6 col-md-7 col-auto order-lg-2">
+            <div class="content-image-group">
+              <img src="./image/home-page/content-img.png" alt="" />
+              <div class="content-abs-image image-1">
+                <img src="./image/home-page/content-abs-image-1.png" alt="" />
+              </div>
+              <div class="content-abs-image image-2">
+                <img src="./image/home-page/content-abs-image-2.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-11 order-lg-1">
+            <div class="content-text-block">
+              <div class="content-title-block">
+                <h3 class="subtitle">Why choose us</h3>
+                <h2 class="content-title">
+                  Efficient residential and commercial plumbing service
+                </h2>
+                <p>
+                  When it comes to your plumbing requirements, we understand
+                  that you have choices. Here's why you should choose us as
+                  your trusted partner:
+                </p>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Iusto impedit hic accusantium ut omnis mollitia dignissimos,
+                  aperiam ipsam voluptate rerum!</span>
+              </div>
+              <ul class="list-type-check two-column">
+                <li>24/7 services</li>
+                <li>Fast service</li>
+                <li>Affordable pricing</li>
+                <li>Modern technology</li>
+              </ul>
+              <div class="content-button">
+                <a href="#" class="btn btn-primary">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--===================
      Home 1 : testimonial section 
     =======================-->
@@ -602,53 +649,7 @@
         </div>
       </div>
     </section>
-    <!--========================
-     Home 1 : content section 
-    ============================-->
-    <section class="content-section">
-      <div class="container">
-        <div class="row justify-content-center gutter-y-30">
-          <div class="col-xl-6 col-lg-6 col-md-7 col-auto order-lg-2">
-            <div class="content-image-group">
-              <img src="./image/home-page/content-img.png" alt="" />
-              <div class="content-abs-image image-1">
-                <img src="./image/home-page/content-abs-image-1.png" alt="" />
-              </div>
-              <div class="content-abs-image image-2">
-                <img src="./image/home-page/content-abs-image-2.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-11 order-lg-1">
-            <div class="content-text-block">
-              <div class="content-title-block">
-                <h3 class="subtitle">Why choose us</h3>
-                <h2 class="content-title">
-                  Efficient residential and commercial plumbing service
-                </h2>
-                <p>
-                  When it comes to your plumbing requirements, we understand
-                  that you have choices. Here's why you should choose us as
-                  your trusted partner:
-                </p>
-                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Iusto impedit hic accusantium ut omnis mollitia dignissimos,
-                  aperiam ipsam voluptate rerum!</span>
-              </div>
-              <ul class="list-type-check two-column">
-                <li>24/7 services</li>
-                <li>Fast service</li>
-                <li>Affordable pricing</li>
-                <li>Modern technology</li>
-              </ul>
-              <div class="content-button">
-                <a href="#" class="btn btn-primary">Contact us</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <!--==========================
       Home 1 : blog section 
     ==============================-->
@@ -824,6 +825,14 @@
   <script src="./plugins/bootstrap/js/bootstrap.bundle.js"></script>
   <script type="text/javascript" src="./js/custom.js"></script>
   <script type="text/javascript" src="./js/inlineSvg.min.js"></script>
+
+  <script src="./js/jquery.nice-select.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('select').niceSelect();
+    });
+  </script>
 </body>
 
 </html>
